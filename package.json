@@ -2,7 +2,7 @@
   "name": "travel-blog",
   "version": "1.0.0",
   "author": "Maxim Grivennyy",
-  "homepage": "https://github.io/maximka76667/travel-blog",
+  "homepage": "https://maximka76667.github.io/travel-blog",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
