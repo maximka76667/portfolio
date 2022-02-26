@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/maximka76667/travel-blog/static/css/main.6ada3502.css",
-    "main.js": "/maximka76667/travel-blog/static/js/main.ac7707a0.js",
-    "static/js/787.fa4a499b.chunk.js": "/maximka76667/travel-blog/static/js/787.fa4a499b.chunk.js",
-    "index.html": "/maximka76667/travel-blog/index.html",
-    "main.6ada3502.css.map": "/maximka76667/travel-blog/static/css/main.6ada3502.css.map",
-    "main.ac7707a0.js.map": "/maximka76667/travel-blog/static/js/main.ac7707a0.js.map",
-    "787.fa4a499b.chunk.js.map": "/maximka76667/travel-blog/static/js/787.fa4a499b.chunk.js.map"
+    "main.css": "/travel-blog/static/css/main.6ada3502.css",
+    "main.js": "/travel-blog/static/js/main.6d5a1936.js",
+    "static/js/787.fa4a499b.chunk.js": "/travel-blog/static/js/787.fa4a499b.chunk.js",
+    "index.html": "/travel-blog/index.html",
+    "main.6ada3502.css.map": "/travel-blog/static/css/main.6ada3502.css.map",
+    "main.6d5a1936.js.map": "/travel-blog/static/js/main.6d5a1936.js.map",
+    "787.fa4a499b.chunk.js.map": "/travel-blog/static/js/787.fa4a499b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6ada3502.css",
-    "static/js/main.ac7707a0.js"
+    "static/js/main.6d5a1936.js"
   ]
 }
