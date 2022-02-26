@@ -2,20 +2,26 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 function Article(props) {
-  const { id } = useParams();
+  const { linkName } = useParams();
 
   const [articleName, setArticleName] = React.useState('');
+  const [articleContent, setArticleContent] = React.useState('');
 
   React.useEffect(() => {
     props.articles.forEach(article => {
-      if (article._id.toString() === id) {
+      if (article.linkName.toString() === linkName) {
         setArticleName(article.name);
+        setArticleContent(article.content);
       }
     })
-  }, [id, props.articles]);
+  }, [linkName, props.articles]);
 
   return (
-    <h1>{articleName} {id}</h1>
+    <>
+      <h1>{articleName} {linkName}</h1>
+      <div className="article__content" dangerouslySetInnerHTML={{ __html: articleContent }}>
+      </div>
+    </>
   )
 }
 
