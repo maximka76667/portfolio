@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import {
-  BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
-import Main from '../Main/Main';
+import Blog from '../Blog/Blog';
 import Article from '../Article/Article';
+import Header from '../Header/Header';
 
 function App() {
 
@@ -29,6 +29,14 @@ function App() {
         img: "https://thumbs.dreamstime.com/z/article-reading-16383133.jpg",
         linkName: "new-article",
         content: "<h2>Here is heading!</h2><p>Paragraph 1<p><p>Paragraph 2<p>"
+      },
+      {
+        id: 110,
+        name: "Barcelona",
+        description: "My travel to Barcelona",
+        img: "https://lh3.googleusercontent.com/aopfdWgAbydWD1kYlBMTM5wlVKlzU-lyTIyoDq9csvqLxC69Pw0Ba7cJnq-UShsZ2buIAHU_g3jX_ZoawyvaGft7oXhaCYr9Bb9gryHnmmtzrL0Ssb0pil3v0VXXRb4_c9bZLS_F1yR1I2KQGsv0IQwIXbyAMr5SPylJJsQJHgKZUVo8Yib3_NTrzTwmtbG1XH4Z2A5vMiccVAM9-YpGc4dp5nYTXb9IEjj6il8WtNVUrqjiXpdAI8EM6SX2pIeg_qiciqg-TObG1eHBKIzxELMKtGgXOXvqCzvIzpT15xczALsSmJsQTCE3NfLt9iiZJdZYOGC872Ohdpi5j4QSSvZQAaRahfW_3rXu5nwnMqWQ3H02H3QuyLKnGOYEqU7Z16EQeZdxiV6EVsYUKPkXYCRrmtkGyDcKZ0_zkwXEPLYXcTsX0Tb1_wQjeEOA5PmT9PFABP3tX0v-bcZ_oly3kOP2atOIWcnMstu28iYLcXYRKjKf4e1BcLAhcc4pmdEd63jAD_8gYSocCgqJ0c6VXKQa3paQfSCkJrjjDg4wBKFAu4y-IbF1fknGH8ZNDGqhdBzn2r4k38sW2MjEEg8XK8diDQW4utHhbIOh79tZmMk59HaiH6UZ5AG3g8QbiEi-Gacll0qdcjfwGgvB5ycPRwhOyfh3gU8fa3WXpNPa-4glOI30FjAUsoJacmWkGjT9hs-SxEJFD3e8_Rse3bkr3b1l=w507-h898-no?authuser=1",
+        linkName: "barcelona",
+        content: "<h2>Travel</h2><p>Text</p>"
       }
     ].reverse())
   }, [])
@@ -36,19 +44,16 @@ function App() {
 
   return (
     <div className="app">
-      <header className="header">
-
-      </header>
+      <Header />
       <main className="content">
-        <h1 className="content__heading">My blog</h1>
-        <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
-          <Routes>
-            <Route path="/" element={<Main articles={articles} />} />
-            <Route path="/article/:linkName" element={<Article articles={articles} />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path="/blog">
+            <Route path="/blog/" element={<Blog articles={articles} />} />
+            <Route path="/blog/article/:linkName" element={<Article articles={articles} />} />
+          </Route>
+        </Routes>
       </main>
-    </div>
+    </div >
   );
 }
 

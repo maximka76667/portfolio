@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import './Article.css';
 
 function Article(props) {
   const { linkName } = useParams();
@@ -11,7 +12,7 @@ function Article(props) {
     props.articles.forEach(article => {
       if (article.linkName.toString() === linkName) {
         setArticleName(article.name);
-        setArticleContent(article.content);
+        setArticleContent(`<img src="${article.img}"/>${article.content}`);
       }
     })
   }, [linkName, props.articles]);

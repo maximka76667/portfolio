@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 
-function Main(props) {
+function Blog(props) {
   return (
-    <>
+    <div className="blog">
+      <h1 className="blog__heading">My blog</h1>
       <section className="articles">
         {
           props.articles.map((article) => {
             return (
-              <Link className="article-link" to={`/article/${article.linkName}`} key={article._id}>
+              <Link className="article-link" to={`/blog/article/${article.linkName}`} key={article._id}>
                 <article className="article">
                   <img src={article.img} alt="" className="article__img" />
                   <h2 className="article__name">{article.name}</h2>
@@ -18,8 +19,8 @@ function Main(props) {
           })
         }
       </section>
-    </>
+    </div>
   )
 }
 
-export default Main;
+export default Blog;
