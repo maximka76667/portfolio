@@ -1,0 +1,40 @@
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  padding: 0 10px;
+}
+
+.nav__link {
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.2s;
+  position: relative;
+  padding: 5px 10px;
+}
+
+.nav__link:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: lightcoral;
+  z-index: -1;
+  transition: all 0.2s;
+  border-radius: 5px;
+}
+
+.nav__link:hover {
+  color: darkblue;
+}
+
+.nav__link:hover:before {
+  height: 100%;
+}
