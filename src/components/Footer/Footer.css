@@ -1,0 +1,34 @@
+.footer {
+  width: 80%;
+  max-width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+}
+
+.footer__menu {
+  display: flex;
+  height: 40px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__menu-item {
+  padding: 5px 10px;
+}
+
+.footer__menu-link img {
+  border-radius: 6px;
+  width: 30px;
+  height: 30px;
+  transition: all 0.2s;
+}
+
+.footer__menu-link:hover img {
+  transform: rotate(5deg);
+}

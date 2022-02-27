@@ -6,7 +6,8 @@
 }
 
 .nav__item {
-  padding: 0 10px;
+  padding: 0 30px;
+  font-size: 18px;
 }
 
 .nav__link {
@@ -15,7 +16,8 @@
   text-decoration: none;
   transition: all 0.2s;
   position: relative;
-  padding: 5px 10px;
+  padding: 5px 20px;
+  z-index: 2;
 }
 
 .nav__link:before {
@@ -32,9 +34,10 @@
 }
 
 .nav__link:hover {
-  color: darkblue;
+  color: #fff;
 }
 
 .nav__link:hover:before {
+  background-color: darkblue;
   height: 100%;
 }

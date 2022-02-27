@@ -7,6 +7,10 @@ import {
 import Blog from '../Blog/Blog';
 import Article from '../Article/Article';
 import Header from '../Header/Header';
+import Home from '../Home/Home';
+import About from '../About/About';
+import Projects from '../Projects/Projects';
+import Footer from '../Footer/Footer';
 
 function App() {
 
@@ -47,13 +51,17 @@ function App() {
       <Header />
       <main className="content">
         <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/blog">
             <Route path="/blog/" element={<Blog articles={articles} />} />
             <Route path="/blog/article/:linkName" element={<Article articles={articles} />} />
           </Route>
         </Routes>
       </main>
-    </div >
+      <Footer />
+    </div>
   );
 }
 
