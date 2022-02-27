@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="home">
       <div className="about-me">
-        <h1 className="about-me__greetings">I‘m Maxim. I‘m web developer and I love it! <span className='about-me__heart'>❤</span></h1>
+        <h1 className="about-me__greetings">I‘m <span className='about-me__name'>Maxim</span>. I‘m web developer and I love it! <span className='about-me__heart'>❤</span></h1>
         <img className='about-me__photo' src={photo} alt="" />
       </div>
       <div className='home__links'>
