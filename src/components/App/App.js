@@ -41,7 +41,7 @@ function App() {
       </header>
       <main className="content">
         <h1 className="content__heading">My blog</h1>
-        <BrowserRouter basename="/travel-blog">
+        <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
           <Routes>
             <Route path="/" element={<Main articles={articles} />} />
             <Route path="/article/:linkName" element={<Article articles={articles} />} />
