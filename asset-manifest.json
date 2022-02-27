@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/travel-blog/static/css/main.6ada3502.css",
-    "main.js": "/travel-blog/static/js/main.13a6df29.js",
+    "main.css": "/travel-blog/static/css/main.0ecfe00b.css",
+    "main.js": "/travel-blog/static/js/main.eb88ef2f.js",
     "static/js/787.fa4a499b.chunk.js": "/travel-blog/static/js/787.fa4a499b.chunk.js",
+    "static/media/photo.jpg": "/travel-blog/static/media/photo.845339a8e28a29f2b1b3.jpg",
+    "static/media/logo-vk.svg": "/travel-blog/static/media/logo-vk.eed0ee4f59fb2c34e44c17c9868c3bad.svg",
+    "static/media/logo-instagram.svg": "/travel-blog/static/media/logo-instagram.62572c862d53f228aa8eff879e2e1d37.svg",
+    "static/media/logo-linkedin.svg": "/travel-blog/static/media/logo-linkedin.7defd339fd92d3e5fa034b24a5f10ed6.svg",
     "index.html": "/travel-blog/index.html",
-    "main.6ada3502.css.map": "/travel-blog/static/css/main.6ada3502.css.map",
-    "main.13a6df29.js.map": "/travel-blog/static/js/main.13a6df29.js.map",
+    "main.0ecfe00b.css.map": "/travel-blog/static/css/main.0ecfe00b.css.map",
+    "main.eb88ef2f.js.map": "/travel-blog/static/js/main.eb88ef2f.js.map",
     "787.fa4a499b.chunk.js.map": "/travel-blog/static/js/787.fa4a499b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ada3502.css",
-    "static/js/main.13a6df29.js"
+    "static/css/main.0ecfe00b.css",
+    "static/js/main.eb88ef2f.js"
   ]
 }
