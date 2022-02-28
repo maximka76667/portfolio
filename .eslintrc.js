@@ -20,5 +20,6 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'jsx-quotes': ['error', 'prefer-double'],
+    'no-underscore-dangle': 'off',
   },
 };
