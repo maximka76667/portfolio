@@ -2,13 +2,13 @@
 
 .app {
   min-height: 100vh;
-  background-color: var(--c1-dark);
-  --c1-dark: #3c125c;
-  --c1-light: #b562f5;
-  --c1: #7532a8;
-  --c2-dark: #545c09;
-  --c2: #a2ab54;
-  color: var(--c2);
+  background-color: #fff;
+  --c1-dark: #14585c;
+  --c1-light: #67eef5;
+  --c1: #35a3a8;
+  --c2-dark: #5c2b0b;
+  --c2: #ab7857;
+  color: #000;
 }
 
 .blog__heading {

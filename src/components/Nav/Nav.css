@@ -6,16 +6,16 @@
 }
 
 .nav__item {
-  padding: 0 20px;
+  padding: 0 5px;
   font-size: 18px;
 }
 
 .nav__link {
-  color: var(--c2);
+  color: #000;
   text-decoration: none;
   transition: all 0.2s;
   position: relative;
-  padding: 5px 20px;
+  padding: 5px 10px;
   z-index: 2;
   border-radius: 5px;
 }
@@ -30,14 +30,13 @@
   background-color: var(--c1-light);
   z-index: -1;
   transition: all 0.2s;
-  border-radius: 5px;
-}
-
-.nav__link:hover {
-  color: #fff;
 }
 
 .nav__link:hover:before {
-  background-color: var(--c2-dark);
-  height: 100%;
+  background-color: var(--c2);
+  height: 4px;
+}
+
+.nav__link_active:before {
+  background-color: var(--c2);
 }

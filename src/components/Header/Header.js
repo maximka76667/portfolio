@@ -1,3 +1,4 @@
+import React from 'react';
 import './Header.css';
 import Nav from '../Nav/Nav';
 
@@ -6,7 +7,7 @@ function Header() {
     <header className="header">
       <Nav />
     </header>
-  )
+  );
 }
 
 export default Header;

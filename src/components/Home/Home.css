@@ -18,11 +18,11 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  color: var(--c2);
+  color: #000;
 }
 
 .about-me__name {
-  color: #fff;
+  color: var(--c1);
 }
 
 .about-me__photo {
@@ -50,9 +50,9 @@
   transition: all 0.2s;
   text-decoration: none;
   color: var(--c1-dark);
-  background-color: #fff;
+  background-color: var(--c1-light);
   font-size: 20px;
-  box-shadow: 0 0 0 4px var(--c1-light);
+  box-shadow: 0 0 0 4px #fff;
 }
 
 .home__link:not(:last-of-type) {
@@ -61,6 +61,6 @@
 
 .home__link:hover {
   color: #fff;
-  background-color: var(--c2-dark);
-  box-shadow: 0 0 0 4px var(--c2-dark);
+  background-color: var(--c2);
+  box-shadow: 0 0 0 4px var(--c2);
 }
