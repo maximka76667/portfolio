@@ -11,7 +11,7 @@
 }
 
 .nav__link {
-  color: #000;
+  color: var(--c2);
   text-decoration: none;
   transition: all 0.2s;
   position: relative;
@@ -27,7 +27,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: lightcoral;
+  background-color: var(--c1-light);
   z-index: -1;
   transition: all 0.2s;
   border-radius: 5px;
@@ -38,6 +38,6 @@
 }
 
 .nav__link:hover:before {
-  background-color: darkblue;
+  background-color: var(--c2-dark);
   height: 100%;
 }
