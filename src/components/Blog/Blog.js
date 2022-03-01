@@ -10,7 +10,7 @@ function Blog(props) {
       <section className="articles">
         {
           articles.map((article) => (
-            <Link className="article-link" to={`/blog/article/${article.linkName}`} key={article._id}>
+            <Link className="article-link" to={`/blog/article/${article.linkName}`} key={article.linkName}>
               <article className="article">
                 <img src={article.img} alt="" className="article__img" />
                 <h2 className="article__name">{article.name}</h2>

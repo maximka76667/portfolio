@@ -3,20 +3,22 @@ import './Nav.css';
 import { NavLink } from 'react-router-dom';
 
 function Nav() {
+  const navLinkActiveClass = ({ isActive }) => `nav__link ${isActive ? 'nav__link_active' : ''}`;
+
   return (
     <nav className="nav">
       <ul className="nav__list">
         <li className="nav__item">
-          <NavLink to="/" className={({ isActive }) => `nav__link ${isActive ? 'nav__link_active' : ''}`}>Home</NavLink>
+          <NavLink to="/" className={navLinkActiveClass}>Home</NavLink>
         </li>
-        <li className="nav__item" key="home">
-          <NavLink to="/about" className={({ isActive }) => `nav__link ${isActive ? 'nav__link_active' : ''}`}>About</NavLink>
+        <li className="nav__item">
+          <NavLink to="/about" className={navLinkActiveClass}>About</NavLink>
         </li>
-        <li className="nav__item" key="home">
-          <NavLink to="/projects" className={({ isActive }) => `nav__link ${isActive ? 'nav__link_active' : ''}`}>Projects</NavLink>
+        <li className="nav__item">
+          <NavLink to="/projects" className={navLinkActiveClass}>Projects</NavLink>
         </li>
-        <li className="nav__item" key="home">
-          <NavLink to="/blog" className={({ isActive }) => `nav__link ${isActive ? 'nav__link_active' : ''}`}>Blog</NavLink>
+        <li className="nav__item">
+          <NavLink to="/blog" className={navLinkActiveClass}>Blog</NavLink>
         </li>
       </ul>
     </nav>

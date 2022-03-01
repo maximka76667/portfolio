@@ -23,12 +23,14 @@
 }
 
 .footer__menu-link img {
-  border-radius: 6px;
+  border-radius: 8px;
   width: 30px;
   height: 30px;
   transition: all 0.2s;
+  background-color: #fff;
 }
 
 .footer__menu-link:hover img {
   transform: rotate(5deg);
+  box-shadow: 0 0 8px 2px #fff;
 }
