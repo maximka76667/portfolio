@@ -1,19 +1,24 @@
 {
   "files": {
-    "main.css": "/travel-blog/static/css/main.9c28101c.css",
-    "main.js": "/travel-blog/static/js/main.6f6e8753.js",
+    "main.css": "/travel-blog/static/css/main.c7eedb3f.css",
+    "main.js": "/travel-blog/static/js/main.1c67874e.js",
     "static/js/787.fa4a499b.chunk.js": "/travel-blog/static/js/787.fa4a499b.chunk.js",
+    "static/media/Montserrat-MediumItalic.ttf": "/travel-blog/static/media/Montserrat-MediumItalic.69fda777fc886ba5ac31.ttf",
+    "static/media/Montserrat-Medium.ttf": "/travel-blog/static/media/Montserrat-Medium.3a0917345468c959207a.ttf",
+    "static/media/Montserrat-Bold.ttf": "/travel-blog/static/media/Montserrat-Bold.63fae500fdcf19ce83d4.ttf",
+    "static/media/Montserrat-Light.ttf": "/travel-blog/static/media/Montserrat-Light.f0963fd9968fbd54cc35.ttf",
+    "static/media/Montserrat-Regular.ttf": "/travel-blog/static/media/Montserrat-Regular.ac98a5f5ca71180fe293.ttf",
     "static/media/photo.jpg": "/travel-blog/static/media/photo.845339a8e28a29f2b1b3.jpg",
     "static/media/logo-vk.svg": "/travel-blog/static/media/logo-vk.eed0ee4f59fb2c34e44c17c9868c3bad.svg",
     "static/media/logo-instagram.svg": "/travel-blog/static/media/logo-instagram.62572c862d53f228aa8eff879e2e1d37.svg",
     "static/media/logo-linkedin.svg": "/travel-blog/static/media/logo-linkedin.7defd339fd92d3e5fa034b24a5f10ed6.svg",
     "index.html": "/travel-blog/index.html",
-    "main.9c28101c.css.map": "/travel-blog/static/css/main.9c28101c.css.map",
-    "main.6f6e8753.js.map": "/travel-blog/static/js/main.6f6e8753.js.map",
+    "main.c7eedb3f.css.map": "/travel-blog/static/css/main.c7eedb3f.css.map",
+    "main.1c67874e.js.map": "/travel-blog/static/js/main.1c67874e.js.map",
     "787.fa4a499b.chunk.js.map": "/travel-blog/static/js/787.fa4a499b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c28101c.css",
-    "static/js/main.6f6e8753.js"
+    "static/css/main.c7eedb3f.css",
+    "static/js/main.1c67874e.js"
   ]
 }
