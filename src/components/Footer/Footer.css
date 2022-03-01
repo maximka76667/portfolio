@@ -27,10 +27,10 @@
   width: 30px;
   height: 30px;
   transition: all 0.2s;
-  background-color: #fff;
 }
 
 .footer__menu-link:hover img {
+  background-color: #fff;
   transform: rotate(5deg);
-  box-shadow: 0 0 8px 2px #fff;
+  box-shadow: 0 0 5px 2px #fff;
 }
