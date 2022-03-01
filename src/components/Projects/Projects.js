@@ -1,9 +1,15 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './Projects.css';
 
 function Projects() {
   return (
-    <h1>Projects</h1>
+    <>
+      <Helmet>
+        <title>Projects</title>
+      </Helmet>
+      <h1>Projects</h1>
+    </>
   );
 }
 

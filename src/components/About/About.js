@@ -1,9 +1,15 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './About.css';
 
 function About() {
   return (
-    <h1>About me</h1>
+    <>
+      <Helmet>
+        <title>About</title>
+      </Helmet>
+      <h1>About me</h1>
+    </>
   );
 }
 
