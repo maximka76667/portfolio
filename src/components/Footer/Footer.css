@@ -22,14 +22,14 @@
   padding: 5px 10px;
 }
 
-.footer__menu-link img {
+.footer__menu-icon {
   border-radius: 8px;
   width: 30px;
   height: 30px;
   transition: all 0.2s;
 }
 
-.footer__menu-link:hover img {
+.footer__menu-link:hover .footer__menu-icon {
   background-color: #fff;
   transform: rotate(5deg);
   box-shadow: 0 0 5px 2px #fff;
