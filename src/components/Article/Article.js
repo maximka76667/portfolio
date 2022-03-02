@@ -8,27 +8,24 @@ function Article(props) {
 
   const { articles } = props;
 
-  const [articleName, setArticleName] = React.useState('');
-  const [articleContent, setArticleContent] = React.useState('');
+  const [thisArticle, setThisArticle] = React.useState({});
 
   React.useEffect(() => {
     articles.forEach((article) => {
       if (article.linkName.toString() === linkName) {
-        setArticleName(article.name);
-        setArticleContent(`<img src="${article.img}"/>${article.content}`);
+        setThisArticle(article);
       }
     });
   }, [linkName, articles]);
 
   return (
-    <>
-      <h1>
-        {articleName}
-        {' '}
-        {linkName}
+    <article className="article">
+      <h1 className="article__heading">
+        {thisArticle.name}
       </h1>
-      <div className="article__content" dangerouslySetInnerHTML={{ __html: articleContent }} />
-    </>
+      <img className="article__img" src={thisArticle.img} alt={thisArticle.name} />
+      <div className="article__content" dangerouslySetInnerHTML={{ __html: thisArticle.content }} />
+    </article>
   );
 }
 

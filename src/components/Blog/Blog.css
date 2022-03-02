@@ -1,0 +1,9 @@
+.blog__heading {
+  text-align: center;
+}
+
+.blog__articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px 30px 20px;
+}

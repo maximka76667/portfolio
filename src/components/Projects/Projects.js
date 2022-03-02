@@ -4,12 +4,12 @@ import './Projects.css';
 
 function Projects() {
   return (
-    <>
+    <div className="projects">
       <Helmet>
         <title>Projects</title>
       </Helmet>
-      <h1>Projects</h1>
-    </>
+      <h1 className="projects__heading">Projects</h1>
+    </div>
   );
 }
 
