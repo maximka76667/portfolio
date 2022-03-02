@@ -1,3 +1,58 @@
 .projects__heading {
   text-align: center;
+  margin: 20px 0;
+}
+
+.project {
+  display: flex;
+  margin: 60px;
+  padding: 20px;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  box-shadow: 0 0 1px 1px #fff;
+}
+
+.project__info {
+  padding: 50px;
+}
+
+.project__name {
+  margin: 20px 0;
+}
+
+.project__description {
+  margin: 5px 0;
+}
+
+.project__img {
+  min-width: 700px;
+  max-width: 700px;
+  min-height: 200px;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.project__links {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+}
+
+.project__link {
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  color: var(--c2);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.project__link:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.project__link:hover {
+  color: var(--c1-light);
 }
