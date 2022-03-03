@@ -11,6 +11,7 @@ import Home from '../Home/Home';
 import About from '../About/About';
 import Projects from '../Projects/Projects';
 import Footer from '../Footer/Footer';
+import AddArticle from '../AddArticle/AddArticle';
 
 function App() {
   const [articles, setArticles] = React.useState([]);
@@ -99,8 +100,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects projects={projects} />} />
           <Route path="/blog">
-            <Route path="/blog/" element={<Blog articles={articles} />} />
+            <Route path="/blog" element={<Blog articles={articles} />} />
             <Route path="/blog/article/:linkName" element={<Article articles={articles} />} />
+            <Route path="/blog/create-article" element={<AddArticle />} />
           </Route>
         </Routes>
       </main>

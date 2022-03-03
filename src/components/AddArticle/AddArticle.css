@@ -1,0 +1,15 @@
+.add-form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-form__input {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
