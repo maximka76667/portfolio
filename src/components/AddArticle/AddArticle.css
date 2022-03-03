@@ -13,3 +13,11 @@
     padding: 0;
     margin: 0;
 }
+
+.add-form__add-menu {
+    display: none;
+}
+
+.add-form__add-menu_visible {
+    display: flex;
+}
