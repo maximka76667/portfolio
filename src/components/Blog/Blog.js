@@ -17,7 +17,7 @@ function Blog(props) {
   return (
     <>
       <Helmet>
-        <title>Blog</title>
+        <title>My Blog</title>
       </Helmet>
       <div className="blog">
         <h1 className="blog__heading">My blog</h1>

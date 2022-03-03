@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>Home</title>
+        <title>Maxim Grivennyy</title>
       </Helmet>
       <div className="home">
         <div className="about-me">

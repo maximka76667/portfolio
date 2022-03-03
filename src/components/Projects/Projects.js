@@ -9,7 +9,7 @@ function Projects(props) {
   return (
     <div className="projects">
       <Helmet>
-        <title>Projects</title>
+        <title>My projects</title>
       </Helmet>
       <h1 className="projects__heading">Projects</h1>
       <section className="projects__list">

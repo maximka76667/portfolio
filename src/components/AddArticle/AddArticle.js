@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
+import AddArticleElement from '../AddArticleElement/AddArticleElement';
 import './AddArticle.css';
 
 function AddArticle() {
-  const [content, setContent] = useState([]);
+  const [elements, setElements] = useState([]);
   const [isAddMenuVisible, setIsAddMenuVisible] = useState(false);
+  const [texts, setTexts] = useState([]);
 
   function handleSubmit(e) {
     e.preventDefault();
 
-    console.log(content);
+    console.log(texts);
   }
 
   function handleAddElement() {
@@ -16,23 +18,26 @@ function AddArticle() {
   }
 
   function addElement(type) {
-    setContent([...content, { type, text: '' }]);
+    setElements([...elements, { type }]);
   }
 
-  function handleChange(e) {
-    console.log(e.target.value);
+  function handleTextChange(element, text, index) {
+    const newTexts = texts;
+    newTexts[index] = { element, text };
+    setTexts(newTexts);
+    console.log(newTexts);
   }
 
   return (
     <form className="add-form" onSubmit={handleSubmit}>
       <input type="text" name="title" className="add-form__input" placeholder="Title" />
       <div className="add-form__content">
-        {content.map((element, index) => (
-          // eslint-disable-next-line
-          <element.type key={index}>
-            <input type="text" onChange={handleChange} />
-          </element.type>
-        ))}
+        {
+          elements.map((element, index) => (
+            // eslint-disable-next-line
+            <AddArticleElement onTextChange={handleTextChange} element={element} index={index} key={index} />
+          ))
+        }
       </div>
       <button type="button" className="add-form__add-element" onClick={handleAddElement}>+</button>
       <div className={`add-form__add-menu ${isAddMenuVisible ? 'add-form__add-menu_visible' : ''}`}>

@@ -6,7 +6,7 @@ function About() {
   return (
     <>
       <Helmet>
-        <title>About</title>
+        <title>About me</title>
       </Helmet>
       <h1>About me</h1>
     </>
