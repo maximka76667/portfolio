@@ -28,11 +28,11 @@ function Article(props) {
       <img className="article__img" src={thisArticle.img} alt={thisArticle.name} />
       <div className="article__content">
         {
-          content.map((element, index) => (
+          content.map((contentElement, index) => (
             // eslint-disable-next-line
-            <element.type key={index}>
-              {element.text}
-            </element.type>
+            <contentElement.type key={index}>
+              {contentElement.text}
+            </contentElement.type>
           ))
         }
       </div>

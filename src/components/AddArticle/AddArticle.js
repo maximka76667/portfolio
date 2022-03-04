@@ -67,7 +67,7 @@ function AddArticle(props) {
             <AddArticleElement
               // eslint-disable-next-line
               onTextChange={handleTextChange}
-              element={element}
+              content={element}
               index={index}
               // eslint-disable-next-line
               key={index}
