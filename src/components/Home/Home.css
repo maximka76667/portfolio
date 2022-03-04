@@ -41,7 +41,8 @@
 }
 
 .home__links {
-  padding: 50px 0;
+  display: flex;
+  padding: 30px 0;
 }
 
 .home__link {
@@ -61,4 +62,23 @@
 
 .home__link:hover {
   background-color: var(--c2);
+}
+
+@media (max-width: 800px) {
+  .home {
+    padding: 50px 0;
+  }
+
+  .about-me {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-me__photo {
+    margin-bottom: 30px;
+  }
+
+  .home__links {
+    justify-content: center;
+  }
 }
