@@ -38,12 +38,14 @@ function Blog(props) {
 
 Blog.propTypes = {
   articles: PropTypes.arrayOf(PropTypes.shape({
-    _id: PropTypes.number,
     name: PropTypes.string,
     description: PropTypes.string,
     img: PropTypes.string,
     linkName: PropTypes.string,
-    content: PropTypes.string,
+    content: PropTypes.arrayOf(PropTypes.shape({
+      type: PropTypes.string,
+      text: PropTypes.string,
+    })),
   })).isRequired,
 };
 

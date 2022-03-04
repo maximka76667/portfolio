@@ -24,7 +24,6 @@ ArticleLink.propTypes = {
     description: PropTypes.string,
     img: PropTypes.string,
     linkName: PropTypes.string,
-    content: PropTypes.string,
   }).isRequired,
 };
 
