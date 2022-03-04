@@ -26,3 +26,9 @@
   opacity: 0.6;
   color: var(--c1-light);
 }
+
+@media (max-width: 800px) {
+  .blog__articles {
+    grid-template-columns: 1fr;
+  }
+}
