@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './Article.css';
 import PropTypes from 'prop-types';
@@ -8,8 +8,8 @@ function Article(props) {
 
   const { articles } = props;
 
-  const [thisArticle, setThisArticle] = React.useState({});
-  const [content, setContent] = React.useState([]);
+  const [thisArticle, setThisArticle] = useState({});
+  const [content, setContent] = useState([]);
 
   useEffect(() => {
     articles.forEach((article) => {
@@ -28,8 +28,9 @@ function Article(props) {
       <img className="article__img" src={thisArticle.img} alt={thisArticle.name} />
       <div className="article__content">
         {
-          content.map((element) => (
-            <element.type>
+          content.map((element, index) => (
+            // eslint-disable-next-line
+            <element.type key={index}>
               {element.text}
             </element.type>
           ))

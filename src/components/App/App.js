@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import {
   Routes,
@@ -14,8 +14,8 @@ import Footer from '../Footer/Footer';
 import AddArticle from '../AddArticle/AddArticle';
 
 function App() {
-  const [articles, setArticles] = React.useState([]);
-  const [projects, setProjects] = React.useState([]);
+  const [articles, setArticles] = useState([]);
+  const [projects, setProjects] = useState([]);
 
   function addArticle(title, img, description, linkName, texts) {
     setArticles([{
@@ -27,7 +27,7 @@ function App() {
     }, ...articles]);
   }
 
-  React.useEffect(() => {
+  useEffect(() => {
     setArticles([
       {
         _id: 321,
