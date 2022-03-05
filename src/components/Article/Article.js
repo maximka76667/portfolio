@@ -28,12 +28,18 @@ function Article(props) {
       <img className="article__img" src={thisArticle.img} alt={thisArticle.name} />
       <div className="article__content">
         {
-          content.map((contentElement, index) => (
-            // eslint-disable-next-line
-            <contentElement.type key={index}>
-              {contentElement.text}
-            </contentElement.type>
-          ))
+          content.map((contentElement, index) => {
+            if (contentElement.type === 'img') {
+              // eslint-disable-next-line
+              return <img key={index} src={contentElement.text} />;
+            }
+            return (
+              // eslint-disable-next-line
+              <contentElement.type key={index}>
+                {contentElement.text}
+              </contentElement.type>
+            );
+          })
         }
       </div>
     </article>
