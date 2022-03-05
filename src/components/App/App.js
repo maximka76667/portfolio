@@ -30,7 +30,7 @@ function App() {
   useEffect(() => {
     setArticles([
       {
-        _id: 321,
+
         name: 'Article',
         description: 'Lorem ipsum',
         img: 'https://media.istockphoto.com/photos/young-woman-reading-the-news-on-a-modern-tablet-computer-while-in-picture-id1177502660?b=1&k=20&m=1177502660&s=170667a&w=0&h=ROub8oDtheyx3xtHMjtU2FV6ZC7g2iSGX2qxme6388w=',
@@ -51,7 +51,7 @@ function App() {
         ],
       },
       {
-        _id: 543,
+
         name: 'Article',
         description: 'Lorem ipsum',
         img: 'https://media.istockphoto.com/photos/young-woman-reading-the-news-on-a-modern-tablet-computer-while-in-picture-id1177502660?b=1&k=20&m=1177502660&s=170667a&w=0&h=ROub8oDtheyx3xtHMjtU2FV6ZC7g2iSGX2qxme6388w=',
@@ -72,7 +72,7 @@ function App() {
         ],
       },
       {
-        _id: 666,
+
         name: 'Article',
         description: 'Lorem ipsum',
         img: 'https://media.istockphoto.com/photos/young-woman-reading-the-news-on-a-modern-tablet-computer-while-in-picture-id1177502660?b=1&k=20&m=1177502660&s=170667a&w=0&h=ROub8oDtheyx3xtHMjtU2FV6ZC7g2iSGX2qxme6388w=',
@@ -93,7 +93,7 @@ function App() {
         ],
       },
       {
-        _id: 105,
+
         name: 'New article',
         description: 'Description new article',
         img: 'https://thumbs.dreamstime.com/z/article-reading-16383133.jpg',

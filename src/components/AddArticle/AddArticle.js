@@ -32,9 +32,9 @@ function AddArticle(props) {
     setElements([...elements, { type }]);
   }
 
-  function handleTextChange(element, text, index) {
+  function handleTextChange(type, text, index) {
     const newTexts = texts;
-    newTexts[index] = { element, text };
+    newTexts[index] = { type, text };
     setTexts(newTexts);
   }
 

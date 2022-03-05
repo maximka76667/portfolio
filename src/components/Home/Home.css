@@ -9,7 +9,7 @@
   width: 80%;
   max-width: 72rem;
   margin: 0 auto;
-  padding: 15% 0 80px;
+  padding: calc(80vh / 2 - 80px * 2) 0 80px;
 }
 
 .about-me {
