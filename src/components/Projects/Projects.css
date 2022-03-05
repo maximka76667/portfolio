@@ -56,3 +56,29 @@
 .project__link:hover {
   color: var(--c1-light);
 }
+
+@media (max-width: 800px) {
+  .project {
+    flex-direction: column;
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .project__info {
+    padding: 30px 20px 10px;
+  }
+
+  .project__name {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .project__links {
+    padding: 10px 0;
+  }
+
+  .project__img {
+    max-width: 100%;
+    min-height: 300px;
+  }
+}

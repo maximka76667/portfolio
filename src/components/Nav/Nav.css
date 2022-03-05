@@ -45,3 +45,9 @@
 .nav__link_active:before {
   background-color: var(--c2);
 }
+
+@media (max-width: 800px) {
+  .nav__item {
+    font-size: 14px;
+  }
+}

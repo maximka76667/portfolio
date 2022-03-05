@@ -35,3 +35,9 @@
   transform: rotate(5deg);
   box-shadow: 0 0 5px 2px #fff;
 }
+
+@media (max-width: 800px) {
+  .footer {
+    font-size: 16px;
+  }
+}
