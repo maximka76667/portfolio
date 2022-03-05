@@ -176,7 +176,7 @@ function App() {
         repoLink: 'https://github.com/maximka76667/dino-game',
       },
       {
-        name: 'Calcutador',
+        name: 'CalcuTADOR',
         description: 'My calculator',
         img: 'https://imgur.com/ydtfSkV.png',
         link: 'https://maximka76667.github.io/calcutador',
