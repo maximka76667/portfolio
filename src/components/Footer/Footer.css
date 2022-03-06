@@ -8,9 +8,18 @@
   padding: 30px 0;
 }
 
+.footer__email {
+  color: var(--c2);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.footer__email:hover {
+  color: var(--c1-light);
+}
+
 .footer__menu {
   display: flex;
-  height: 40px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -18,6 +27,9 @@
 
 .footer__menu-item {
   padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__menu-icon {
@@ -33,8 +45,22 @@
   box-shadow: 0 0 5px 2px #fff;
 }
 
+.footer__social {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 800px) {
   .footer {
     font-size: 16px;
+    flex-direction: column-reverse;
+  }
+
+  .footer__menu {
+    flex-direction: column;
+  }
+
+  .footer__social {
+    padding: 10px 0;
   }
 }

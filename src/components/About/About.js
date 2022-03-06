@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import './About.css';
-import photo from '../../images/photo.jpg';
+import photo from '../../images/photo-about.jpg';
 
 function About() {
   return (

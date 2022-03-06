@@ -57,6 +57,12 @@
   color: var(--c1-light);
 }
 
+@media (max-width: 1200px) {
+  .project__img {
+    min-height: 400px;
+  }
+}
+
 @media (max-width: 800px) {
   .project {
     flex-direction: column;
