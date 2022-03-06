@@ -19,6 +19,7 @@
 
 .about__paragraph {
   margin: 30px 0;
+  letter-spacing: 1.5px;
 }
 
 .about__photo {
@@ -27,11 +28,16 @@
   object-fit: cover;
   border-radius: 50%;
   margin-left: 60px;
+  float: right;
 }
 
 .about__list {
   padding: 0;
   list-style-type: none;
+}
+
+.about__list-name {
+  margin: 50px 0 0;
 }
 
 .about__list-item:before {
@@ -40,4 +46,33 @@
   height: 5px;
   position: relative;
   background-color: red;
+}
+
+.about a {
+  color: #000;
+  transition: all 0.2s;
+}
+
+.about a:hover {
+  color: var(--c1);
+}
+
+@media (max-width: 800px) {
+  .about__main-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+  }
+
+  .about__list-name {
+    margin: 10px 0 0;
+  }
+
+  .about__paragraph {
+    margin: 10px 0;
+  }
+
+  .about__photo {
+    margin: 0 auto 20px;
+  }
 }

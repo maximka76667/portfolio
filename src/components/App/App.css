@@ -11,6 +11,6 @@
   --c2-dark: #a82a34;
   --c2: #0c2638;
   color: var(--c2);
-  background-color: #faaca8;
-  background-image: linear-gradient(19deg, #fff 0%, #ddd6f3 30%);
+  background-color: #fff;
+  background-image: linear-gradient(19deg, #fff 0%, #ddd6f3 90%);
 }

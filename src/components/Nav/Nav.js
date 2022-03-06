@@ -17,9 +17,9 @@ function Nav() {
         <li className="nav__item">
           <NavLink to="/projects" className={navLinkActiveClass}>Projects</NavLink>
         </li>
-        <li className="nav__item">
+        {/* <li className="nav__item">
           <NavLink to="/blog" className={navLinkActiveClass}>Blog</NavLink>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

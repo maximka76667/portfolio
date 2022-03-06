@@ -135,19 +135,19 @@ function App() {
       },
     ].reverse());
     setProjects([
-      {
-        name: 'Movies Explorer',
-        description: 'Searching and saving movies',
-        img: 'https://imgur.com/4wb6GH8.png',
-        link: 'https://max76667.movies.nomoredomains.club',
-        linkName: 'Save some movies (Demo)',
-        repoLink: 'https://github.com/maximka76667/movies-explorer-frontend',
-      },
+      // {
+      //   name: 'Movies Explorer',
+      //   description: 'Searching and saving movies',
+      //   img: 'https://imgur.com/4wb6GH8.png',
+      //   link: 'https://max76667.movies.nomoredomains.club',
+      //   linkName: 'Save some movies (Demo)',
+      //   repoLink: 'https://github.com/maximka76667/movies-explorer-frontend',
+      // },
       {
         name: 'Mesto',
         description: 'Social media for beatiful photos',
         img: 'https://imgur.com/ICNuiBr.png',
-        link: 'https://max76667.mesto.nomoredomains.monster',
+        link: 'https://maximka76667.github.io/react-mesto-auth',
         linkName: 'Post photos (Demo)',
         repoLink: 'https://github.com/maximka76667/react-mesto-api-full',
       },
