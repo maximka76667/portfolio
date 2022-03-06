@@ -23,8 +23,8 @@ function Home() {
           <img className="about-me__photo" src={photo} alt="" />
         </div>
         <div className="home__links">
-          <Link to="/projects" className="home__link">Look my projects</Link>
-          <Link to="/blog" className="home__link">Read my blog</Link>
+          <Link to="/projects" className="home__link">My projects</Link>
+          {/* <Link to="/blog" className="home__link">Read my blog</Link> */}
         </div>
       </div>
     </>
