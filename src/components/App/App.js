@@ -183,6 +183,14 @@ function App() {
         linkName: 'Calculate (Demo)',
         repoLink: 'https://github.com/maximka76667/calcutador',
       },
+      {
+        name: 'Pass Gen',
+        description: 'Password generator',
+        img: 'https://imgur.com/LrrnwHU.png',
+        link: 'https://maximka76667.github.io/pass-gen',
+        linkName: 'Generate password (Demo)',
+        repoLink: 'https://github.com/maximka76667/pass-gen',
+      },
     ]);
   }, []);
 
