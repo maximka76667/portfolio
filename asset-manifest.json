@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/travel-blog/static/css/main.d45c239c.css",
-    "main.js": "/travel-blog/static/js/main.fcb43a92.js",
+    "main.js": "/travel-blog/static/js/main.8e0fd414.js",
     "static/js/787.fa4a499b.chunk.js": "/travel-blog/static/js/787.fa4a499b.chunk.js",
     "static/media/Montserrat-MediumItalic.ttf": "/travel-blog/static/media/Montserrat-MediumItalic.69fda777fc886ba5ac31.ttf",
     "static/media/Montserrat-Medium.ttf": "/travel-blog/static/media/Montserrat-Medium.3a0917345468c959207a.ttf",
@@ -14,11 +14,11 @@
     "static/media/logo-linkedin.svg": "/travel-blog/static/media/logo-linkedin.7defd339fd92d3e5fa034b24a5f10ed6.svg",
     "index.html": "/travel-blog/index.html",
     "main.d45c239c.css.map": "/travel-blog/static/css/main.d45c239c.css.map",
-    "main.fcb43a92.js.map": "/travel-blog/static/js/main.fcb43a92.js.map",
+    "main.8e0fd414.js.map": "/travel-blog/static/js/main.8e0fd414.js.map",
     "787.fa4a499b.chunk.js.map": "/travel-blog/static/js/787.fa4a499b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d45c239c.css",
-    "static/js/main.fcb43a92.js"
+    "static/js/main.8e0fd414.js"
   ]
 }
