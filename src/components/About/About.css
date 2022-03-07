@@ -19,7 +19,6 @@
 
 .about__paragraph {
   margin: 30px 0;
-  letter-spacing: 1.5px;
 }
 
 .about__photo {
@@ -29,11 +28,6 @@
   border-radius: 50%;
   margin: 10px 0 10px 60px;
   float: right;
-}
-
-.about__list {
-  padding: 0;
-  list-style-type: none;
 }
 
 .about__list-name {

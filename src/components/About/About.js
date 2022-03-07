@@ -23,11 +23,11 @@ function About() {
             <h2 className="about__list-name">Every day I work on improving my skills</h2>
             <ul className="about__list">
               <li className="about__list-item">
-                <p className="about__list-text">- Independent projects on React.js (which I have in my portfolio)</p>
+                <p className="about__list-text"> Independent projects on React.js (which I have in my portfolio)</p>
               </li>
               <li className="about__list-item">
                 <p className="about__list-text">
-                  - Algorithms tasks on JavaScript on
+                  Algorithms tasks on JavaScript on
                   {' '}
                   <a href="https://www.codewars.com">CodeWars</a>
                   .
@@ -38,7 +38,7 @@ function About() {
               </li>
               <li className="about__list-item">
                 <p className="about__list-text">
-                  - Non-standard tasks on CSS on
+                  Non-standard tasks on CSS on
                   {' '}
                   <a href="https://www.cssbattle.dev">CSSBattle</a>
                   .
@@ -47,10 +47,10 @@ function About() {
                 </p>
               </li>
               <li className="about__list-item">
-                <p className="about__list-text">- TypeScript books and tasks</p>
+                <p className="about__list-text">TypeScript books and tasks</p>
               </li>
               <li className="about__list-item">
-                <p className="about__list-text">- Learning new technologies (e.g now it&apos;s Redux)</p>
+                <p className="about__list-text">Learning new technologies (e.g now it&apos;s Redux)</p>
               </li>
             </ul>
           </p>
@@ -63,10 +63,10 @@ function About() {
           <p className="about__paragraph">
             <h2 className="about__list-name">What else do i like?</h2>
             <ul className="about__list">
-              <li className="about__list-item"><p className="about__list-text">- Electric guitars. When I was 15 I tried to record my music</p></li>
-              <li className="about__list-item"><p className="about__list-text">- Languages. I speak English and Spanish at an intermediate level (B2)</p></li>
-              <li className="about__list-item"><p className="about__list-text">- Travels. In the last 3 years, I have visited 4 countries</p></li>
-              <li className="about__list-item"><p className="about__list-text">- Coca-Cola (not Pepsi)</p></li>
+              <li className="about__list-item"><p className="about__list-text">Electric guitars. When I was 15 I tried to record my music</p></li>
+              <li className="about__list-item"><p className="about__list-text">Languages. I speak English and Spanish at an intermediate level (B2)</p></li>
+              <li className="about__list-item"><p className="about__list-text">Travels. In the last 3 years, I have visited 4 countries</p></li>
+              <li className="about__list-item"><p className="about__list-text">Coca-Cola (not Pepsi)</p></li>
             </ul>
           </p>
         </div>
