@@ -1,8 +1,8 @@
 {
-  "name": "travel-blog",
+  "name": "portfolio",
   "version": "1.0.0",
   "author": "Maxim Grivennyy",
-  "homepage": "https://maximka76667.github.io/travel-blog",
+  "homepage": "https://maximka76667.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
