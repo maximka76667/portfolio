@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import logoLinkedin from '../../images/logo-linkedin.svg';
+import logoLinkedin from '../../images/logo-linkedin-2.svg';
 import logoInstagram from '../../images/logo-instagram.svg';
 import logoVk from '../../images/logo-vk.svg';
 
@@ -19,17 +19,17 @@ function Footer() {
         </li>
         <div className="footer__social">
           <li className="footer__menu-item">
-            <a href="https://www.linkedin.com/in/maxim-grivennyy-ba9a31231" className="footer__menu-link">
+            <a href="https://www.linkedin.com/in/maxim-grivennyy-ba9a31231" className="footer__menu-link" style={{ backgroundColor: '#0A66C2' }}>
               <img className="footer__menu-icon" src={logoLinkedin} alt="" />
             </a>
           </li>
           <li className="footer__menu-item">
-            <a href="https://www.instagram.com/maximka76667" className="footer__menu-link">
+            <a href="https://www.instagram.com/maximka76667" className="footer__menu-link" style={{ backgroundColor: 'rgb(197, 60, 117)' }}>
               <img className="footer__menu-icon" src={logoInstagram} alt="" />
             </a>
           </li>
           <li className="footer__menu-item">
-            <a href="https://vk.com/maximgriven" className="footer__menu-link">
+            <a href="https://vk.com/maximgriven" className="footer__menu-link" style={{ backgroundColor: 'rgb(81, 129, 184)' }}>
               <img className="footer__menu-icon" src={logoVk} alt="" />
             </a>
           </li>
