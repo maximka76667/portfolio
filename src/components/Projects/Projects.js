@@ -24,7 +24,7 @@ function Projects(props) {
                   <a href={project.repoLink} className="project__link project__repo-link">See GitHub repository</a>
                 </div>
               </div>
-              <img className="project__img" src={project.img} alt={project.name} />
+              <a href={project.link} className="project__img-link"><img className="project__img" src={project.img} alt={project.name} /></a>
             </article>
           ))
         }

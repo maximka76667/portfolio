@@ -48,7 +48,7 @@
 }
 
 .about a:hover {
-  color: var(--c1);
+  color: var(--color-2);
 }
 
 @media (max-width: 800px) {
