@@ -37,7 +37,7 @@ function App() {
     // setArticles(getArticles.reverse());
     setProjects(getProjects);
     const themeIndex = random(0, 14, true);
-    const randomTheme = themes[12];
+    const randomTheme = themes[4];
     // setTheme(randomTheme);
     setPalette(randomTheme);
     console.log(themeIndex);
