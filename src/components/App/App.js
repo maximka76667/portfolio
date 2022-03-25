@@ -36,8 +36,8 @@ function App() {
   useEffect(() => {
     // setArticles(getArticles.reverse());
     setProjects(getProjects);
-    const themeIndex = random(0, 14, true);
-    const randomTheme = themes[4];
+    const themeIndex = random(0, 9, true);
+    const randomTheme = themes[themeIndex];
     // setTheme(randomTheme);
     setPalette(randomTheme);
     console.log(themeIndex);
@@ -73,36 +73,6 @@ function App() {
           </Route> */}
         </Routes>
       </main>
-      <div style={{
-        width: '50px', height: '50px', padding: '10px', backgroundColor: palette[0],
-      }}
-      >
-        0
-      </div>
-      <div style={{
-        width: '50px', height: '50px', padding: '10px', backgroundColor: palette[1],
-      }}
-      >
-        1
-      </div>
-      <div style={{
-        width: '50px', height: '50px', padding: '10px', backgroundColor: palette[2],
-      }}
-      >
-        2
-      </div>
-      <div style={{
-        width: '50px', height: '50px', padding: '10px', backgroundColor: palette[3],
-      }}
-      >
-        3
-      </div>
-      <div style={{
-        width: '50px', height: '50px', padding: '10px', backgroundColor: palette[4],
-      }}
-      >
-        4
-      </div>
       <Footer />
     </div>
   );
