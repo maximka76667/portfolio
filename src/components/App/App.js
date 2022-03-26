@@ -36,12 +36,7 @@ function App() {
   useEffect(() => {
     // setArticles(getArticles.reverse());
     setProjects(getProjects);
-    const themeIndex = random(0, 9, true);
-    const randomTheme = themes[themeIndex];
-    // setTheme(randomTheme);
-    setPalette(randomTheme);
-    console.log(themeIndex);
-    console.log(randomTheme);
+    setPalette(themes[random(0, 9, true)]);
   }, []);
 
   return (
