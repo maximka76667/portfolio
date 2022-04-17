@@ -6,6 +6,8 @@ const projects = [
     link: 'https://maximka76667.github.io/movies-explorer-frontend',
     linkName: 'Save some movies (Demo)',
     repoLink: 'https://github.com/maximka76667/movies-explorer-frontend',
+    color: '#ffffff',
+    bgColor: '#072e3f',
   },
   {
     name: 'Mesto',
@@ -14,6 +16,8 @@ const projects = [
     link: 'https://maximka76667.github.io/react-mesto-auth',
     linkName: 'Post photos (Demo)',
     repoLink: 'https://github.com/maximka76667/react-mesto-api-full',
+    color: '#ffffff',
+    bgColor: '#000000',
   },
   {
     name: 'Kinopoisk',
@@ -22,6 +26,8 @@ const projects = [
     link: 'https://maximka76667.github.io/kinopoisk',
     linkName: 'See project (Demo)',
     repoLink: 'https://github.com/maximka76667/kinopoisk',
+    color: '#000000',
+    bgColor: '#f7f7f7',
   },
   {
     name: 'Tic Tac Toe',
@@ -30,6 +36,8 @@ const projects = [
     link: 'https://maximka76667.github.io/tic-tac-toe',
     linkName: 'Tic Tac Toe (Demo)',
     repoLink: 'https://github.com/maximka76667/tic-tac-toe',
+    color: '#000000',
+    bgColor: '#f7f7f7',
   },
   {
     name: 'Dino Game',
@@ -38,6 +46,8 @@ const projects = [
     link: 'https://maximka76667.github.io/dino-game',
     linkName: 'Play it again?! (Demo)',
     repoLink: 'https://github.com/maximka76667/dino-game',
+    color: '#000000',
+    bgColor: '#f7f7f7',
   },
   {
     name: 'CalcuTADOR',
@@ -46,6 +56,8 @@ const projects = [
     link: 'https://maximka76667.github.io/calcutador',
     linkName: 'Calculate (Demo)',
     repoLink: 'https://github.com/maximka76667/calcutador',
+    color: '#000000',
+    bgColor: '#f7f7f7',
   },
   {
     name: 'Pass Gen',
@@ -54,6 +66,8 @@ const projects = [
     link: 'https://maximka76667.github.io/pass-gen',
     linkName: 'Generate password (Demo)',
     repoLink: 'https://github.com/maximka76667/pass-gen',
+    color: '#000000',
+    bgColor: '#f7f7f7',
   },
 ];
 

@@ -57,7 +57,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects projects={projects} />} />
+          <Route path="/projects" element={<Projects projects={projects} color="#ffffff" bgColor="#000000" />} />
           {/* <Route path="/blog">
             <Route path="/blog" element={<Blog articles={articles} />} />
             <Route path="/blog/article/:linkName" element={<Article articles={articles} />} />

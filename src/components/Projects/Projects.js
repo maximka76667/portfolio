@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import './Projects.css';
 import PropTypes from 'prop-types';
+import Project from '../Project/Project';
 
 function Projects(props) {
   const { projects } = props;
@@ -15,17 +16,7 @@ function Projects(props) {
       <section className="projects__list">
         {
           projects.map((project) => (
-            <article className="project" key={project.name}>
-              <div className="project__info">
-                <h2 className="project__name">{project.name}</h2>
-                <p className="project__description">{project.description}</p>
-                <div className="project__links">
-                  <a href={project.link} className="project__link">{project.linkName}</a>
-                  <a href={project.repoLink} className="project__link project__repo-link">See GitHub repository</a>
-                </div>
-              </div>
-              <a href={project.link} className="project__img-link"><img className="project__img" src={project.img} alt={project.name} /></a>
-            </article>
+            <Project project={project} />
           ))
         }
       </section>
@@ -42,6 +33,8 @@ Projects.propTypes = {
     link: PropTypes.string,
     linkName: PropTypes.string,
     repoLink: PropTypes.string,
+    color: PropTypes.string.isRequired,
+    bgColor: PropTypes.string.isRequired,
   })).isRequired,
 };
 
