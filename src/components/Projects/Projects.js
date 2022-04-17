@@ -16,7 +16,7 @@ function Projects(props) {
       <section className="projects__list">
         {
           projects.map((project) => (
-            <Project project={project} />
+            <Project project={project} key={project.link} />
           ))
         }
       </section>
