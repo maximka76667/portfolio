@@ -13,7 +13,7 @@ function About() {
 
         <h1 className="about__heading">About me</h1>
         <div className="about__main-text">
-          <img className="about__photo" src={photo} alt="" />
+          <img className="about__photo" src={photo} alt="Мое фото" />
           <p className="about__paragraph">
             I am Maxim. Developer mostly specialized in frontend and partly in
             backend.
