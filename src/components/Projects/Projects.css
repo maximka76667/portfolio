@@ -13,12 +13,7 @@
   display: flex;
   justify-content: space-between;
   border-radius: 15px;
-  /* box-shadow: 0 0 1px 1px #fff; */
   margin: 10px;
-}
-
-.project__info {
-  /* position: absolute; */
 }
 
 .project__img-link {
@@ -53,15 +48,6 @@
   background: linear-gradient(145deg,rgba(0,0,0,.03),rgba(0,0,0,.06)) center center/cover no-repeat;
 }
 
-/* .project__img-link:hover:before {
-  opacity: 0.2;
-} */
-
-/* .project__img-link:hover {
-  opacity: 0.7;
-  outline: 1px solid black;
-} */
-
 .project__name {
   width: 100%;
   font-size: 20px;
@@ -78,46 +64,12 @@
 }
 
 .project__repoLink {
-  /* background-image: url(../../images/logo-github.svg); */
   width: 30px;
   height: 30px;
   position: absolute;
   bottom: 10px;
   right: 10px;
   z-index: 10;
-}
-
-.project__img {
-  width: 100%;
-  object-fit: cover;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-}
-
-.project__links {
-  display: flex;
-  flex-direction: column;
-  padding: 15px 0;
-}
-
-.project__link {
-  padding: 5px 0;
-  border-radius: 10px;
-  transition: all 0.2s;
-  color: #000;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.project__link:not(:last-of-type) {
-  margin-right: 30px;
-}
-
-.project__link:hover {
-  color: var(--color-2);
 }
 
 @media (max-width: 1200px) {
