@@ -1,0 +1,9 @@
+@import url(./vendor/reset.css);
+@import url(./fonts/fonts.css);
+
+.app {
+  font: 18px "Montserrat", sans-serif;
+  min-height: 100vh;
+  background-color: #fff;
+  color: #000;
+}

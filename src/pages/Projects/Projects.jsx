@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import './Projects.css';
 import PropTypes from 'prop-types';
-import Project from '../Project/Project';
+import { Project } from '../../components/index';
 
 function Projects(props) {
   const { projects } = props;

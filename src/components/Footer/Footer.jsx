@@ -1,8 +1,8 @@
 import React from 'react';
 import './Footer.css';
-import logoLinkedin from '../../images/logo-linkedin-2.svg';
-import logoInstagram from '../../images/logo-instagram.svg';
-import logoVk from '../../images/logo-vk.svg';
+import logoLinkedin from '../../assets/images/logo-linkedin-2.svg';
+import logoInstagram from '../../assets/images/logo-instagram.svg';
+import logoVk from '../../assets/images/logo-vk.svg';
 
 function Footer() {
   return (
