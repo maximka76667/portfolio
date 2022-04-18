@@ -61,6 +61,14 @@
   z-index: 10;
 }
 
+.repoLinkSvg__path {
+  transition: all 0.2s;
+}
+
+.project__repoLink:hover .repoLinkSvg__path {
+  fill: var(--color-2);
+}
+
 @media (max-width: 1200px) {
   .project__name {
     font-size: 25px;
