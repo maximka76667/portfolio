@@ -3,6 +3,7 @@ import './Footer.css';
 import logoLinkedin from '../../assets/images/logo-linkedin-2.svg';
 import logoInstagram from '../../assets/images/logo-instagram.svg';
 import logoVk from '../../assets/images/logo-vk.svg';
+import logoGithub from '../../assets/images/logo-github.svg';
 
 function Footer() {
   return (
@@ -18,7 +19,12 @@ function Footer() {
           <a href="mailto:maximgriven@gmail.com" className="footer__email">maximgriven@gmail.com</a>
         </li>
         <div className="footer__social">
-          <li className="footer__menu-item">
+          <li className="footer__menu-item footer__menu-item_github">
+            <a href="https://www.linkedin.com/in/maxim-grivennyy-ba9a31231" className="footer__menu-link" style={{ backgroundColor: '#181717' }}>
+              <img className="footer__menu-icon" src={logoGithub} alt="" />
+            </a>
+          </li>
+          <li className="footer__menu-item footer__menu-item_linkedin">
             <a href="https://www.linkedin.com/in/maxim-grivennyy-ba9a31231" className="footer__menu-link" style={{ backgroundColor: '#0A66C2' }}>
               <img className="footer__menu-icon" src={logoLinkedin} alt="" />
             </a>

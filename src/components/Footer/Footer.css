@@ -52,19 +52,18 @@
   border-radius: 15px;
 }
 
-.footer__menu-item:nth-child(1) .footer__menu-icon {
+.footer__menu-item:hover .footer__menu-icon {
+  transform: scale(1.5);
+}
+
+.footer__menu-item_github .footer__menu-icon,
+.footer__menu-item_linkedin .footer__menu-icon {
   transform: scale(0.8);
 }
 
-.footer__menu-item:nth-child(1):hover .footer__menu-icon {
+.footer__menu-item_github:hover .footer__menu-icon,
+.footer__menu-item_linkedin:hover .footer__menu-icon {
   transform: scale(1);
-}
-
-.footer__menu-link:hover {
-}
-
-.footer__menu-item:hover .footer__menu-icon {
-  transform: scale(1.5);
 }
 
 .footer__social {
