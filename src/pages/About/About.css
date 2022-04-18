@@ -64,6 +64,10 @@
 }
 
 @media (max-width: 800px) {
+  .about__heading {
+    font-size: 40px;
+  }
+  
   .about__main-text {
     display: flex;
     flex-direction: column;
