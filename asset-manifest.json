@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6da9bced.css",
-    "main.js": "/portfolio/static/js/main.cd8988fb.js",
+    "main.css": "/portfolio/static/css/main.16ed6296.css",
+    "main.js": "/portfolio/static/js/main.0abd524e.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Montserrat-MediumItalic.ttf": "/portfolio/static/media/Montserrat-MediumItalic.69fda777fc886ba5ac31.ttf",
     "static/media/Montserrat-Medium.ttf": "/portfolio/static/media/Montserrat-Medium.3a0917345468c959207a.ttf",
@@ -15,12 +15,12 @@
     "static/media/logo-github.svg": "/portfolio/static/media/logo-github.68f631dd153ca9cd781162ec4930ef12.svg",
     "index.html": "/portfolio/index.html",
     "static/media/logo-linkedin-2.svg": "/portfolio/static/media/logo-linkedin-2.871b81d9a04e57517579a36f24cb4418.svg",
-    "main.6da9bced.css.map": "/portfolio/static/css/main.6da9bced.css.map",
-    "main.cd8988fb.js.map": "/portfolio/static/js/main.cd8988fb.js.map",
+    "main.16ed6296.css.map": "/portfolio/static/css/main.16ed6296.css.map",
+    "main.0abd524e.js.map": "/portfolio/static/js/main.0abd524e.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6da9bced.css",
-    "static/js/main.cd8988fb.js"
+    "static/css/main.16ed6296.css",
+    "static/js/main.0abd524e.js"
   ]
 }
