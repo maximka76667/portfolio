@@ -20,7 +20,7 @@ function Footer() {
         </li>
         <div className="footer__social">
           <li className="footer__menu-item footer__menu-item_github">
-            <a href="https://www.linkedin.com/in/maxim-grivennyy-ba9a31231" className="footer__menu-link" style={{ backgroundColor: '#181717' }}>
+            <a href="https://github.com/maximka76667" className="footer__menu-link" style={{ backgroundColor: '#181717' }}>
               <img className="footer__menu-icon" src={logoGithub} alt="" />
             </a>
           </li>
