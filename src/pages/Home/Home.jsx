@@ -20,7 +20,7 @@ function Home() {
             {' '}
             <span className="about-me__heart">❤</span>
           </h1>
-          <img className="about-me__photo" src={photo} alt="Мое фото" />
+          <img className="about-me__photo" src={photo} alt="Me" />
         </div>
         <div className="home__links">
           <Link to="/projects" className="home__link">My projects</Link>

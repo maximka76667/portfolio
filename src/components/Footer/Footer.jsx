@@ -21,22 +21,22 @@ function Footer() {
         <div className="footer__social">
           <li className="footer__menu-item footer__menu-item_github">
             <a href="https://github.com/maximka76667" className="footer__menu-link" style={{ backgroundColor: '#181717' }}>
-              <img className="footer__menu-icon" src={logoGithub} alt="" />
+              <img className="footer__menu-icon" src={logoGithub} alt="GitHub icon" />
             </a>
           </li>
           <li className="footer__menu-item footer__menu-item_linkedin">
             <a href="https://www.linkedin.com/in/maxim-grivennyy-ba9a31231" className="footer__menu-link" style={{ backgroundColor: '#0A66C2' }}>
-              <img className="footer__menu-icon" src={logoLinkedin} alt="" />
+              <img className="footer__menu-icon" src={logoLinkedin} alt="LinkedIn icon" />
             </a>
           </li>
           <li className="footer__menu-item">
             <a href="https://www.instagram.com/maximka76667" className="footer__menu-link" style={{ backgroundColor: 'rgb(197, 60, 117)' }}>
-              <img className="footer__menu-icon" src={logoInstagram} alt="" />
+              <img className="footer__menu-icon" src={logoInstagram} alt="Instagram icon" />
             </a>
           </li>
           <li className="footer__menu-item">
             <a href="https://vk.com/maximgriven" className="footer__menu-link" style={{ backgroundColor: 'rgb(81, 129, 184)' }}>
-              <img className="footer__menu-icon" src={logoVk} alt="" />
+              <img className="footer__menu-icon" src={logoVk} alt="Vkontakte icon" />
             </a>
           </li>
         </div>
