@@ -30,7 +30,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 
 .footer__menu-item:hover .footer__menu-link {

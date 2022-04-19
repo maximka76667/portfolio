@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import { random } from '@georgedoescode/generative-utils';
-import { Header, Footer } from './components/index';
+import { Header, Footer, Cursor } from './components/index';
 import { Home, About, Projects } from './pages/index';
 import { getProjects } from './helpers/api';
 import themes from './helpers/themes';
 
 function App() {
   const [projects, setProjects] = useState([]);
-  const [palette, setPalette] = useState([]);
+  const [palette, setPalette] = useState(['#000', '#000', '#000']);
 
   useEffect(() => {
     setProjects(getProjects);
@@ -38,6 +38,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <Cursor color={palette[1]} />
     </div>
   );
 }

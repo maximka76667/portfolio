@@ -6,4 +6,9 @@
   min-height: 100vh;
   background-color: #fff;
   color: #000;
+  cursor: none;
+}
+
+a {
+  cursor: none;
 }

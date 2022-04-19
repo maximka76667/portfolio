@@ -19,7 +19,7 @@ function About() {
             backend.
             I love living my life, trying and creating new things.
           </p>
-          <p className="about__paragraph">
+          <div className="about__paragraph">
             <h2 className="about__list-name">Every day I work on improving my skills</h2>
             <ul className="about__list">
               <li className="about__list-item">
@@ -53,14 +53,14 @@ function About() {
                 <p className="about__list-text">Learning new technologies (e.g now it&apos;s Redux)</p>
               </li>
             </ul>
-          </p>
+          </div>
 
           <p className="about__paragraph">
             Graduated school with gold medal of honor, I know several languages.
             Able to achieve goals and overcome obstacles.
           </p>
 
-          <p className="about__paragraph">
+          <div className="about__paragraph">
             <h2 className="about__list-name">What else do i like?</h2>
             <ul className="about__list">
               <li className="about__list-item"><p className="about__list-text">Electric guitars. When I was 15 I tried to record my music</p></li>
@@ -68,7 +68,7 @@ function About() {
               <li className="about__list-item"><p className="about__list-text">Travels. In the last 3 years, I have visited 4 countries</p></li>
               <li className="about__list-item"><p className="about__list-text">Coca-Cola (not Pepsi)</p></li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
     </>
