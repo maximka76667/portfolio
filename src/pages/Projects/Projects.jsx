@@ -15,7 +15,7 @@ function Projects(props) {
       <h1 className="projects__heading">Projects</h1>
       <section className="projects__list">
         {
-          projects.map((project) => (
+          projects && projects.map((project) => (
             <Project project={project} key={project.link} />
           ))
         }
