@@ -1,8 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import './Projects.css';
-import PropTypes from 'prop-types';
+import {
+  arrayOf,
+} from 'prop-types';
 import { Project } from '../../components/index';
+import projectProps from '../../interfaces/project';
 
 function Projects(props) {
   const { projects } = props;
@@ -25,17 +28,7 @@ function Projects(props) {
 }
 
 Projects.propTypes = {
-  projects: PropTypes.arrayOf(PropTypes.shape({
-    _id: PropTypes.number,
-    name: PropTypes.string,
-    description: PropTypes.string,
-    img: PropTypes.string,
-    link: PropTypes.string,
-    linkName: PropTypes.string,
-    repoLink: PropTypes.string,
-    color: PropTypes.string.isRequired,
-    bgColor: PropTypes.string.isRequired,
-  })).isRequired,
+  projects: arrayOf(projectProps).isRequired,
 };
 
 export default Projects;

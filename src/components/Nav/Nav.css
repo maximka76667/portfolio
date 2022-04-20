@@ -26,30 +26,9 @@
   background-color: rgba(238, 238, 238, 0.7);
 }
 
-/* .nav__link:before {
-  position: absolute;
-  content: "";
-  height: 2px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--c1-light);
-  z-index: -1;
-  transition: all 0.2s;
-} */
-
-/* .nav__link:hover:before {
-  background-color: var(--c2);
-  height: 4px;
-} */
-
 .nav__link_active {
   color: rgba(0, 0, 0, 0.4);
 }
-
-/* .nav__link_active:before {
-  background-color: var(--c2);
-} */
 
 @media (max-width: 800px) {
   .nav__item {
