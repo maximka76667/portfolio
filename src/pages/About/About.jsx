@@ -10,7 +10,6 @@ function About() {
         <title>About me</title>
       </Helmet>
       <div className="about">
-
         <h1 className="about__heading">About me</h1>
         <div className="about__main-text">
           <img className="about__photo" src={photo} alt="Me" />
@@ -33,7 +32,6 @@ function About() {
                   .
                   {' '}
                   <a href="https://www.codewars.com/users/maximka76667">Profile</a>
-
                 </p>
               </li>
               <li className="about__list-item">
