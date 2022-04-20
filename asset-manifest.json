@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.52271ae9.css",
-    "main.js": "/portfolio/static/js/main.a4825aeb.js",
+    "main.css": "/portfolio/static/css/main.2833fc0e.css",
+    "main.js": "/portfolio/static/js/main.5d8e74d2.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Montserrat-MediumItalic.ttf": "/portfolio/static/media/Montserrat-MediumItalic.69fda777fc886ba5ac31.ttf",
     "static/media/Montserrat-Medium.ttf": "/portfolio/static/media/Montserrat-Medium.3a0917345468c959207a.ttf",
@@ -12,15 +12,15 @@
     "static/media/photo.jpg": "/portfolio/static/media/photo.845339a8e28a29f2b1b3.jpg",
     "static/media/logo-instagram.svg": "/portfolio/static/media/logo-instagram.3bec735cd6e386dc026c2196946603f9.svg",
     "static/media/logo-vk.svg": "/portfolio/static/media/logo-vk.6819a534ac8b8f779eda44614aac06ec.svg",
-    "static/media/logo-github.svg": "/portfolio/static/media/logo-github.68f631dd153ca9cd781162ec4930ef12.svg",
+    "static/media/logo-github.svg": "/portfolio/static/media/logo-github.31dafddf945e81ea03290624624f5cf0.svg",
     "index.html": "/portfolio/index.html",
     "static/media/logo-linkedin-2.svg": "/portfolio/static/media/logo-linkedin-2.871b81d9a04e57517579a36f24cb4418.svg",
-    "main.52271ae9.css.map": "/portfolio/static/css/main.52271ae9.css.map",
-    "main.a4825aeb.js.map": "/portfolio/static/js/main.a4825aeb.js.map",
+    "main.2833fc0e.css.map": "/portfolio/static/css/main.2833fc0e.css.map",
+    "main.5d8e74d2.js.map": "/portfolio/static/js/main.5d8e74d2.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52271ae9.css",
-    "static/js/main.a4825aeb.js"
+    "static/css/main.2833fc0e.css",
+    "static/js/main.5d8e74d2.js"
   ]
 }
