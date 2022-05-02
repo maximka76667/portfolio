@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import photo from '../../assets/images/photo.jpg';
+import CursorContext from '../../contexts/CursorContext';
+import { Cursor } from '../../components';
 
 function Home() {
+  const cursorColor = useContext(CursorContext);
+
   return (
     <>
       <Helmet>
@@ -26,6 +30,7 @@ function Home() {
           <Link to="/projects" className="home__link">My projects</Link>
         </div>
       </div>
+      <Cursor color={cursorColor} />
     </>
   );
 }

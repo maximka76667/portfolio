@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Helmet } from 'react-helmet';
 import './About.css';
 import photo from '../../assets/images/photo-about.jpg';
+import { Cursor } from '../../components';
+import CursorContext from '../../contexts/CursorContext';
 
 function About() {
+  const cursorColor = useContext(CursorContext);
+
   return (
     <>
       <Helmet>
@@ -69,6 +73,7 @@ function About() {
           </div>
         </div>
       </div>
+      <Cursor color={cursorColor} />
     </>
   );
 }
