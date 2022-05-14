@@ -1,5 +1,13 @@
 const projects = [
   {
+    name: 'What Did I Do',
+    img: 'https://imgur.com/SfBwYIr.png',
+    link: 'https://maximka76667.github.io/what-did-i-do',
+    repoLink: 'https://github.com/maximka76667/what-did-i-do',
+    color: '#000000',
+    bgColor: '#f7f7f7',
+  },
+  {
     name: 'Movies Explorer',
     description: 'Searching and saving movies',
     img: 'https://imgur.com/4wb6GH8.png',
