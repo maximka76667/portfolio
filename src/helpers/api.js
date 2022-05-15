@@ -1,7 +1,7 @@
 const projects = [
   {
     name: 'What Did I Do',
-    img: 'https://imgur.com/SfBwYIr.png',
+    img: 'https://imgur.com/HpsOjpo.png',
     link: 'https://maximka76667.github.io/what-did-i-do',
     repoLink: 'https://github.com/maximka76667/what-did-i-do',
     color: '#000000',
