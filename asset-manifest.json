@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.2825a4d8.css",
-    "main.js": "/portfolio/static/js/main.118cb3a8.js",
+    "main.js": "/portfolio/static/js/main.92bc2b79.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Montserrat-MediumItalic.ttf": "/portfolio/static/media/Montserrat-MediumItalic.69fda777fc886ba5ac31.ttf",
     "static/media/Montserrat-Medium.ttf": "/portfolio/static/media/Montserrat-Medium.3a0917345468c959207a.ttf",
@@ -16,11 +16,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/logo-linkedin-2.svg": "/portfolio/static/media/logo-linkedin-2.871b81d9a04e57517579a36f24cb4418.svg",
     "main.2825a4d8.css.map": "/portfolio/static/css/main.2825a4d8.css.map",
-    "main.118cb3a8.js.map": "/portfolio/static/js/main.118cb3a8.js.map",
+    "main.92bc2b79.js.map": "/portfolio/static/js/main.92bc2b79.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2825a4d8.css",
-    "static/js/main.118cb3a8.js"
+    "static/js/main.92bc2b79.js"
   ]
 }
