@@ -49,3 +49,10 @@
   height: 100vh;
   z-index: 12000;
 }
+
+@media screen and (max-width: 1024px) {
+  .cursor-wrapper,
+  .cursor {
+    display: none;
+  }
+}
