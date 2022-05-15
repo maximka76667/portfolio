@@ -2,7 +2,7 @@ const projects = [
   {
     name: 'JWT Generator',
     img: 'https://imgur.com/rA1X9py.png',
-    link: 'maximka76667.github.io/jwt-generator',
+    link: 'https://maximka76667.github.io/jwt-generator',
     repoLink: 'https://github.com/maximka76667/jwt-generator',
     color: '#000000',
     bgColor: '#f7f7f7',
