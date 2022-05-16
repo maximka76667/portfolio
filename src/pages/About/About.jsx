@@ -32,20 +32,16 @@ function About() {
                 <p className="about__list-text">
                   Algorithms tasks on JavaScript on
                   {' '}
-                  <a href="https://www.codewars.com">CodeWars</a>
+                  <a href="https://www.codewars.com/users/maximka76667">CodeWars</a>
                   .
-                  {' '}
-                  <a href="https://www.codewars.com/users/maximka76667">Profile</a>
                 </p>
               </li>
               <li className="about__list-item">
                 <p className="about__list-text">
                   Non-standard tasks on CSS on
                   {' '}
-                  <a href="https://www.cssbattle.dev">CSSBattle</a>
+                  <a href="https://cssbattle.dev/player/max76667">CSSBattle</a>
                   .
-                  {' '}
-                  <a href="https://cssbattle.dev/player/max76667">Profile</a>
                 </p>
               </li>
               <li className="about__list-item">
