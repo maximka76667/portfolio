@@ -14,8 +14,11 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
-  .app,
-  a {
+  .app {
     cursor: auto;
+  }
+
+  a {
+    cursor: pointer;
   }
 }

@@ -1,14 +1,12 @@
-import { string } from 'prop-types';
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
+import CursorContext from '../../contexts/CursorContext';
 import initCursor from '../../helpers/cursor';
 import './Cursor.css';
 
-function Cursor(props) {
-  const { color } = props;
+function Cursor() {
+  const color = useContext(CursorContext);
   useEffect(() => {
-    if (color) {
-      initCursor(color);
-    }
+    initCursor(color);
   }, [color]);
 
   return (
@@ -22,9 +20,5 @@ function Cursor(props) {
     </>
   );
 }
-
-Cursor.propTypes = {
-  color: string.isRequired,
-};
 
 export default Cursor;
