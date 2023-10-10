@@ -9,29 +9,29 @@ const socialLinks = [
     link: 'https://github.com/maximka76667',
     icon: logoGithub,
     className: 'github',
-    color: '#181717',
+    color: '#181717'
   },
   {
     name: 'LinkedIn',
     link: 'https://www.linkedin.com/in/maxim-grivennyy-ba9a31231',
     icon: logoLinkedin,
     className: 'linkedin',
-    color: '#0A66C2',
+    color: '#0A66C2'
   },
   {
     name: 'Instagram',
     link: 'https://www.instagram.com/maximka76667',
     icon: logoInstagram,
     className: 'instagram',
-    color: 'rgb(197, 60, 117)',
+    color: 'rgb(197, 60, 117)'
   },
   {
     name: 'Vkontakte',
     link: 'https://vk.com/maximgriven',
     icon: logoVk,
     className: 'vkontakte',
-    color: 'rgb(81, 129, 184)',
-  },
+    color: 'rgb(81, 129, 184)'
+  }
 ];
 
 export default socialLinks;

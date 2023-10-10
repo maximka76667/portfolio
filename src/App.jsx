@@ -21,22 +21,23 @@ function App() {
     <CursorContext.Provider value={palette[1]}>
       <div
         className="app"
-        style={
-          {
-            '--color-0': palette[0],
-            '--color-1': palette[1],
-            '--color-2': palette[2],
-            '--color-3': palette[3],
-            '--color-4': palette[4],
-          }
-        }
+        style={{
+          '--color-0': palette[0],
+          '--color-1': palette[1],
+          '--color-2': palette[2],
+          '--color-3': palette[3],
+          '--color-4': palette[4]
+        }}
       >
         <Header />
         <main className="content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects projects={projects} />} />
+            <Route
+              path="/projects"
+              element={<Projects projects={projects} />}
+            />
           </Routes>
         </main>
         <Footer />

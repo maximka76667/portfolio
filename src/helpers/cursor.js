@@ -20,7 +20,11 @@ const initCanvas = (color) => {
 
   const lerp = (a, b, n) => (1 - n) * a + n * b;
 
-  const polygon = new paper.Path.RegularPolygon(new paper.Point(0, 0), segments, radius);
+  const polygon = new paper.Path.RegularPolygon(
+    new paper.Point(0, 0),
+    segments,
+    radius
+  );
 
   polygon.strokeColor = strokeColor;
   polygon.strokeWidth = strokeWidth;
@@ -69,7 +73,7 @@ function initCursor(color) {
   const render = () => {
     gsap.set('.cursor-wrapper', {
       x: clientX,
-      y: clientY,
+      y: clientY
     });
     requestAnimationFrame(render);
   };

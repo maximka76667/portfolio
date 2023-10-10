@@ -14,17 +14,15 @@ function Home() {
       <div className="home">
         <div className="about-me">
           <h1 className="about-me__greetings">
-            I‘m
-            {' '}
-            <span className="about-me__name">Maxim</span>
-            . I‘m web developer and I love it!
-            {' '}
-            <span className="about-me__heart">❤</span>
+            I‘m <span className="about-me__name">Maxim</span>. I‘m web developer
+            and I love it! <span className="about-me__heart">❤</span>
           </h1>
           <img className="about-me__photo" src={photo} alt="Me" />
         </div>
         <div className="home__links">
-          <Link to="/projects" className="home__link">My projects</Link>
+          <Link to="/projects" className="home__link">
+            My projects
+          </Link>
         </div>
       </div>
       <Cursor />

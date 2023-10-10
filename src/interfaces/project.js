@@ -9,7 +9,7 @@ const projectProps = shape({
   linkName: string,
   repoLink: string,
   color: string,
-  bgColor: string,
+  bgColor: string
 });
 
 export default projectProps;
