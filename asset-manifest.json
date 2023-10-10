@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.9efb7486.css",
-    "main.js": "/portfolio/static/js/main.a21c62e3.js",
+    "main.js": "/portfolio/static/js/main.d2d93a6a.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Montserrat-MediumItalic.ttf": "/portfolio/static/media/Montserrat-MediumItalic.69fda777fc886ba5ac31.ttf",
     "static/media/Montserrat-Medium.ttf": "/portfolio/static/media/Montserrat-Medium.3a0917345468c959207a.ttf",
     "static/media/Montserrat-Bold.ttf": "/portfolio/static/media/Montserrat-Bold.63fae500fdcf19ce83d4.ttf",
     "static/media/Montserrat-Light.ttf": "/portfolio/static/media/Montserrat-Light.f0963fd9968fbd54cc35.ttf",
     "static/media/Montserrat-Regular.ttf": "/portfolio/static/media/Montserrat-Regular.ac98a5f5ca71180fe293.ttf",
-    "static/media/photo-about.jpg": "/portfolio/static/media/photo-about.51056f0da6e8fb9d3252.jpg",
     "static/media/photo.jpg": "/portfolio/static/media/photo.845339a8e28a29f2b1b3.jpg",
+    "static/media/nie-cropped.jpg": "/portfolio/static/media/nie-cropped.6b4bb5f1230832c44612.jpg",
     "static/media/logo-instagram.svg": "/portfolio/static/media/logo-instagram.3bec735cd6e386dc026c2196946603f9.svg",
     "static/media/logo-vk.svg": "/portfolio/static/media/logo-vk.6819a534ac8b8f779eda44614aac06ec.svg",
     "static/media/logo-github.svg": "/portfolio/static/media/logo-github.31dafddf945e81ea03290624624f5cf0.svg",
     "index.html": "/portfolio/index.html",
     "static/media/logo-linkedin-2.svg": "/portfolio/static/media/logo-linkedin-2.871b81d9a04e57517579a36f24cb4418.svg",
     "main.9efb7486.css.map": "/portfolio/static/css/main.9efb7486.css.map",
-    "main.a21c62e3.js.map": "/portfolio/static/js/main.a21c62e3.js.map",
+    "main.d2d93a6a.js.map": "/portfolio/static/js/main.d2d93a6a.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9efb7486.css",
-    "static/js/main.a21c62e3.js"
+    "static/js/main.d2d93a6a.js"
   ]
 }
