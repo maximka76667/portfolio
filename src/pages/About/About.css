@@ -2,6 +2,7 @@
   font-size: 18px;
   width: 60%;
   margin: 0 auto;
+  height: calc(90vh - 100px);
 }
 
 .about__heading {

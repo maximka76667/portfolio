@@ -10,6 +10,7 @@
   max-width: 72rem;
   margin: 0 auto;
   padding: calc(80vh / 2 - 80px * 2) 0 80px;
+  height: calc(90vh - 90px);
 }
 
 .about-me {
