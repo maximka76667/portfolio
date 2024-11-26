@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { Helmet } from 'react-helmet';
 import './Projects.css';
 import { arrayOf } from 'prop-types';
+import { Helmet } from 'react-helmet-async';
 import { Cursor, Project } from '../../components';
 import projectProps from '../../interfaces/project';
 import CursorContext from '../../contexts/CursorContext';

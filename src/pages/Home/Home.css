@@ -1,60 +1,133 @@
 @keyframes heartbeat {
   50% {
-    transform: scale(1.2);
+    transform: scale(1.2) rotate(10deg);
     opacity: 1;
   }
 }
 
+.home-container {
+  overflow: hidden;
+}
+
 .home {
-  width: 80%;
-  max-width: 72rem;
+  width: 100%;
+  max-width: 120rem;
   margin: 0 auto;
-  padding: calc(80vh / 2 - 80px * 2) 0 80px;
-  height: calc(90vh - 90px);
+  padding: calc(60vh / 2 - 80px * 2) 0 0;
+  z-index: 1;
+  font-family: 'Mori';
+  z-index: 2;
 }
 
 .about-me {
-  font-size: 30px;
+  font-size: 35px;
   display: flex;
-  width: 100%;
-  justify-content: center;
+  width: 70%;
+  justify-content: space-between;
   align-items: center;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+}
+
+.about-me__greetings {
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 150px;
+}
+
+.about-me__im {
+  align-self: flex-start;
 }
 
 .about-me__name {
+  display: inline-block;
   color: var(--color-3);
   font-weight: 600;
+  z-index: 0;
+  align-self: flex-start;
+}
+
+.about-me__love {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  text-align: right;
+  align-items: flex-end;
 }
 
 .about-me__photo {
-  min-width: 200px;
-  height: 200px;
+  min-width: 400px;
+  height: 400px;
   object-fit: cover;
-  border-radius: 50%;
-  margin-left: 50px;
+  border-radius: 80px;
+  object-position: center 50%;
+}
+
+.about-me__photo-wrapper {
+  position: relative;
+}
+
+.about-me__hint {
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Mori', sans-serif;
+  mix-blend-mode: exclusion;
+  color: var(--color-3);
+}
+
+.about-me__photo-background {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 400px;
+  height: 400px;
+  background-color: var(--color-2);
+  display: block;
+  transform: rotate(-37deg);
+  border-radius: 30px;
 }
 
 .about-me__heart {
+  position: absolute;
+  bottom: -5%;
+  left: 30%;
+  transform: rotate(10deg);
   display: inline-block;
   color: red;
   opacity: 0.7;
+  font-size: 300px;
   animation: heartbeat 1.5s infinite cubic-bezier(0.01, 1.14, 0.67, 0.83);
+  z-index: 0;
 }
 
 .home__links {
   display: flex;
+  justify-content: center;
   padding: 3% 0;
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
 }
 
 .home__link {
-  padding: 15px 25px;
+  padding: 25px 45px;
   border-radius: 10px;
   transition: all 0.2s;
   text-decoration: none;
   color: #fff;
   background-color: var(--color-1);
-  font-size: 20px;
+  font-size: 35px;
   font-weight: 600;
+  z-index: 0;
 }
 
 .home__link:not(:last-of-type) {
@@ -63,6 +136,13 @@
 
 .home__link:hover {
   background-color: var(--color-2);
+}
+
+@media screen and (max-width: 1024px) {
+  .about-me__greetings {
+    font-size: 50px;
+    margin-right: 80px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -76,8 +156,16 @@
     font-size: 20px;
   }
 
-  .about-me__photo {
-    margin: 0 0 30px 0;
+  .about-me__photo-wrapper {
+    margin: 20px 0 30px 0;
+  }
+
+  .about-me__name {
+    margin-left: -50px;
+  }
+
+  .about-me__greetings {
+    margin: 0;
   }
 
   .home__links {
@@ -85,6 +173,7 @@
     flex-direction: column;
     text-align: center;
     margin: 10px auto 0;
+    max-width: 50%;
   }
 
   .home__link {

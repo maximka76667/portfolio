@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1600000;
+  z-index: 10000;
   pointer-events: none;
 }
 
@@ -24,8 +24,8 @@
 }
 
 .custom-cursor__outer {
-  width: 6px;
-  height: 6px;
+  width: 30px;
+  height: 30px;
   border: 2px solid var(--color-1);
   background: var(--color-1);
   border-radius: 50%;
@@ -45,8 +45,8 @@
 }
 
 .cursor__canvas {
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
   z-index: 12000;
 }
 

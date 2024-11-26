@@ -1,12 +1,53 @@
-import React, { useContext } from 'react';
-import { Helmet } from 'react-helmet';
+import React, { useContext, useEffect, useState, useRef } from 'react';
 import './About.css';
+import { Helmet } from 'react-helmet-async';
 import photo from '../../assets/images/nie-cropped.jpg';
 import { Cursor } from '../../components';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
+
 import CursorContext from '../../contexts/CursorContext';
 
 function About() {
   const cursorColor = useContext(CursorContext);
+
+  const [markdownContent, setMarkdownContent] = useState('');
+
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    async function fetchMarkdown() {
+      try {
+        const response = await fetch(
+          'https://raw.githubusercontent.com/maximka76667/maximka76667/main/README.md'
+        );
+        const text = await response.text();
+        setMarkdownContent(text);
+      } catch (error) {
+        console.error('Error fetching the markdown file:', error);
+      }
+    }
+
+    // fetchMarkdown();
+
+    const resizeBadges = async () => {
+      await fetchMarkdown();
+
+      const elements = await containerRef.current.querySelectorAll('img');
+
+      elements.forEach((element) => {
+        const currentWidth = element.offsetWidth;
+        const newWidth = currentWidth * 1.5;
+        element.style.width = `${newWidth}px`;
+      });
+    };
+
+    if (!containerRef.current) {
+      return null;
+    }
+
+    resizeBadges();
+  }, [containerRef.current]);
 
   return (
     <>
@@ -15,81 +56,17 @@ function About() {
       </Helmet>
       <div className="about">
         <h1 className="about__heading">About me</h1>
+
         <div className="about__main-text">
-          <img className="about__photo" src={photo} alt="Me" />
-          <p className="about__paragraph">
-            I am Maxim. Developer mostly specialized in frontend and partly in
-            backend. I love living my life, trying and creating new things.
-          </p>
-          <div className="about__paragraph">
-            <h2 className="about__list-name">
-              Every day I work on improving my skills
-            </h2>
-            <ul className="about__list">
-              <li className="about__list-item">
-                <p className="about__list-text">
-                  {' '}
-                  Independent projects on React.js (which I have in my
-                  portfolio)
-                </p>
-              </li>
-              <li className="about__list-item">
-                <p className="about__list-text">
-                  Algorithms tasks on JavaScript on{' '}
-                  <a href="https://www.codewars.com/users/maximka76667">
-                    CodeWars
-                  </a>
-                  .
-                </p>
-              </li>
-              <li className="about__list-item">
-                <p className="about__list-text">
-                  Non-standard tasks on CSS on{' '}
-                  <a href="https://cssbattle.dev/player/max76667">CSSBattle</a>.
-                </p>
-              </li>
-              <li className="about__list-item">
-                <p className="about__list-text">TypeScript books and tasks</p>
-              </li>
-              <li className="about__list-item">
-                <p className="about__list-text">
-                  Learning new technologies (e.g now it&apos;s Redux)
-                </p>
-              </li>
-            </ul>
-          </div>
-
-          <p className="about__paragraph">
-            Graduated school with gold medal of honor, I know several languages.
-            Able to achieve goals and overcome obstacles.
-          </p>
-
-          <div className="about__paragraph">
-            <h2 className="about__list-name">What else do i like?</h2>
-            <ul className="about__list">
-              <li className="about__list-item">
-                <p className="about__list-text">
-                  Electric guitars. When I was 15 I tried to record my music
-                </p>
-              </li>
-              <li className="about__list-item">
-                <p className="about__list-text">
-                  Languages. I speak English and Spanish at an intermediate
-                  level (B2)
-                </p>
-              </li>
-              <li className="about__list-item">
-                <p className="about__list-text">
-                  Travels. In the last 3 years, I have visited 4 countries
-                </p>
-              </li>
-              <li className="about__list-item">
-                <p className="about__list-text">Coca-Cola (not Pepsi)</p>
-              </li>
-            </ul>
+          <div ref={containerRef} className="about__markdown-container">
+            <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+              {markdownContent}
+            </ReactMarkdown>
           </div>
         </div>
       </div>
+      <img className="about__photo" src={photo} alt="Me" />
+
       <Cursor color={cursorColor} />
     </>
   );

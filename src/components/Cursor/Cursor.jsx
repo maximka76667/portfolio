@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import CursorContext from '../../contexts/CursorContext';
 import initCursor from '../../helpers/cursor';
 import './Cursor.css';
@@ -13,7 +13,7 @@ function Cursor() {
     <>
       <div className="cursor-wrapper">
         <div className="custom-cursor custom-cursor__outer">
-          <div className="custom-cursor custom-cursor__inner" />
+          <div className="custom-cursor custom-cursor__inner"></div>
         </div>
       </div>
       <canvas className="cursor cursor__canvas" />

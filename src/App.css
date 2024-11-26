@@ -2,15 +2,73 @@
 @import url(./fonts/fonts.css);
 
 .app {
-  font: 18px "Montserrat", sans-serif;
+  font: 18px 'Montserrat', sans-serif;
   min-height: 100vh;
   background-color: #fff;
   color: #000;
   cursor: none;
+  --secondary-glow: conic-gradient(
+    from 10deg at 50% 50%,
+    #ff9e9d 0deg,
+    #f21d41 55deg,
+    #fab87f 120deg,
+    #ffeaa5 160deg,
+    transparent 360deg
+  );
+  --third-glow: conic-gradient(
+    from 90deg at 50% 50%,
+    #031634 0deg,
+    #046d8b 160deg,
+    #83af9b 120deg,
+    #b3cc57 55deg,
+    transparent 360deg
+  );
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
 }
 
 a {
   cursor: none;
+}
+
+.content {
+  position: relative;
+}
+
+.app::before,
+.app::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.app::before {
+  background-attachment: fixed;
+  background: var(--third-glow);
+  border-radius: 50%;
+  width: 50vw;
+  height: 50vw;
+  margin-left: -200px;
+  filter: blur(90px);
+  top: calc(50vh - 50vw / 2);
+  left: calc(50vw);
+}
+
+.app::after {
+  background-attachment: fixed;
+  background: var(--secondary-glow);
+  border-radius: 50%;
+  width: 500px;
+  height: 700px;
+  filter: blur(90px);
+  top: calc(50vh - 50vw / 2);
+  left: calc(50vw - 50vw / 2);
 }
 
 @media screen and (max-width: 1024px) {
