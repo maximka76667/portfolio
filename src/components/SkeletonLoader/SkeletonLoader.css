@@ -1,0 +1,30 @@
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.skeleton-loader__title {
+  width: 60%;
+  background: linear-gradient(45deg, var(--color-1), var(--color-2));
+  background-size: 400% 400%;
+  animation: gradientAnimation 2s ease infinite;
+  height: 60px;
+  margin-top: 50px;
+}
+
+.skeleton-loader__paragraph {
+  width: 60%;
+  background: linear-gradient(45deg, var(--color-1), var(--color-2));
+  animation: gradientAnimation 2s ease infinite;
+  background-size: 400% 400%;
+
+  height: 30px;
+  margin: 20px 0;
+}

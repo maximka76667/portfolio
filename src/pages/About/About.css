@@ -3,12 +3,15 @@
   width: 80%;
   margin: 0 auto;
   scroll-behavior: smooth;
+  min-height: 700px;
 }
 
 .about__heading {
   text-align: center;
   margin: 20px 0;
   font-size: 3em;
+  z-index: 1;
+  position: relative;
 }
 
 .about__main-text {
@@ -33,9 +36,13 @@
   margin: 30px 0 20px;
 }
 
+.about__markdown-container h3:nth-child(1) {
+  margin: 150px 0 20px;
+}
+
 .about__markdown-container h4 {
   font-size: 40px;
-  margin: 20px 0;
+  margin: 30px 0 10px;
 }
 
 .about__markdown-container p {
@@ -130,6 +137,11 @@
 
   .about__photo {
     margin: 0 auto 20px;
+  }
+
+  .about__markdown-container h3:nth-child(1) {
+    font-size: 50px;
+    margin-top: 430px;
   }
 }
 

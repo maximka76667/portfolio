@@ -1,19 +1,24 @@
-import React, { useContext, useEffect, useState, useRef } from 'react';
+import React, {
+  useContext,
+  useEffect,
+  useState,
+  useRef,
+  lazy,
+  Suspense
+} from 'react';
 import './About.css';
 import { Helmet } from 'react-helmet-async';
 import photo from '../../assets/images/nie-cropped.jpg';
 import { Cursor } from '../../components';
-import ReactMarkdown from 'react-markdown';
-import rehypeRaw from 'rehype-raw';
 
 import CursorContext from '../../contexts/CursorContext';
+import SkeletonLoader from '../../components/SkeletonLoader/SkeletonLoader';
+
+const Markdown = lazy(() => import('../../components/Markdown/Markdown'));
 
 function About() {
   const cursorColor = useContext(CursorContext);
-
   const [markdownContent, setMarkdownContent] = useState('');
-
-  const containerRef = useRef(null);
 
   useEffect(() => {
     async function fetchMarkdown() {
@@ -28,26 +33,8 @@ function About() {
       }
     }
 
-    // fetchMarkdown();
-
-    const resizeBadges = async () => {
-      await fetchMarkdown();
-
-      const elements = await containerRef.current.querySelectorAll('img');
-
-      elements.forEach((element) => {
-        const currentWidth = element.offsetWidth;
-        const newWidth = currentWidth * 1.5;
-        element.style.width = `${newWidth}px`;
-      });
-    };
-
-    if (!containerRef.current) {
-      return null;
-    }
-
-    resizeBadges();
-  }, [containerRef.current]);
+    fetchMarkdown();
+  }, []);
 
   return (
     <>
@@ -58,11 +45,13 @@ function About() {
         <h1 className="about__heading">About me</h1>
 
         <div className="about__main-text">
-          <div ref={containerRef} className="about__markdown-container">
-            <ReactMarkdown rehypePlugins={[rehypeRaw]}>
-              {markdownContent}
-            </ReactMarkdown>
-          </div>
+          <Suspense fallback={<SkeletonLoader />}>
+            {markdownContent ? (
+              <Markdown markdownContent={markdownContent} />
+            ) : (
+              <SkeletonLoader />
+            )}
+          </Suspense>
         </div>
       </div>
       <img className="about__photo" src={photo} alt="Me" />
