@@ -9,8 +9,6 @@ import CursorContext from '../../contexts/CursorContext';
 function Projects(props) {
   const { projects } = props;
 
-  const cursorColor = useContext(CursorContext);
-
   return (
     <>
       <div className="projects">
@@ -25,7 +23,7 @@ function Projects(props) {
             ))}
         </section>
       </div>
-      <Cursor color={cursorColor} />
+      <Cursor />
     </>
   );
 }

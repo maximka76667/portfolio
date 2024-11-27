@@ -24,7 +24,7 @@ function Home() {
     } else if (resolution.width <= 1024) {
       margin = '+=30';
     }
-    console.log(resolution, margin);
+
     gsap.to(nameRef.current, { marginLeft: margin, duration: 3 });
     gsap.to(photoBackgroundRef.current, {
       scale: 0.9,

@@ -17,7 +17,6 @@ import SkeletonLoader from '../../components/SkeletonLoader/SkeletonLoader';
 const Markdown = lazy(() => import('../../components/Markdown/Markdown'));
 
 function About() {
-  const cursorColor = useContext(CursorContext);
   const [markdownContent, setMarkdownContent] = useState('');
 
   useEffect(() => {
@@ -56,7 +55,7 @@ function About() {
       </div>
       <img className="about__photo" src={photo} alt="Me" />
 
-      <Cursor color={cursorColor} />
+      <Cursor />
     </>
   );
 }

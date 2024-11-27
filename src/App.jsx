@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import { random } from '@georgedoescode/generative-utils';
@@ -10,13 +10,8 @@ import themes from './helpers/themes';
 import CursorContext from './contexts/CursorContext';
 
 function App() {
-  const [projects, setProjects] = useState([]);
-  const [palette, setPalette] = useState(['#000', '#000', '#000']);
-
-  useEffect(() => {
-    setProjects(getProjects);
-    setPalette(themes[random(0, 9, true)]);
-  }, []);
+  const projects = getProjects();
+  const palette = themes[random(0, 9, true)];
 
   return (
     <HelmetProvider>
