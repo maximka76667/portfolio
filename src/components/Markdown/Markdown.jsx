@@ -12,6 +12,11 @@ const Markdown = ({ markdownContent }) => {
 
       elements.forEach((element) => {
         const currentWidth = element.offsetWidth;
+
+        if (!currentWidth) {
+          resizeBadges();
+        }
+
         const newWidth = currentWidth * 1.5;
         element.style.width = `${newWidth}px`;
       });

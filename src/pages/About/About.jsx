@@ -11,7 +11,6 @@ import { Helmet } from 'react-helmet-async';
 import photo from '../../assets/images/nie-cropped.jpg';
 import { Cursor } from '../../components';
 
-import CursorContext from '../../contexts/CursorContext';
 import SkeletonLoader from '../../components/SkeletonLoader/SkeletonLoader';
 
 const Markdown = lazy(() => import('../../components/Markdown/Markdown'));

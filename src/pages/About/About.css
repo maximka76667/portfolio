@@ -56,8 +56,6 @@
 
 .about__markdown-container img {
   margin: 5px 10px 5px 0;
-  min-width: 50px;
-  min-height: 20px;
   object-fit: cover;
 }
 
