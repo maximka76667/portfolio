@@ -11,11 +11,8 @@ const Markdown = ({ markdownContent }) => {
       const elements = containerRef.current.querySelectorAll('img');
 
       elements.forEach((element) => {
+        console.log(element);
         const currentWidth = element.offsetWidth;
-
-        if (!currentWidth) {
-          resizeBadges();
-        }
 
         const newWidth = currentWidth * 1.5;
         element.style.width = `${newWidth}px`;
