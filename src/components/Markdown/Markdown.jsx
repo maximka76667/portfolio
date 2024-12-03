@@ -10,8 +10,17 @@ const Markdown = ({ markdownContent }) => {
     const resizeBadges = async () => {
       const elements = containerRef.current.querySelectorAll('img');
 
+      if (elements.length <= 0) {
+        return;
+      }
+
       elements.forEach((element) => {
         const currentWidth = element.naturalWidth;
+
+        if (!currentWidth) {
+          return;
+        }
+
         const newWidth = currentWidth * 1.5;
         element.style.width = `${newWidth}px`;
       });
