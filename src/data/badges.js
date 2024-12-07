@@ -8,7 +8,7 @@ const badges = {
     hoverColor: '#fff'
   },
   typescript: {
-    label: 'Typescript',
+    label: 'TypeScript',
     icon: 'SiTypescript',
     link: 'https://www.typescriptlang.org',
     bgColor: '#3178C6',
