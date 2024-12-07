@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import CursorContext from '../../contexts/CursorContext';
-import initCursor from '../../helpers/cursor';
+import initCursor from '../../utils/cursor';
 import './Cursor.css';
 
 function Cursor() {

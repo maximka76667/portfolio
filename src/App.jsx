@@ -5,12 +5,11 @@ import { random } from '@georgedoescode/generative-utils';
 import { HelmetProvider } from 'react-helmet-async';
 import { Header, Footer } from './components';
 import { Home, About, Projects } from './pages';
-import { getProjects } from './helpers/api';
-import themes from './helpers/themes';
+import { getProjects } from './data/projects';
+import themes from './data/themes';
 import CursorContext from './contexts/CursorContext';
 
 function App() {
-  const projects = getProjects();
   const palette = themes[random(0, 9, true)];
 
   return (
@@ -31,10 +30,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route
-                path="/projects"
-                element={<Projects projects={projects} />}
-              />
+              <Route path="/projects" element={<Projects />} />
             </Routes>
           </main>
           <Footer />

@@ -1,0 +1,10 @@
+.badge {
+  background-color: var(--badge-bg-color);
+  color: var(--badge-text-color);
+  transition: all 0.2s;
+}
+
+.badge:hover {
+  background-color: var(--color-2);
+  color: var(--badge-hover-color);
+}

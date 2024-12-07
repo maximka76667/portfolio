@@ -5,9 +5,10 @@ import { Helmet } from 'react-helmet-async';
 import { Cursor, Project } from '../../components';
 import projectProps from '../../interfaces/project';
 import CursorContext from '../../contexts/CursorContext';
+import { getProjects } from '../../data/projects';
 
-function Projects(props) {
-  const { projects } = props;
+function Projects() {
+  const projects = getProjects();
 
   return (
     <>
@@ -27,9 +28,5 @@ function Projects(props) {
     </>
   );
 }
-
-Projects.propTypes = {
-  projects: arrayOf(projectProps).isRequired
-};
 
 export default Projects;

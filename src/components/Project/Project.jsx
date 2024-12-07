@@ -1,50 +1,65 @@
 import React, { useEffect, useState } from 'react';
 import './Project.css';
 import projectProps from '../../interfaces/project';
+import hexToDecimal from '../../utils/hexToDecimal';
+import Badge from '../Badge/Badge';
 
-function Project(props) {
-  const {
-    project: { name, img, link, color, bgColor, repoLink }
-  } = props;
-
-  const [RGBColor, setRGBColor] = useState('');
-
-  function hexToDecimal(hex) {
-    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-    return result
-      ? {
-          r: parseInt(result[1], 16),
-          g: parseInt(result[2], 16),
-          b: parseInt(result[3], 16)
-        }
-      : null;
-  }
-
-  useEffect(() => {
-    setRGBColor(hexToDecimal(bgColor));
-  }, []);
+function Project({
+  project: { frontStack, backStack, otherStacks, ...project }
+}) {
+  const RGBColor = hexToDecimal(project.bgColor);
 
   return (
     <article
       className="project"
-      key={name}
+      key={project.name}
       style={{
-        '--color': color,
-        '--bgColor': bgColor,
+        '--color': project.color,
+        '--bgColor': project.bgColor,
         '--r': RGBColor.r,
         '--g': RGBColor.g,
         '--b': RGBColor.b
       }}
     >
+      <div className="absolute top-0 right-0 flex z-10 p-2 gap-1.5 flex-col items-end">
+        {frontStack && (
+          <div className="flex gap-1 flex-wrap justify-end">
+            {frontStack?.map((stack) => (
+              <Badge key={stack.label} stack={stack} />
+            ))}
+          </div>
+        )}
+
+        {backStack && (
+          <div className="flex gap-1 flex-wrap justify-end">
+            {backStack?.map((stack) => (
+              <Badge key={stack.label} stack={stack} />
+            ))}
+          </div>
+        )}
+
+        {otherStacks && (
+          <div className="flex gap-1 flex-wrap justify-end">
+            {otherStacks?.map((stack) => (
+              <Badge key={stack.label} stack={stack} />
+            ))}
+          </div>
+        )}
+      </div>
       <a
-        href={link}
+        href={project.link}
         className="project__img-link"
-        style={{ backgroundImage: `url(${img})` }}
+        style={{ backgroundImage: `url(${project.img})` }}
       >
-        <h2 className="project__name">{name}</h2>
+        <div className="flex project__info w-full pr-12 pl-4 pb-2 pt-3 gap-2 items-center justify-start">
+          <h2 className="project__name">{project.name}</h2>
+          <p className="project__description hidden md:flex">
+            {project.description}
+          </p>
+        </div>
         <div className="project__gradient" />
       </a>
-      <a className="project__repoLink" href={repoLink}>
+      <a className="project__repoLink" href={project.repoLink}>
         <svg
           className="repoLinkSvg"
           role="img"
