@@ -15,7 +15,7 @@ const Badge = ({
         '--badge-text-color': color || '',
         '--badge-hover-color': hoverColor || color
       }}
-      className="no-underline flex gap-1 justify-center items-center py-1.5 px-2 rounded-lg badge text-xs sm:text-sm lg:text-base"
+      className="no-underline flex gap-1.5 justify-center items-center py-1.5 px-2 rounded-lg badge text-xs sm:text-sm lg:text-base"
       href={link}
     >
       {IconComponent && <IconComponent />}
