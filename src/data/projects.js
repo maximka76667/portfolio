@@ -15,7 +15,10 @@ const {
     ghpages,
     express,
     javascript,
-    css
+    css,
+    pg,
+    vercel,
+    tailwind
   }
 } = require('./badges');
 
@@ -54,6 +57,19 @@ const projects = [
     color: '#000000',
     bgColor: '#f7f7f7',
     frontStack: [react, typescript, redux, sass, ghpages]
+  },
+  {
+    name: 'NextJS Dashboard',
+    description: 'Starter Next.js project',
+    img: 'https://imgur.com/J7dRCNx.png',
+    link: 'https://nextjs-dashboard-orpin-sigma-26.vercel.app/dashboard',
+    linkName: 'Link to next.js dashboard',
+    repoLink: 'https://github.com/maximka76667/nextjs-dashboard',
+    color: '#000000',
+    bgColor: '#ffffff',
+    frontStack: [react, typescript, css, tailwind],
+    backStack: [pg],
+    otherStacks: [vercel]
   },
   {
     name: 'Movies Explorer',

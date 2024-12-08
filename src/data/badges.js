@@ -112,6 +112,28 @@ const badges = {
     link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
     bgColor: '#1572B6',
     color: '#fff'
+  },
+
+  pg: {
+    label: 'PostgreSQL',
+    icon: 'SiPostgresql',
+    link: 'https://www.postgresql.org',
+    bgColor: '#4169E1',
+    color: '#fff'
+  },
+  vercel: {
+    label: 'Vercel',
+    icon: 'SiVercel',
+    link: 'https://vercel.com',
+    bgColor: '#000000',
+    color: '#fff'
+  },
+  tailwind: {
+    label: 'Tailwind CSS',
+    icon: 'SiTailwindcss',
+    link: 'https://tailwindcss.com',
+    bgColor: '#06B6D4',
+    color: '#fff'
   }
 };
 
