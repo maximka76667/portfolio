@@ -141,18 +141,18 @@ const projects = [
     color: '#000000',
     bgColor: '#f7f7f7',
     frontStack: [react, typescript, sass, ghpages]
-  },
-  {
-    name: 'Dino Game',
-    description: 'Clone of Google Dino Game',
-    img: 'https://imgur.com/QzzWbGh.png',
-    link: 'https://maximka76667.github.io/dino-game',
-    linkName: 'Play it again?! (Demo)',
-    repoLink: 'https://github.com/maximka76667/dino-game',
-    color: '#000000',
-    bgColor: '#f7f7f7',
-    frontStack: [javascript, css, ghpages]
   }
+  // {
+  //   name: 'Dino Game',
+  //   description: 'Clone of Google Dino Game',
+  //   img: 'https://imgur.com/QzzWbGh.png',
+  //   link: 'https://maximka76667.github.io/dino-game',
+  //   linkName: 'Play it again?! (Demo)',
+  //   repoLink: 'https://github.com/maximka76667/dino-game',
+  //   color: '#000000',
+  //   bgColor: '#f7f7f7',
+  //   frontStack: [javascript, css, ghpages]
+  // }
 ];
 
 function getProjects() {
