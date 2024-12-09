@@ -134,6 +134,13 @@ const badges = {
     link: 'https://tailwindcss.com',
     bgColor: '#06B6D4',
     color: '#fff'
+  },
+  nextjs: {
+    label: 'Next.js',
+    icon: 'SiNextdotjs',
+    link: 'https://nextjs.org',
+    bgColor: '#000',
+    color: '#fff'
   }
 };
 

@@ -18,7 +18,8 @@ const {
     css,
     pg,
     vercel,
-    tailwind
+    tailwind,
+    nextjs
   }
 } = require('./badges');
 
@@ -59,7 +60,7 @@ const projects = [
     frontStack: [react, typescript, redux, sass, ghpages]
   },
   {
-    name: 'NextJS Dashboard',
+    name: 'Dashboard',
     description: 'Starter Next.js project',
     img: 'https://imgur.com/J7dRCNx.png',
     link: 'https://nextjs-dashboard-orpin-sigma-26.vercel.app/dashboard',
@@ -69,7 +70,7 @@ const projects = [
     bgColor: '#ffffff',
     frontStack: [react, typescript, css, tailwind],
     backStack: [pg],
-    otherStacks: [vercel]
+    otherStacks: [nextjs, vercel]
   },
   {
     name: 'Movies Explorer',
