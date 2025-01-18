@@ -141,6 +141,34 @@ const badges = {
     link: 'https://nextjs.org',
     bgColor: '#000',
     color: '#fff'
+  },
+  gql: {
+    label: 'GraphQL',
+    icon: 'SiGraphql',
+    link: 'https://graphql.org/',
+    bgColor: '#E10098',
+    color: '#fff'
+  },
+  barcelonaMobilityApi: {
+    label: 'Barcelona Urban Mobility API',
+    icon: 'SiGraphql',
+    link: 'https://github.com/aalises/barcelona-urban-mobility-graphql-api',
+    bgColor: '#E10098',
+    color: '#fff'
+  },
+  threejs: {
+    label: 'Three.js',
+    icon: 'SiThreedotjs',
+    link: 'https://threejs.org',
+    bgColor: '#000',
+    color: '#fff'
+  },
+  zustand: {
+    label: 'Zustand',
+    icon: '',
+    link: 'https://zustand-demo.pmnd.rs',
+    bgColor: '#000',
+    color: '#fff'
   }
 };
 

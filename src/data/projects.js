@@ -19,7 +19,11 @@ const {
     pg,
     vercel,
     tailwind,
-    nextjs
+    nextjs,
+    gql,
+    zustand,
+    barcelonaMobilityApi,
+    threejs
   }
 } = require('./badges');
 
@@ -36,7 +40,18 @@ const projects = [
     backStack: [python, fastapi, firebase],
     otherStacks: [docker, gcp]
   },
-
+  {
+    name: 'Metro Map',
+    description: 'Interactive metro map',
+    img: 'https://imgur.com/ebWfhVf.png',
+    link: 'https://learn-r3f-nine.vercel.app/',
+    repoLink: 'https://github.com/maximka76667/learn-r3f',
+    color: '#000000',
+    bgColor: '#f7f7f7',
+    frontStack: [react, typescript, gql, threejs, zustand, ghpages],
+    backStack: [barcelonaMobilityApi],
+    otherStacks: [vercel]
+  },
   {
     name: 'What Did I Do',
     description: 'To Do List',
@@ -48,16 +63,6 @@ const projects = [
     frontStack: [react, typescript, sass, ghpages],
     backStack: [node, express, mongo],
     otherStacks: [docker, circleci, gcp]
-  },
-  {
-    name: 'JWT Generator',
-    description: 'Simple Jwt Generator',
-    img: 'https://imgur.com/wYRPYO1.png',
-    link: 'https://maximka76667.github.io/jwt-generator',
-    repoLink: 'https://github.com/maximka76667/jwt-generator',
-    color: '#000000',
-    bgColor: '#f7f7f7',
-    frontStack: [react, typescript, redux, sass, ghpages]
   },
   {
     name: 'Dashboard',
@@ -119,7 +124,6 @@ const projects = [
     bgColor: '#f7f7f7',
     frontStack: [react, typescript, sass, ghpages]
   },
-
   {
     name: 'CalcuTADOR',
     description: 'Calculator which detects KeyPress events',
@@ -132,6 +136,16 @@ const projects = [
     frontStack: [react, typescript, css, ghpages]
   },
   {
+    name: 'JWT Generator',
+    description: 'Simple Jwt Generator',
+    img: 'https://imgur.com/wYRPYO1.png',
+    link: 'https://maximka76667.github.io/jwt-generator',
+    repoLink: 'https://github.com/maximka76667/jwt-generator',
+    color: '#000000',
+    bgColor: '#f7f7f7',
+    frontStack: [react, typescript, redux, sass, ghpages]
+  },
+  {
     name: 'Pass Gen',
     description: 'Password generator',
     img: 'https://imgur.com/LrrnwHU.png',
@@ -141,18 +155,18 @@ const projects = [
     color: '#000000',
     bgColor: '#f7f7f7',
     frontStack: [react, typescript, sass, ghpages]
+  },
+  {
+    name: 'Dino Game',
+    description: 'Clone of Google Dino Game',
+    img: 'https://imgur.com/QzzWbGh.png',
+    link: 'https://maximka76667.github.io/dino-game',
+    linkName: 'Play it again?! (Demo)',
+    repoLink: 'https://github.com/maximka76667/dino-game',
+    color: '#000000',
+    bgColor: '#f7f7f7',
+    frontStack: [javascript, css, ghpages]
   }
-  // {
-  //   name: 'Dino Game',
-  //   description: 'Clone of Google Dino Game',
-  //   img: 'https://imgur.com/QzzWbGh.png',
-  //   link: 'https://maximka76667.github.io/dino-game',
-  //   linkName: 'Play it again?! (Demo)',
-  //   repoLink: 'https://github.com/maximka76667/dino-game',
-  //   color: '#000000',
-  //   bgColor: '#f7f7f7',
-  //   frontStack: [javascript, css, ghpages]
-  // }
 ];
 
 function getProjects() {
