@@ -32,7 +32,7 @@
 }
 
 .about__markdown-container h3 {
-  font-size: 70px;
+  font-size: 28px;
   margin: 30px 0 20px;
 }
 
@@ -41,13 +41,14 @@
 }
 
 .about__markdown-container h4 {
-  font-size: 40px;
+  font-size: 20px;
   margin: 30px 0 10px;
 }
 
 .about__markdown-container p {
   margin-bottom: 50px;
-  font-size: 30px;
+  font-size: 22px;
+  max-width: 50%;
 }
 
 .about__markdown-container a {
@@ -64,7 +65,7 @@
 }
 
 .about__markdown-container h3:nth-child(4) {
-  margin-top: 100px;
+  margin-top: 52px;
 }
 
 .about__paragraph {
@@ -123,6 +124,10 @@
     font-size: 0.8888888888888889em;
   }
 
+  .about__markdown-container p {
+    max-width: 100%;
+  }
+
   .about__list-name {
     text-align: center;
     margin: 0.8em 0;
@@ -157,10 +162,15 @@
   }
 
   .about__markdown-container h3 {
-    font-size: 50px;
+    font-size: 28px;
   }
 
   .about__markdown-container h4 {
-    font-size: 30px;
+    font-size: 20px;
+  }
+
+  .about__markdown-container h3:nth-child(1) {
+    font-size: 24px;
+    margin-top: 120px;
   }
 }

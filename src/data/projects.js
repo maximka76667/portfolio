@@ -31,7 +31,7 @@ const projects = [
   {
     name: 'Eterio',
     description: 'Cocktails Library',
-    img: 'https://imgur.com/xEnpn9g.png',
+    img: 'eterio.png',
     link: 'https://maximka76667.github.io/eterio',
     repoLink: 'https://github.com/maximka76667/jwt-generator',
     color: '#000000',
@@ -43,7 +43,7 @@ const projects = [
   {
     name: 'Metro Map',
     description: 'Interactive metro map',
-    img: 'https://imgur.com/ebWfhVf.png',
+    img: 'metro-barca.png',
     link: 'https://learn-r3f-nine.vercel.app/',
     repoLink: 'https://github.com/maximka76667/learn-r3f',
     color: '#000000',
@@ -55,7 +55,7 @@ const projects = [
   {
     name: 'What Did I Do',
     description: 'To Do List',
-    img: 'https://imgur.com/HpsOjpo.png',
+    img: 'whatdid.png',
     link: 'https://maximka76667.github.io/what-did-i-do',
     repoLink: 'https://github.com/maximka76667/what-did-i-do',
     color: '#000000',
@@ -67,7 +67,7 @@ const projects = [
   {
     name: 'Dashboard',
     description: 'Starter Next.js project',
-    img: 'https://imgur.com/J7dRCNx.png',
+    img: 'dashboard.png',
     link: 'https://nextjs-dashboard-orpin-sigma-26.vercel.app/dashboard',
     linkName: 'Link to next.js dashboard',
     repoLink: 'https://github.com/maximka76667/nextjs-dashboard',
@@ -80,7 +80,7 @@ const projects = [
   {
     name: 'Movies Explorer',
     description: 'Searching and saving movies',
-    img: 'https://imgur.com/4wb6GH8.png',
+    img: 'movies-explorer.png',
     link: 'https://maximka76667.github.io/movies-explorer-frontend',
     linkName: 'Save some movies (Demo)',
     repoLink: 'https://github.com/maximka76667/movies-explorer-frontend',
@@ -93,7 +93,7 @@ const projects = [
   {
     name: 'Mesto',
     description: 'Photos posting social media',
-    img: 'https://imgur.com/ICNuiBr.png',
+    img: 'mesto.png',
     link: 'https://maximka76667.github.io/react-mesto-auth',
     linkName: 'Post photos (Demo)',
     repoLink: 'https://github.com/maximka76667/react-mesto-api-full',
@@ -105,7 +105,7 @@ const projects = [
   {
     name: 'Kinopoisk',
     description: 'Search movies info',
-    img: 'https://imgur.com/3NwgDu2.png',
+    img: 'kinopoisk.png',
     link: 'https://maximka76667.github.io/kinopoisk',
     linkName: 'See project (Demo)',
     repoLink: 'https://github.com/maximka76667/kinopoisk',
@@ -116,7 +116,7 @@ const projects = [
   {
     name: 'Tic Tac Toe',
     description: 'Single and multiplayer game',
-    img: 'https://imgur.com/DWIac4v.png',
+    img: 'ttt.png',
     link: 'https://maximka76667.github.io/tic-tac-toe',
     linkName: 'Tic Tac Toe (Demo)',
     repoLink: 'https://github.com/maximka76667/tic-tac-toe',
@@ -127,7 +127,7 @@ const projects = [
   {
     name: 'CalcuTADOR',
     description: 'Calculator which detects KeyPress events',
-    img: 'https://imgur.com/ydtfSkV.png',
+    img: 'calcutador.png',
     link: 'https://maximka76667.github.io/calcutador',
     linkName: 'Calculate (Demo)',
     repoLink: 'https://github.com/maximka76667/calcutador',
@@ -138,7 +138,7 @@ const projects = [
   {
     name: 'JWT Generator',
     description: 'Simple Jwt Generator',
-    img: 'https://imgur.com/wYRPYO1.png',
+    img: 'jwt-generator.png',
     link: 'https://maximka76667.github.io/jwt-generator',
     repoLink: 'https://github.com/maximka76667/jwt-generator',
     color: '#000000',
@@ -148,7 +148,7 @@ const projects = [
   {
     name: 'Pass Gen',
     description: 'Password generator',
-    img: 'https://imgur.com/LrrnwHU.png',
+    img: 'passgen.png',
     link: 'https://maximka76667.github.io/pass-gen',
     linkName: 'Generate password (Demo)',
     repoLink: 'https://github.com/maximka76667/pass-gen',
@@ -159,7 +159,7 @@ const projects = [
   {
     name: 'Dino Game',
     description: 'Clone of Google Dino Game',
-    img: 'https://imgur.com/QzzWbGh.png',
+    img: 'dino-game.png',
     link: 'https://maximka76667.github.io/dino-game',
     linkName: 'Play it again?! (Demo)',
     repoLink: 'https://github.com/maximka76667/dino-game',

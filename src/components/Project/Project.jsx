@@ -49,7 +49,11 @@ function Project({
       <a
         href={project.link}
         className="project__img-link"
-        style={{ backgroundImage: `url(${project.img})` }}
+        style={{
+          backgroundImage: `url(${
+            process.env.PUBLIC_URL + '/images/' + project.img
+          })`
+        }}
       >
         <div className="flex project__info w-full pr-12 pl-4 pb-2 pt-3 gap-2 items-center justify-start">
           <h2 className="project__name">{project.name}</h2>
