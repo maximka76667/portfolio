@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8ca1db8e.css",
-    "main.js": "/portfolio/static/js/main.2668869c.js",
-    "static/js/357.f5e7690c.chunk.js": "/portfolio/static/js/357.f5e7690c.chunk.js",
+    "main.css": "/portfolio/static/css/main.75dd8b2d.css",
+    "main.js": "/portfolio/static/js/main.85697766.js",
+    "static/js/357.8ff01a1d.chunk.js": "/portfolio/static/js/357.8ff01a1d.chunk.js",
     "static/js/496.c9de6ced.chunk.js": "/portfolio/static/js/496.c9de6ced.chunk.js",
     "static/js/561.cbf8f45d.chunk.js": "/portfolio/static/js/561.cbf8f45d.chunk.js",
     "static/media/Montserrat-MediumItalic.ttf": "/portfolio/static/media/Montserrat-MediumItalic.69fda777fc886ba5ac31.ttf",
@@ -19,14 +19,14 @@
     "static/media/logo-github.svg": "/portfolio/static/media/logo-github.31dafddf945e81ea03290624624f5cf0.svg",
     "index.html": "/portfolio/index.html",
     "static/media/logo-linkedin-2.svg": "/portfolio/static/media/logo-linkedin-2.871b81d9a04e57517579a36f24cb4418.svg",
-    "main.8ca1db8e.css.map": "/portfolio/static/css/main.8ca1db8e.css.map",
-    "main.2668869c.js.map": "/portfolio/static/js/main.2668869c.js.map",
-    "357.f5e7690c.chunk.js.map": "/portfolio/static/js/357.f5e7690c.chunk.js.map",
+    "main.75dd8b2d.css.map": "/portfolio/static/css/main.75dd8b2d.css.map",
+    "main.85697766.js.map": "/portfolio/static/js/main.85697766.js.map",
+    "357.8ff01a1d.chunk.js.map": "/portfolio/static/js/357.8ff01a1d.chunk.js.map",
     "496.c9de6ced.chunk.js.map": "/portfolio/static/js/496.c9de6ced.chunk.js.map",
     "561.cbf8f45d.chunk.js.map": "/portfolio/static/js/561.cbf8f45d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ca1db8e.css",
-    "static/js/main.2668869c.js"
+    "static/css/main.75dd8b2d.css",
+    "static/js/main.85697766.js"
   ]
 }
