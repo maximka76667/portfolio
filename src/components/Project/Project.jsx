@@ -3,6 +3,7 @@ import './Project.css';
 import projectProps from '../../interfaces/project';
 import hexToDecimal from '../../utils/hexToDecimal';
 import Badge from '../Badge/Badge';
+import ProgressiveImage from '../ProgressiveImage/ProgressiveImage';
 
 function Project({
   project: { frontStack, backStack, otherStacks, ...project }
@@ -46,14 +47,11 @@ function Project({
           </div>
         )}
       </div>
-      <a
+
+      <ProgressiveImage
         href={project.link}
-        className="project__img-link"
-        style={{
-          backgroundImage: `url(${
-            process.env.PUBLIC_URL + '/images/' + project.img
-          })`
-        }}
+        src={project.img}
+        alt={project.name}
       >
         <div className="flex project__info w-full pr-12 pl-4 pb-2 pt-3 gap-2 items-center justify-start">
           <h2 className="project__name">{project.name}</h2>
@@ -62,7 +60,7 @@ function Project({
           </p>
         </div>
         <div className="project__gradient" />
-      </a>
+      </ProgressiveImage>
       <a className="project__repoLink" href={project.repoLink}>
         <svg
           className="repoLinkSvg"
