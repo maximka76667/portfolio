@@ -53,6 +53,17 @@ const projects = [
     otherStacks: [vercel]
   },
   {
+    name: 'Dimitry Portfolio',
+    description: 'Artist portfolio',
+    img: 'dimitry-portfolio.png',
+    link: 'https://dimitry-portfolio-jet.vercel.app/',
+    repoLink: 'https://github.com/maximka76667/dima-portfolio',
+    color: '#f7f7f7',
+    bgColor: '#000000',
+    frontStack: [react, typescript, tailwind],
+    backStack: [nextjs, vercel]
+  },
+  {
     name: 'What Did I Do',
     description: 'To Do List',
     img: 'whatdid.png',
