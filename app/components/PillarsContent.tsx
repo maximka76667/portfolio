@@ -29,7 +29,7 @@ export default function PillarsContent({
       </div>
       <div
         onClick={onSelectOsCompatibility}
-        className="w-1/3 h-full flex items-center justify-center bg-zinc-800 cursor-pointer"
+        className="w-1/3 h-full flex items-center justify-center bg-accent cursor-pointer"
       >
         <h1 className="font-display text-background text-2xl sm:text-4xl font-medium text-center px-4">
           OS Compatibility

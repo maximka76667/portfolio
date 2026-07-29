@@ -3,11 +3,23 @@
 :root {
   --background: #f5f1ea;
   --foreground: #1c1c1a;
+  --accent: #1c5c47;
+  --accent-dark: #144233;
+  --status-active: #2f8f6c;
+  --status-loading: #5b86a0;
+  --status-error: #b5543f;
+  --status-dev: #b98f3f;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+  --color-status-active: var(--status-active);
+  --color-status-loading: var(--status-loading);
+  --color-status-error: var(--status-error);
+  --color-status-dev: var(--status-dev);
   --font-sans: var(--font-bricolage-grotesque);
   --font-mono: var(--font-geist-mono);
   --font-display: var(--font-abril-fatface);

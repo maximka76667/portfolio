@@ -37,7 +37,7 @@ export default function ProjectsIntroContent() {
             </div>
           </div>
           {/* Lode — bottom-right corner */}
-          <div className="group relative h-1/2 w-full bg-zinc-800 overflow-hidden">
+          <div className="group relative h-1/2 w-full bg-accent overflow-hidden">
             <div className="absolute bottom-0 right-0 p-6 flex flex-col items-end">
               <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-300 w-64 max-w-xs">
                 <div className="overflow-hidden">

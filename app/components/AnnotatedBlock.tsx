@@ -41,6 +41,9 @@ export default function AnnotatedBlock({
         side === "right" ? "md:order-1" : ""
       }`}
     >
+      <span className="font-display text-accent text-7xl sm:text-8xl leading-none block mb-2">
+        »
+      </span>
       {text}
     </div>
   );

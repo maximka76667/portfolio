@@ -7,7 +7,7 @@ export default function UiUxHyperloopContent() {
         <h1 className="font-display text-[#e4ded4] text-6xl sm:text-8xl">
           UI/UX
         </h1>
-        <h2 className="font-display text-foreground text-3xl sm:text-5xl">
+        <h2 className="font-display text-foreground text-3xl sm:text-5xl underline decoration-accent decoration-4 underline-offset-8">
           Hyperloop Control Station
         </h2>
       </div>
@@ -20,14 +20,14 @@ export default function UiUxHyperloopContent() {
           <>
             <p>
               The app always shows its current state —{" "}
-              <span className="text-green-700">active</span>,{" "}
-              <span className="text-blue-700">loading</span>,{" "}
-              <span className="text-red-700">error</span>, or{" "}
-              <span className="text-orange-600">dev mode</span>.
+              <span className="text-status-active bg-status-active/10 px-1 rounded-sm">active</span>,{" "}
+              <span className="text-status-loading bg-status-loading/10 px-1 rounded-sm">loading</span>,{" "}
+              <span className="text-status-error bg-status-error/10 px-1 rounded-sm">error</span>, or{" "}
+              <span className="text-status-dev bg-status-dev/10 px-1 rounded-sm">dev mode</span>.
             </p>
             <p>
               While loading, the relevant functionality is{" "}
-              <strong>disabled</strong>, so the user can&apos;t interact with it
+              <strong className="text-accent bg-accent/10 px-1 rounded-sm">disabled</strong>, so the user can&apos;t interact with it
               unintentionally.
             </p>
           </>
@@ -42,13 +42,13 @@ export default function UiUxHyperloopContent() {
         text={
           <>
             <p>
-              Charts are built with <strong>drag and drop</strong> — drag a
+              Charts are built with <strong className="text-accent bg-accent/10 px-1 rounded-sm">drag and drop</strong> — drag a
               variable onto the canvas to create a chart, or onto an existing
               chart to add it there.
             </p>
             <p>
               For anyone who&apos;d rather not drag, a{" "}
-              <strong>plus button</strong> does the same thing manually.
+              <strong className="text-accent bg-accent/10 px-1 rounded-sm">plus button</strong> does the same thing manually.
             </p>
           </>
         }
@@ -62,11 +62,11 @@ export default function UiUxHyperloopContent() {
           <>
             <p>
               Different configurations live in different workspaces, so
-              switching context is <strong>one click</strong> instead of reconfiguring
+              switching context is <strong className="text-accent bg-accent/10 px-1 rounded-sm">one click</strong> instead of reconfiguring
               everything.
             </p>
             <p>
-              New workspaces can be added <strong>anytime</strong>, for however many setups you
+              New workspaces can be added <strong className="text-accent bg-accent/10 px-1 rounded-sm">anytime</strong>, for however many setups you
               need.
             </p>
           </>
@@ -81,11 +81,11 @@ export default function UiUxHyperloopContent() {
         text={
           <>
             <p>
-              Every user can <strong>bind their own keys</strong> to commands, for speed and
+              Every user can <strong className="text-accent bg-accent/10 px-1 rounded-sm">bind their own keys</strong> to commands, for speed and
               convenience that match how they actually work.
             </p>
             <p>
-              For critical commands, keybindings provide a <strong>fast way</strong> to execute
+              For critical commands, keybindings provide a <strong className="text-accent bg-accent/10 px-1 rounded-sm">fast way</strong> to execute
               them.
             </p>
           </>

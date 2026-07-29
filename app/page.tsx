@@ -104,27 +104,27 @@ const screenDefs: ScreenDef[] = [
   },
   {
     key: "hyperloop-photos",
-    className: "bg-zinc-900 flex items-center justify-center",
+    className: "bg-accent-dark flex items-center justify-center",
     render: () => <HyperloopPhotosContent />,
   },
   {
     key: "os-compatibility-intro",
-    className: "bg-zinc-800 flex items-center justify-center",
+    className: "bg-accent flex items-center justify-center",
     render: () => <OsCompatibilityIntroContent />,
   },
   {
     key: "os-compatibility-hyperloop",
-    className: "bg-zinc-800 flex items-center justify-center",
+    className: "bg-accent flex items-center justify-center",
     render: () => <OsCompatibilityHyperloopContent />,
   },
   {
     key: "os-compatibility-swiss-kyle",
-    className: "bg-zinc-800 flex items-center justify-center",
+    className: "bg-accent flex items-center justify-center",
     render: () => <OsCompatibilitySwissKyleContent />,
   },
   {
     key: "os-compatibility-lode",
-    className: "bg-zinc-800 flex items-center justify-center",
+    className: "bg-accent flex items-center justify-center",
     render: () => <OsCompatibilityLodeContent />,
   },
   {
