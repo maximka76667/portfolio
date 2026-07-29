@@ -27,6 +27,7 @@ type ScreenDef = {
   key: string;
   className?: string;
   advanceOnClick?: boolean;
+  scrollable?: boolean;
   render: (goToKey: (key: string) => void, advance: () => void) => ReactNode;
 };
 
@@ -64,17 +65,20 @@ const screenDefs: ScreenDef[] = [
   },
   {
     key: "ui-ux-hyperloop",
-    className: "bg-white flex items-center justify-center",
+    className: "bg-white",
+    scrollable: true,
     render: () => <UiUxHyperloopContent />,
   },
   {
     key: "ui-ux-swiss-kyle",
-    className: "bg-white flex items-center justify-center",
+    className: "bg-white",
+    scrollable: true,
     render: () => <UiUxSwissKyleContent />,
   },
   {
     key: "ui-ux-lode",
-    className: "bg-white flex items-center justify-center",
+    className: "bg-white",
+    scrollable: true,
     render: () => <UiUxLodeContent />,
   },
   {
@@ -131,6 +135,7 @@ const screenDefs: ScreenDef[] = [
 
 export default function Home() {
   const layerRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const scrollRefs = useRef<(HTMLDivElement | null)[]>([]);
   const indexRef = useRef(0);
   const animatingRef = useRef(false);
   const screenCount = screenDefs.length;
@@ -209,7 +214,18 @@ export default function Home() {
   useEffect(() => {
     document.body.style.overflow = "hidden";
 
+    const scrollBoundary = (deltaY: number) => {
+      const el = scrollRefs.current[indexRef.current];
+      if (!el) return true;
+      const atTop = el.scrollTop <= 0;
+      const atBottom = el.scrollTop + el.clientHeight >= el.scrollHeight - 1;
+      if (deltaY > 0 && !atBottom) return false;
+      if (deltaY < 0 && !atTop) return false;
+      return true;
+    };
+
     const onWheel = (e: WheelEvent) => {
+      if (!scrollBoundary(e.deltaY)) return;
       e.preventDefault();
       if (e.deltaY > 0) goTo(indexRef.current + 1);
       else if (e.deltaY < 0) goTo(indexRef.current - 1);
@@ -220,9 +236,10 @@ export default function Home() {
       touchStartY = e.touches[0].clientY;
     };
     const onTouchMove = (e: TouchEvent) => {
-      e.preventDefault();
       const delta = touchStartY - e.touches[0].clientY;
       if (Math.abs(delta) < 40) return;
+      if (!scrollBoundary(delta)) return;
+      e.preventDefault();
       touchStartY = e.touches[0].clientY;
       goTo(indexRef.current + (delta > 0 ? 1 : -1));
     };
@@ -258,6 +275,14 @@ export default function Home() {
             }
             onClick={screen.advanceOnClick === false ? undefined : handleAdvance}
             className={screen.className}
+            scrollable={screen.scrollable}
+            contentRef={
+              screen.scrollable
+                ? (el) => {
+                    scrollRefs.current[idx] = el;
+                  }
+                : undefined
+            }
           >
             {screen.render(goToKey, handleAdvance)}
           </Screen>
