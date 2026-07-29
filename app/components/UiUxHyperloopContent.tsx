@@ -7,7 +7,7 @@ export default function UiUxHyperloopContent() {
         <h1 className="font-display text-[#e4ded4] text-6xl sm:text-8xl">
           UI/UX
         </h1>
-        <h2 className="font-display text-foreground text-3xl sm:text-5xl underline decoration-accent decoration-4 underline-offset-8">
+        <h2 className="font-display text-foreground text-3xl sm:text-5xl underline decoration-[var(--accent)] decoration-4 underline-offset-8">
           Hyperloop Control Station
         </h2>
       </div>
