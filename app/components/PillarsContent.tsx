@@ -13,17 +13,17 @@ export default function PillarsContent({
     <div className="flex h-full w-full">
       <div
         onClick={onSelectUiUx}
-        className="w-1/3 h-full flex items-center justify-center bg-white cursor-pointer"
+        className="w-1/3 h-full flex items-center justify-center bg-background cursor-pointer"
       >
-        <h1 className="font-display text-black text-2xl sm:text-4xl font-medium text-center px-4">
+        <h1 className="font-display text-foreground text-2xl sm:text-4xl font-medium text-center px-4">
           UI/UX
         </h1>
       </div>
       <div
         onClick={onSelectPerformance}
-        className="w-1/3 h-full flex items-center justify-center bg-black cursor-pointer"
+        className="w-1/3 h-full flex items-center justify-center bg-foreground cursor-pointer"
       >
-        <h1 className="font-display text-white text-2xl sm:text-4xl font-medium text-center px-4">
+        <h1 className="font-display text-background text-2xl sm:text-4xl font-medium text-center px-4">
           Performance
         </h1>
       </div>
@@ -31,7 +31,7 @@ export default function PillarsContent({
         onClick={onSelectOsCompatibility}
         className="w-1/3 h-full flex items-center justify-center bg-zinc-800 cursor-pointer"
       >
-        <h1 className="font-display text-white text-2xl sm:text-4xl font-medium text-center px-4">
+        <h1 className="font-display text-background text-2xl sm:text-4xl font-medium text-center px-4">
           OS Compatibility
         </h1>
       </div>

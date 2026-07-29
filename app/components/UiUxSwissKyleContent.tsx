@@ -3,7 +3,7 @@ import AnnotatedBlock from "./AnnotatedBlock";
 export default function UiUxSwissKyleContent() {
   return (
     <div className="min-h-full flex flex-col justify-center gap-32 pt-24 pb-100">
-      <h1 className="font-display text-black text-2xl sm:text-4xl font-medium px-6 text-center mb-12">
+      <h1 className="font-display text-foreground text-2xl sm:text-4xl font-medium px-6 text-center mb-12">
         swiss-kyle — UI/UX
       </h1>
       <AnnotatedBlock

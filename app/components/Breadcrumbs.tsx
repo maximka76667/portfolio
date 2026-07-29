@@ -7,7 +7,7 @@ type BreadcrumbsProps = {
 
 export default function Breadcrumbs({ trail, onNavigate }: BreadcrumbsProps) {
   return (
-    <nav className="absolute top-6 left-6 flex items-center gap-2 rounded-full bg-black/60 px-4 py-2 text-sm text-white backdrop-blur">
+    <nav className="absolute top-6 left-6 flex items-center gap-2 rounded-full bg-foreground/60 px-4 py-2 text-sm text-background backdrop-blur">
       {trail.map((crumb, i) => (
         <span key={i} className="flex items-center gap-2">
           {i > 0 && <span className="opacity-40">/</span>}

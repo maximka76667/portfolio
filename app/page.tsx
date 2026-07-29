@@ -35,17 +35,17 @@ type ScreenDef = {
 const screenDefs: ScreenDef[] = [
   {
     key: "statement",
-    className: "bg-black flex items-center justify-center",
+    className: "bg-foreground flex items-center justify-center",
     render: () => <StatementContent />,
   },
   {
     key: "white-space",
-    className: "bg-white",
+    className: "bg-background",
     render: () => <WhiteSpaceContent />,
   },
   {
     key: "projects-intro",
-    className: "bg-white flex flex-col",
+    className: "bg-background flex flex-col",
     render: () => <ProjectsIntroContent />,
   },
   {
@@ -61,45 +61,45 @@ const screenDefs: ScreenDef[] = [
   },
   {
     key: "ui-ux-intro",
-    className: "bg-white flex items-center justify-center",
+    className: "bg-background flex items-center justify-center",
     render: () => <UiUxIntroContent />,
   },
   {
     key: "ui-ux-hyperloop",
-    className: "bg-white",
+    className: "bg-background",
     scrollable: true,
     render: () => <UiUxHyperloopContent />,
   },
   {
     key: "ui-ux-swiss-kyle",
-    className: "bg-white",
+    className: "bg-background",
     scrollable: true,
     render: () => <UiUxSwissKyleContent />,
   },
   {
     key: "ui-ux-lode",
-    className: "bg-white",
+    className: "bg-background",
     scrollable: true,
     render: () => <UiUxLodeContent />,
   },
   {
     key: "performance-intro",
-    className: "bg-black flex items-center justify-center",
+    className: "bg-foreground flex items-center justify-center",
     render: () => <PerformanceIntroContent />,
   },
   {
     key: "performance-hyperloop",
-    className: "bg-black flex items-center justify-center",
+    className: "bg-foreground flex items-center justify-center",
     render: () => <PerformanceHyperloopContent />,
   },
   {
     key: "performance-swiss-kyle",
-    className: "bg-black flex items-center justify-center",
+    className: "bg-foreground flex items-center justify-center",
     render: () => <PerformanceSwissKyleContent />,
   },
   {
     key: "performance-lode",
-    className: "bg-black flex items-center justify-center",
+    className: "bg-foreground flex items-center justify-center",
     render: () => <PerformanceLodeContent />,
   },
   {
@@ -129,7 +129,7 @@ const screenDefs: ScreenDef[] = [
   },
   {
     key: "contact",
-    className: "bg-black flex items-center justify-center",
+    className: "bg-foreground flex items-center justify-center",
     render: () => <ContactContent />,
   },
 ];
