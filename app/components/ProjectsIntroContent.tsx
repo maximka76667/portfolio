@@ -1,9 +1,9 @@
 export default function ProjectsIntroContent() {
   return (
     <>
-      <p className="mt-auto mb-10 text-black text-3xl sm:text-5xl font-medium text-center px-6">
+      <h1 className="font-display mt-auto mb-10 text-black text-3xl sm:text-5xl font-medium text-center px-6">
         My Projects
-      </p>
+      </h1>
       <div className="mx-12 mb-12 h-[55vh] flex overflow-hidden rounded-lg">
         {/* Hyperloop Control Station — top-left corner */}
         <div className="group relative w-1/2 h-full bg-black overflow-hidden">

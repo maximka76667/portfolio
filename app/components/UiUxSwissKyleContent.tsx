@@ -3,9 +3,9 @@ import AnnotatedBlock from "./AnnotatedBlock";
 export default function UiUxSwissKyleContent() {
   return (
     <div className="min-h-full flex flex-col justify-center gap-32 pt-24 pb-100">
-      <p className="text-black text-2xl sm:text-4xl font-medium px-6 text-center mb-12">
+      <h1 className="font-display text-black text-2xl sm:text-4xl font-medium px-6 text-center mb-12">
         swiss-kyle — UI/UX
-      </p>
+      </h1>
       <AnnotatedBlock
         side="left"
         width="clamp(320px, 60vw, 900px)"

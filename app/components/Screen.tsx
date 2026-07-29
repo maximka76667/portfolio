@@ -4,12 +4,13 @@ type ScreenProps = {
   onClick?: () => void;
   className?: string;
   children?: ReactNode;
+  header?: ReactNode;
   scrollable?: boolean;
   contentRef?: (el: HTMLDivElement | null) => void;
 };
 
 const Screen = forwardRef<HTMLDivElement, ScreenProps>(function Screen(
-  { onClick, className = "", children, scrollable = false, contentRef },
+  { onClick, className = "", children, header, scrollable = false, contentRef },
   ref
 ) {
   const handleClick = (e: MouseEvent<HTMLDivElement>) => {
@@ -25,6 +26,7 @@ const Screen = forwardRef<HTMLDivElement, ScreenProps>(function Screen(
         scrollable ? "" : "cursor-pointer"
       } [&_p]:cursor-auto ${className}`}
     >
+      {header}
       {scrollable ? (
         <div ref={contentRef} className="h-full w-full overflow-y-auto">
           {children}
