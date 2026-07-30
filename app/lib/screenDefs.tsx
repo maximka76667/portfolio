@@ -2,6 +2,10 @@ import type { ReactNode } from "react";
 import StatementContent from "../components/StatementContent";
 import WhiteSpaceContent from "../components/WhiteSpaceContent";
 import ProjectsIntroContent from "../components/ProjectsIntroContent";
+import ProjectHyperloopContent from "../components/ProjectHyperloopContent";
+import ProjectSwissKyleContent from "../components/ProjectSwissKyleContent";
+import ProjectLodeContent from "../components/ProjectLodeContent";
+import PillarsTransitionContent from "../components/PillarsTransitionContent";
 import PillarsContent from "../components/PillarsContent";
 import UiUxIntroContent from "../components/UiUxIntroContent";
 import UiUxHyperloopContent from "../components/UiUxHyperloopContent";
@@ -40,7 +44,33 @@ export const screenDefs: ScreenDef[] = [
   {
     key: "projects-intro",
     className: "bg-background flex flex-col",
-    render: () => <ProjectsIntroContent />,
+    render: (goToKey) => (
+      <ProjectsIntroContent
+        onSelectHyperloop={() => goToKey("project-hyperloop")}
+        onSelectSwissKyle={() => goToKey("project-swiss-kyle")}
+        onSelectLode={() => goToKey("project-lode")}
+      />
+    ),
+  },
+  {
+    key: "project-hyperloop",
+    className: "bg-background flex items-center justify-center",
+    render: () => <ProjectHyperloopContent />,
+  },
+  {
+    key: "project-swiss-kyle",
+    className: "bg-background flex items-center justify-center",
+    render: () => <ProjectSwissKyleContent />,
+  },
+  {
+    key: "project-lode",
+    className: "bg-background flex items-center justify-center",
+    render: () => <ProjectLodeContent />,
+  },
+  {
+    key: "pillars-transition",
+    className: "bg-foreground flex items-center justify-center",
+    render: () => <PillarsTransitionContent />,
   },
   {
     key: "pillars",

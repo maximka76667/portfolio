@@ -12,6 +12,9 @@ const OS_COMPATIBILITY: Crumb = {
 
 export const breadcrumbTrails: Partial<Record<string, Crumb[]>> = {
   "projects-intro": [HOME, { label: "Projects" }],
+  "project-hyperloop": [HOME, PROJECTS, { label: "Hyperloop" }],
+  "project-swiss-kyle": [HOME, PROJECTS, { label: "Swiss Kyle" }],
+  "project-lode": [HOME, PROJECTS, { label: "Lode" }],
   pillars: [HOME, PROJECTS, { label: "Pillars" }],
   "ui-ux-intro": [HOME, PROJECTS, PILLARS, { label: "UI/UX" }],
   "ui-ux-hyperloop": [
