@@ -9,8 +9,9 @@ const OS_COMPATIBILITY: Crumb = {
   label: "OS Compatibility",
   key: "os-compatibility-intro",
 };
+const CONTACT: Crumb = { label: "Contact", key: "contact" };
 
-export const breadcrumbTrails: Partial<Record<string, Crumb[]>> = {
+const rawTrails: Partial<Record<string, Crumb[]>> = {
   "projects-intro": [HOME, { label: "Projects" }],
   "project-hyperloop": [HOME, PROJECTS, { label: "Hyperloop" }],
   "project-swiss-kyle": [HOME, PROJECTS, { label: "Swiss Kyle" }],
@@ -84,3 +85,13 @@ export const breadcrumbTrails: Partial<Record<string, Crumb[]>> = {
   ],
   contact: [HOME, PROJECTS, PILLARS, { label: "Contact" }],
 };
+
+// Every trail gets a trailing "Contact" shortcut so you can jump straight to
+// the end from anywhere, instead of only being able to navigate backwards.
+export const breadcrumbTrails: Partial<Record<string, Crumb[]>> =
+  Object.fromEntries(
+    Object.entries(rawTrails).map(([key, trail]) => [
+      key,
+      key === "contact" ? trail! : [...trail!, CONTACT],
+    ])
+  );
