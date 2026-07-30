@@ -1,15 +1,23 @@
 import VideoBlock from "./VideoBlock";
+import ContentPage from "./ContentPage";
 
 export default function UiUxHyperloopContent() {
   return (
-    <div className="min-h-full flex flex-col justify-center gap-32 pt-24 pb-100">
+    <ContentPage>
       <div className="flex flex-col items-end justify-center gap-12 h-[60vh] pr-24 mb-12">
-        <h1 className="font-display text-[#e4ded4] text-6xl sm:text-8xl">
+        <h1 className="font-display text-[#e4ded4] text-6xl sm:text-8xl 3xl:text-9xl">
           UI/UX
         </h1>
-        <h2 className="font-display text-foreground text-3xl sm:text-5xl underline decoration-[var(--accent)] decoration-4 underline-offset-8">
+        <h2 className="font-display text-foreground text-3xl sm:text-5xl 3xl:text-7xl underline decoration-[var(--accent)] decoration-4 underline-offset-8">
           Hyperloop Control Station
         </h2>
+        <p className="text-foreground text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl text-right">
+          For a critical system like this one, you need to always be{" "}
+          <strong className="text-accent bg-accent/10 px-1 rounded-sm">
+            aware of its state
+          </strong>
+          , and a fast way to get to what you actually want to see.
+        </p>
       </div>
       <VideoBlock
         side="left"
@@ -126,6 +134,6 @@ export default function UiUxHyperloopContent() {
         }
         margin="0 30px 0"
       />
-    </div>
+    </ContentPage>
   );
 }

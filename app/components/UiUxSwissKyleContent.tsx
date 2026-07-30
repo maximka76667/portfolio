@@ -1,8 +1,9 @@
 import AnnotatedBlock from "./AnnotatedBlock";
+import ContentPage from "./ContentPage";
 
 export default function UiUxSwissKyleContent() {
   return (
-    <div className="min-h-full flex flex-col justify-center gap-32 pt-24 pb-100">
+    <ContentPage>
       <h1 className="font-display text-foreground text-2xl sm:text-4xl font-medium px-6 text-center mb-12">
         swiss-kyle — UI/UX
       </h1>
@@ -24,6 +25,6 @@ export default function UiUxSwissKyleContent() {
         aspectRatio="16/10"
         text="Explain the third UI/UX decision here."
       />
-    </div>
+    </ContentPage>
   );
 }

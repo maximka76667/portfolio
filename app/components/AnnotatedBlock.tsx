@@ -37,11 +37,11 @@ export default function AnnotatedBlock({
 
   const copy = (
     <div
-      className={`text-foreground text-lg sm:text-xl font-medium flex-1 px-2 md:px-12 space-y-6 ${
+      className={`text-foreground text-lg sm:text-xl 3xl:text-3xl font-medium flex-1 max-w-[clamp(280px,32vw,700px)] px-2 md:px-12 space-y-6 ${
         side === "right" ? "md:order-1" : ""
       }`}
     >
-      <span className="font-display text-accent text-7xl sm:text-8xl leading-none block mb-2">
+      <span className="font-display text-accent text-7xl sm:text-8xl 3xl:text-9xl leading-none block mb-2">
         »
       </span>
       {text}
@@ -50,7 +50,7 @@ export default function AnnotatedBlock({
 
   return (
     <div
-      className="w-full flex flex-col md:flex-row items-center justify-between gap-8 box-border p-0 md:p-(--block-margin)"
+      className="w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20 box-border p-0 md:p-(--block-margin)"
       style={{ "--block-margin": margin } as CSSProperties}
     >
       {mediaBox}

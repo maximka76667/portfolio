@@ -1,7 +1,7 @@
 export default function UiUxIntroContent() {
   return (
     <div className="flex flex-col items-center gap-12 px-6 text-center max-w-3xl">
-      <h1 className="font-display text-foreground text-4xl sm:text-6xl">
+      <h1 className="font-display text-foreground text-4xl sm:text-6xl 3xl:text-[12rem]">
         UI/UX
       </h1>
       <div className="text-foreground text-lg sm:text-2xl font-medium space-y-8">
