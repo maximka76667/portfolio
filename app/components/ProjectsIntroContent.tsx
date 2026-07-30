@@ -24,7 +24,7 @@ export default function ProjectsIntroContent({
             <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-300 w-64 max-w-xs">
               <div className="overflow-hidden">
                 <p className="mb-2 text-background text-sm sm:text-base text-left opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Hyperloop Control Station description — coming soon
+                  Cross-platform mission control for a Hyperloop vehicle.
                 </p>
               </div>
             </div>
@@ -43,7 +43,7 @@ export default function ProjectsIntroContent({
               <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-300 w-64 max-w-xs">
                 <div className="overflow-hidden">
                   <p className="mb-2 text-foreground text-sm sm:text-base text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    swiss-kyle description — coming soon
+                    A swiss army knife for your PC.
                   </p>
                 </div>
               </div>
@@ -61,7 +61,7 @@ export default function ProjectsIntroContent({
               <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-300 w-64 max-w-xs">
                 <div className="overflow-hidden">
                   <p className="mb-2 text-background text-sm sm:text-base text-right opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    Lode description — coming soon
+                    Live sensor data of my room, straight from the board.
                   </p>
                 </div>
               </div>

@@ -12,19 +12,15 @@ export default function ProjectOverview({
   media,
 }: ProjectOverviewProps) {
   return (
-    <div className="flex flex-col items-center justify-center gap-10 px-6 text-center max-w-4xl mx-auto">
-      <div className="w-full max-w-3xl aspect-video rounded-lg overflow-hidden bg-zinc-200 flex items-center justify-center">
+    <div className="relative mx-auto w-full max-w-4xl 3xl:max-w-6xl 4xl:max-w-7xl px-6">
+      <div className="aspect-video rounded-lg overflow-hidden bg-zinc-200 flex items-center justify-center">
         {media ?? (
           <span className="text-zinc-400 text-sm">screenshot placeholder</span>
         )}
       </div>
-      <div className="space-y-4">
-        <h1 className="font-display text-foreground text-3xl sm:text-5xl">
-          {name}
-        </h1>
-        <p className="text-foreground text-lg sm:text-xl font-medium max-w-2xl mx-auto">
-          {description}
-        </p>
+      <div className="absolute -bottom-7.5 -right-7.5 max-w-md text-left text-foreground space-y-3">
+        <h1 className="font-display text-4xl sm:text-6xl">{name}</h1>
+        <p className="text-lg sm:text-2xl font-medium">{description}</p>
       </div>
     </div>
   );

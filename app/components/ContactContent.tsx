@@ -1,13 +1,16 @@
 export default function ContactContent() {
   return (
-    <div className="flex flex-col items-center gap-4 text-center px-6">
+    <div className="flex flex-col items-center gap-8 text-center px-6">
       <h1 className="font-display text-background text-2xl sm:text-4xl font-medium max-w-2xl">
-        I hope you enjoyed this little journey. You finished it in 5 minutes,
+        I hope you enjoyed this little journey. You experienced it in 5 minutes,
         but for me there were years of hard work.
       </h1>
       <p className="text-background text-lg sm:text-xl mt-4">Maxim Grivennyy</p>
       <div className="flex flex-col gap-1 text-background/70 text-base sm:text-lg">
-        <a href="mailto:maximgriven@gmail.com" className="hover:text-background">
+        <a
+          href="mailto:maximgriven@gmail.com"
+          className="hover:text-background"
+        >
           maximgriven@gmail.com
         </a>
         <a
