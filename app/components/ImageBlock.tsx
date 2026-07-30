@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import AnnotatedBlock from "./AnnotatedBlock";
 
 type ImageBlockProps = {
+  title: string;
   text: ReactNode;
   alt: string;
   side?: "left" | "right";
@@ -12,6 +13,7 @@ type ImageBlockProps = {
 };
 
 export default function ImageBlock({
+  title,
   text,
   alt,
   side,
@@ -22,6 +24,7 @@ export default function ImageBlock({
 }: ImageBlockProps) {
   return (
     <AnnotatedBlock
+      title={title}
       text={text}
       side={side}
       width={width}
