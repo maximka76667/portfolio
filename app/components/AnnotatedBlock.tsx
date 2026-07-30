@@ -37,7 +37,7 @@ export default function AnnotatedBlock({
 
   const copy = (
     <div
-      className={`text-foreground text-lg sm:text-xl font-medium flex-1 px-2 md:px-12 space-y-12 ${
+      className={`text-foreground text-lg sm:text-xl font-medium flex-1 px-2 md:px-12 space-y-6 ${
         side === "right" ? "md:order-1" : ""
       }`}
     >
