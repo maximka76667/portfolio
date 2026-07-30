@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import AnnotatedBlock from "./AnnotatedBlock";
 
 type VideoBlockProps = {
+  title: string;
   text: ReactNode;
   side?: "left" | "right";
   width?: string;
@@ -11,6 +12,7 @@ type VideoBlockProps = {
 };
 
 export default function VideoBlock({
+  title,
   text,
   side,
   width,
@@ -20,6 +22,7 @@ export default function VideoBlock({
 }: VideoBlockProps) {
   return (
     <AnnotatedBlock
+      title={title}
       text={text}
       side={side}
       width={width}

@@ -1,6 +1,8 @@
 import type { CSSProperties, ReactNode } from "react";
 
 type AnnotatedBlockProps = {
+  /** Small heading shown above the caption. */
+  title: string;
   /** Caption content. A string renders as one paragraph; pass multiple <p> (or any nodes) for more. */
   text: ReactNode;
   side?: "left" | "right";
@@ -15,6 +17,7 @@ type AnnotatedBlockProps = {
 };
 
 export default function AnnotatedBlock({
+  title,
   text,
   side = "left",
   width = "clamp(240px, 40vw, 480px)",
@@ -41,9 +44,9 @@ export default function AnnotatedBlock({
         side === "right" ? "md:order-1" : ""
       }`}
     >
-      <span className="font-display text-accent text-7xl sm:text-8xl 3xl:text-9xl leading-none block mb-2">
-        »
-      </span>
+      <h3 className="font-display text-accent text-3xl sm:text-4xl 3xl:text-5xl leading-tight">
+        » {title} «
+      </h3>
       {text}
     </div>
   );

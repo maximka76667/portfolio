@@ -1,230 +1,43 @@
 "use client";
 
-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef } from "react";
-import type { ReactNode } from "react";
+import {
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+} from "react";
 import gsap from "gsap";
 import Screen from "./components/Screen";
-import Breadcrumbs, { type Crumb } from "./components/Breadcrumbs";
-import StatementContent from "./components/StatementContent";
-import WhiteSpaceContent from "./components/WhiteSpaceContent";
-import ProjectsIntroContent from "./components/ProjectsIntroContent";
-import PillarsContent from "./components/PillarsContent";
-import UiUxIntroContent from "./components/UiUxIntroContent";
-import UiUxHyperloopContent from "./components/UiUxHyperloopContent";
-import UiUxSwissKyleContent from "./components/UiUxSwissKyleContent";
-import UiUxLodeContent from "./components/UiUxLodeContent";
-import PerformanceIntroContent from "./components/PerformanceIntroContent";
-import PerformanceHyperloopContent from "./components/PerformanceHyperloopContent";
-import PerformanceSwissKyleContent from "./components/PerformanceSwissKyleContent";
-import PerformanceLodeContent from "./components/PerformanceLodeContent";
-import HyperloopPhotosContent from "./components/HyperloopPhotosContent";
-import OsCompatibilityIntroContent from "./components/OsCompatibilityIntroContent";
-import OsCompatibilityHyperloopContent from "./components/OsCompatibilityHyperloopContent";
-import OsCompatibilitySwissKyleContent from "./components/OsCompatibilitySwissKyleContent";
-import OsCompatibilityLodeContent from "./components/OsCompatibilityLodeContent";
-import ContactContent from "./components/ContactContent";
-
-type ScreenDef = {
-  key: string;
-  className?: string;
-  advanceOnClick?: boolean;
-  scrollable?: boolean;
-  render: (goToKey: (key: string) => void, advance: () => void) => ReactNode;
-};
-
-const screenDefs: ScreenDef[] = [
-  {
-    key: "statement",
-    className: "bg-foreground flex items-center justify-center",
-    render: () => <StatementContent />,
-  },
-  {
-    key: "white-space",
-    className: "bg-background",
-    render: () => <WhiteSpaceContent />,
-  },
-  {
-    key: "projects-intro",
-    className: "bg-background flex flex-col",
-    render: () => <ProjectsIntroContent />,
-  },
-  {
-    key: "pillars",
-    advanceOnClick: false,
-    render: (goToKey) => (
-      <PillarsContent
-        onSelectUiUx={() => goToKey("ui-ux-intro")}
-        onSelectPerformance={() => goToKey("performance-intro")}
-        onSelectOsCompatibility={() => goToKey("os-compatibility-intro")}
-      />
-    ),
-  },
-  {
-    key: "ui-ux-intro",
-    className: "bg-background flex items-center justify-center",
-    render: () => <UiUxIntroContent />,
-  },
-  {
-    key: "ui-ux-hyperloop",
-    className: "bg-background",
-    scrollable: true,
-    render: () => <UiUxHyperloopContent />,
-  },
-  {
-    key: "ui-ux-swiss-kyle",
-    className: "bg-background",
-    scrollable: true,
-    render: () => <UiUxSwissKyleContent />,
-  },
-  {
-    key: "ui-ux-lode",
-    className: "bg-background",
-    scrollable: true,
-    render: () => <UiUxLodeContent />,
-  },
-  {
-    key: "performance-intro",
-    className: "bg-foreground flex items-center justify-center",
-    render: () => <PerformanceIntroContent />,
-  },
-  {
-    key: "performance-hyperloop",
-    className: "bg-foreground flex items-center justify-center",
-    render: () => <PerformanceHyperloopContent />,
-  },
-  {
-    key: "performance-swiss-kyle",
-    className: "bg-foreground flex items-center justify-center",
-    render: () => <PerformanceSwissKyleContent />,
-  },
-  {
-    key: "performance-lode",
-    className: "bg-foreground flex items-center justify-center",
-    render: () => <PerformanceLodeContent />,
-  },
-  {
-    key: "hyperloop-photos",
-    className: "bg-accent-dark flex items-center justify-center",
-    render: () => <HyperloopPhotosContent />,
-  },
-  {
-    key: "os-compatibility-intro",
-    className: "bg-accent flex items-center justify-center",
-    render: () => <OsCompatibilityIntroContent />,
-  },
-  {
-    key: "os-compatibility-hyperloop",
-    className: "bg-accent flex items-center justify-center",
-    render: () => <OsCompatibilityHyperloopContent />,
-  },
-  {
-    key: "os-compatibility-swiss-kyle",
-    className: "bg-accent flex items-center justify-center",
-    render: () => <OsCompatibilitySwissKyleContent />,
-  },
-  {
-    key: "os-compatibility-lode",
-    className: "bg-accent flex items-center justify-center",
-    render: () => <OsCompatibilityLodeContent />,
-  },
-  {
-    key: "contact",
-    className: "bg-foreground flex items-center justify-center",
-    render: () => <ContactContent />,
-  },
-];
-
-const HOME: Crumb = { label: "Home", key: "statement" };
-const PROJECTS: Crumb = { label: "Projects", key: "projects-intro" };
-const PILLARS: Crumb = { label: "Pillars", key: "pillars" };
-const UI_UX: Crumb = { label: "UI/UX", key: "ui-ux-intro" };
-const PERFORMANCE: Crumb = { label: "Performance", key: "performance-intro" };
-const OS_COMPATIBILITY: Crumb = {
-  label: "OS Compatibility",
-  key: "os-compatibility-intro",
-};
-
-const breadcrumbTrails: Partial<Record<string, Crumb[]>> = {
-  "projects-intro": [HOME, { label: "Projects" }],
-  pillars: [HOME, PROJECTS, { label: "Pillars" }],
-  "ui-ux-intro": [HOME, PROJECTS, PILLARS, { label: "UI/UX" }],
-  "ui-ux-hyperloop": [
-    HOME,
-    PROJECTS,
-    PILLARS,
-    UI_UX,
-    { label: "Hyperloop" },
-  ],
-  "ui-ux-swiss-kyle": [
-    HOME,
-    PROJECTS,
-    PILLARS,
-    UI_UX,
-    { label: "swiss-kyle" },
-  ],
-  "ui-ux-lode": [HOME, PROJECTS, PILLARS, UI_UX, { label: "Lode" }],
-  "performance-intro": [HOME, PROJECTS, PILLARS, { label: "Performance" }],
-  "performance-hyperloop": [
-    HOME,
-    PROJECTS,
-    PILLARS,
-    PERFORMANCE,
-    { label: "Hyperloop" },
-  ],
-  "performance-swiss-kyle": [
-    HOME,
-    PROJECTS,
-    PILLARS,
-    PERFORMANCE,
-    { label: "swiss-kyle" },
-  ],
-  "performance-lode": [
-    HOME,
-    PROJECTS,
-    PILLARS,
-    PERFORMANCE,
-    { label: "Lode" },
-  ],
-  "hyperloop-photos": [HOME, { label: "Hyperloop Photos" }],
-  "os-compatibility-intro": [
-    HOME,
-    PROJECTS,
-    PILLARS,
-    { label: "OS Compatibility" },
-  ],
-  "os-compatibility-hyperloop": [
-    HOME,
-    PROJECTS,
-    PILLARS,
-    OS_COMPATIBILITY,
-    { label: "Hyperloop" },
-  ],
-  "os-compatibility-swiss-kyle": [
-    HOME,
-    PROJECTS,
-    PILLARS,
-    OS_COMPATIBILITY,
-    { label: "swiss-kyle" },
-  ],
-  "os-compatibility-lode": [
-    HOME,
-    PROJECTS,
-    PILLARS,
-    OS_COMPATIBILITY,
-    { label: "Lode" },
-  ],
-  contact: [HOME, PROJECTS, PILLARS, { label: "Contact" }],
-};
+import Breadcrumbs from "./components/Breadcrumbs";
+import { screenDefs } from "./lib/screenDefs";
+import { breadcrumbTrails } from "./lib/breadcrumbTrails";
+import { getInitialScreenIndex, getHintState } from "./lib/navigation";
 
 export default function Home() {
   const layerRefs = useRef<(HTMLDivElement | null)[]>([]);
   const scrollRefs = useRef<(HTMLDivElement | null)[]>([]);
   const indexRef = useRef(0);
   const animatingRef = useRef(false);
+  const hintRef = useRef<HTMLDivElement>(null);
   const screenCount = screenDefs.length;
   const keyToIndex = useMemo(
     () => new Map(screenDefs.map((s, i) => [s.key, i])),
-    []
+    [],
+  );
+
+  const updateHint = useCallback(
+    (idx: number) => {
+      const el = hintRef.current;
+      if (!el) return;
+      const { hidden, html } = getHintState(
+        screenDefs[idx],
+        idx === screenCount - 1,
+      );
+      el.style.display = hidden ? "none" : "flex";
+      el.innerHTML = html;
+    },
+    [screenCount],
   );
 
   const goTo = useCallback(
@@ -265,11 +78,12 @@ export default function Home() {
           if (goingForward) animatingLayer.style.pointerEvents = "none";
           indexRef.current = next;
           animatingRef.current = false;
+          updateHint(next);
         },
       });
       window.history.replaceState(null, "", `?screen=${next + 1}`);
     },
-    [screenCount]
+    [screenCount, updateHint],
   );
 
   const goToKey = useCallback(
@@ -277,14 +91,12 @@ export default function Home() {
       const next = keyToIndex.get(key);
       if (next !== undefined) goTo(next);
     },
-    [goTo, keyToIndex]
+    [goTo, keyToIndex],
   );
 
   useLayoutEffect(() => {
-    const param = new URLSearchParams(window.location.search).get("screen");
-    const initial = param
-      ? Math.min(Math.max(Number(param) - 1, 0), screenCount - 1)
-      : 0;
+    const initial = getInitialScreenIndex(screenCount);
+    updateHint(initial);
     if (!initial) return;
     indexRef.current = initial;
     layerRefs.current.slice(0, initial).forEach((el) => {
@@ -292,7 +104,7 @@ export default function Home() {
       gsap.set(el, { opacity: 0 });
       el.style.pointerEvents = "none";
     });
-  }, [screenCount]);
+  }, [screenCount, updateHint]);
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -341,44 +153,41 @@ export default function Home() {
 
   const handleAdvance = () => goTo(indexRef.current + 1);
 
+  const setLayerRef = (idx: number) => (el: HTMLDivElement | null) => {
+    layerRefs.current[idx] = el;
+  };
+
+  const setScrollRef = (idx: number) => (el: HTMLDivElement | null) => {
+    scrollRefs.current[idx] = el;
+  };
+
   return (
     <div className="relative h-screen w-screen overflow-hidden">
       {[...screenDefs].reverse().map((screen, reversedIdx) => {
         const idx = screenCount - 1 - reversedIdx;
         const isLast = idx === screenCount - 1;
+        const trail = breadcrumbTrails[screen.key];
+
         return (
           <Screen
             key={screen.key}
-            ref={
-              isLast
-                ? undefined
-                : (el) => {
-                    layerRefs.current[idx] = el;
-                  }
+            ref={isLast ? undefined : setLayerRef(idx)}
+            onClick={
+              screen.advanceOnClick === false ? undefined : handleAdvance
             }
-            onClick={screen.advanceOnClick === false ? undefined : handleAdvance}
             className={screen.className}
             scrollable={screen.scrollable}
-            contentRef={
-              screen.scrollable
-                ? (el) => {
-                    scrollRefs.current[idx] = el;
-                  }
-                : undefined
-            }
-            header={
-              breadcrumbTrails[screen.key] ? (
-                <Breadcrumbs
-                  trail={breadcrumbTrails[screen.key]!}
-                  onNavigate={goToKey}
-                />
-              ) : undefined
-            }
+            contentRef={screen.scrollable ? setScrollRef(idx) : undefined}
+            header={trail && <Breadcrumbs trail={trail} onNavigate={goToKey} />}
           >
             {screen.render(goToKey, handleAdvance)}
           </Screen>
         );
       })}
+      <div
+        ref={hintRef}
+        className="fixed bottom-6 right-6 z-20 hidden items-center gap-2 rounded-full bg-foreground/60 px-4 py-2 text-sm text-background backdrop-blur pointer-events-none [&_span]:leading-none"
+      />
     </div>
   );
 }

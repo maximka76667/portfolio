@@ -20,6 +20,7 @@ export default function UiUxHyperloopContent() {
         </p>
       </div>
       <VideoBlock
+        title="State"
         side="left"
         width="clamp(200px, 60vw, 1300px)"
         aspectRatio="16/7"
@@ -57,6 +58,7 @@ export default function UiUxHyperloopContent() {
         margin="0 70px 0"
       />
       <VideoBlock
+        title="Drag and drop"
         side="right"
         width="clamp(200px, 60vw, 1200px)"
         aspectRatio="16/10"
@@ -83,6 +85,7 @@ export default function UiUxHyperloopContent() {
         margin="0 20px 0"
       />
       <VideoBlock
+        title="Workspaces"
         side="left"
         width="clamp(200px, 60vw, 1200px)"
         aspectRatio="16/9"
@@ -109,6 +112,7 @@ export default function UiUxHyperloopContent() {
         margin="0 50px 0"
       />
       <VideoBlock
+        title="Keybindings"
         side="right"
         width="clamp(200px, 60vw, 1200px)"
         aspectRatio="16/9"
