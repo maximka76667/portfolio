@@ -1,4 +1,4 @@
-import AnnotatedBlock from "./AnnotatedBlock";
+import VideoBlock from "./VideoBlock";
 import ContentPage from "./ContentPage";
 
 export default function UiUxSwissKyleContent() {
@@ -20,11 +20,13 @@ export default function UiUxSwissKyleContent() {
           away if it didn&apos;t.
         </p>
       </div>
-      <AnnotatedBlock
+      <VideoBlock
         title="Document upload"
         side="left"
-        width="clamp(320px, 60vw, 900px)"
+        width="clamp(200px, 60vw, 1300px)"
         aspectRatio="16/9"
+        src="/media/swiss-kyle/ui-ux-swiss-kyle-dnd.mp4"
+        margin="0 70px 0"
         text={
           <p>
             Documents are added by{" "}
@@ -39,33 +41,37 @@ export default function UiUxSwissKyleContent() {
           </p>
         }
       />
-      <AnnotatedBlock
+      <VideoBlock
         title="Job status badges"
         side="right"
-        width="clamp(220px, 28vw, 340px)"
-        aspectRatio="3/4"
+        width="clamp(200px, 60vw, 1200px)"
+        aspectRatio="16/10"
+        src="/media/swiss-kyle/ui-ux-swiss-kyle-badge-status.mp4"
+        margin="0 20px 0"
         text={
           <p>
             Every job carries a{" "}
             <strong className="text-accent bg-accent/10 px-1 rounded-sm">
               status badge
             </strong>{" "}
-            — running, done, or failed.
+            — running, done, or failed — always visible in the sidebar.
           </p>
         }
       />
-      <AnnotatedBlock
+      <VideoBlock
         title="Diagnostics"
         side="left"
-        width="clamp(260px, 40vw, 520px)"
-        aspectRatio="16/10"
+        width="clamp(200px, 60vw, 1200px)"
+        aspectRatio="16/9"
+        src="/media/swiss-kyle/ui-ux-swiss-kyle-diagnostics.mp4"
+        margin="0 50px 0"
         text={
           <p>
-            A diagnostics page that{" "}
+            The diagnostics page shows{" "}
             <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-              reveals problems or failures
-            </strong>{" "}
-            as they happen.
+              worker status and the job log
+            </strong>
+            , so problems are visible as they happen.
           </p>
         }
       />
