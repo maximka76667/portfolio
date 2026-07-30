@@ -4,7 +4,7 @@ export default function ProjectSwissKyleContent() {
   return (
     <ProjectOverview
       name="Swiss Kyle"
-      description="A local desktop toolbox for video cutting, document conversion, and PDF merging — everything runs on your machine, no cloud, no uploads."
+      description="A local desktop toolbox for frequently used services such as video cutting, document conversion, and PDF merging. You need neither an account nor an internet connection."
     />
   );
 }
