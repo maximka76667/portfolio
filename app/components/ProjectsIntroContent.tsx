@@ -20,6 +20,13 @@ export default function ProjectsIntroContent({
           onClick={onSelectHyperloop}
           className="group relative w-1/2 h-full bg-foreground overflow-hidden cursor-pointer"
         >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/media/hyperloop/thumbnail.png"
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-foreground/95 group-hover:bg-foreground/75 transition-colors duration-300" />
           <div className="absolute top-0 left-0 p-6 flex flex-col items-start">
             <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-300 w-64 max-w-xs">
               <div className="overflow-hidden">
@@ -39,6 +46,13 @@ export default function ProjectsIntroContent({
             onClick={onSelectSwissKyle}
             className="group relative h-1/2 w-full bg-background overflow-hidden cursor-pointer"
           >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/media/swiss-kyle/thumbnail.png"
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-background/95 group-hover:bg-background/75 transition-colors duration-300" />
             <div className="absolute top-0 right-0 p-6 flex flex-col items-end">
               <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-300 w-64 max-w-xs">
                 <div className="overflow-hidden">
@@ -57,6 +71,13 @@ export default function ProjectsIntroContent({
             onClick={onSelectLode}
             className="group relative h-1/2 w-full bg-accent overflow-hidden cursor-pointer"
           >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/media/lode/thumbnail.png"
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-accent/95 group-hover:bg-accent/75 transition-colors duration-300" />
             <div className="absolute bottom-0 right-0 p-6 flex flex-col items-end">
               <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-300 w-64 max-w-xs">
                 <div className="overflow-hidden">

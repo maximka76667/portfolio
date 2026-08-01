@@ -14,6 +14,23 @@
 @theme {
   --breakpoint-3xl: 120rem;
   --breakpoint-4xl: 150rem;
+  --animate-float: float 2s ease-in-out infinite;
+}
+
+@property --reveal-r {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
 }
 
 @theme inline {

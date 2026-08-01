@@ -22,7 +22,7 @@ const Screen = forwardRef<HTMLDivElement, ScreenProps>(function Screen(
     <div
       ref={ref}
       onClick={!scrollable && onClick ? handleClick : undefined}
-      className={`absolute inset-0 h-screen w-screen ${
+      className={`absolute inset-0 isolate h-screen w-screen ${
         scrollable ? "" : "cursor-pointer"
       } [&_p]:cursor-auto [&_h1]:cursor-auto ${className}`}
     >
