@@ -1,5 +1,5 @@
-import AnnotatedBlock from "./AnnotatedBlock";
-import ContentPage from "./ContentPage";
+import AnnotatedBlock from "../ui/AnnotatedBlock";
+import ContentPage from "../ui/ContentPage";
 
 export default function UiUxLodeContent() {
   return (

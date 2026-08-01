@@ -8,8 +8,8 @@ import {
   useRef,
 } from "react";
 import gsap from "gsap";
-import Screen from "./components/Screen";
-import Breadcrumbs from "./components/Breadcrumbs";
+import Screen from "./components/ui/Screen";
+import Breadcrumbs from "./components/ui/Breadcrumbs";
 import { screenDefs } from "./lib/screenDefs";
 import { breadcrumbTrails } from "./lib/breadcrumbTrails";
 import { getInitialScreenIndex, getHintState } from "./lib/navigation";

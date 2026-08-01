@@ -1,4 +1,4 @@
-import type { Crumb } from "../components/Breadcrumbs";
+import type { Crumb } from "../components/ui/Breadcrumbs";
 
 const HOME: Crumb = { label: "Home", key: "statement" };
 const PROJECTS: Crumb = { label: "Projects", key: "projects-intro" };

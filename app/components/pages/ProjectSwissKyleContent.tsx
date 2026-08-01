@@ -1,5 +1,5 @@
-import ProjectOverview from "./ProjectOverview";
-import ZoomableScreenshot from "./ZoomableScreenshot";
+import ProjectOverview from "../ui/ProjectOverview";
+import ZoomableScreenshot from "../ui/ZoomableScreenshot";
 
 export default function ProjectSwissKyleContent() {
   return (

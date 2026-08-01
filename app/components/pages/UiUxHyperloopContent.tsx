@@ -1,5 +1,5 @@
-import VideoBlock from "./VideoBlock";
-import ContentPage from "./ContentPage";
+import VideoBlock from "../ui/VideoBlock";
+import ContentPage from "../ui/ContentPage";
 
 export default function UiUxHyperloopContent() {
   return (
