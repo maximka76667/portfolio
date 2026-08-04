@@ -13,9 +13,31 @@ const CONTACT: Crumb = { label: "Contact", key: "contact" };
 
 const rawTrails: Partial<Record<string, Crumb[]>> = {
   "projects-intro": [HOME, { label: "Projects" }],
-  "project-hyperloop": [HOME, PROJECTS, { label: "Hyperloop" }],
+  "project-hyperloop": [
+    HOME,
+    PROJECTS,
+    { label: "Hyperloop Control Station" },
+  ],
+  "project-hyperloop-team": [
+    HOME,
+    PROJECTS,
+    { label: "Hyperloop Control Station" },
+    { label: "EHW" },
+  ],
   "project-swiss-kyle": [HOME, PROJECTS, { label: "Swiss Kyle" }],
+  "project-swiss-kyle-statement": [
+    HOME,
+    PROJECTS,
+    { label: "Swiss Kyle" },
+    { label: "Why local" },
+  ],
   "project-lode": [HOME, PROJECTS, { label: "Lode" }],
+  "project-lode-statement": [
+    HOME,
+    PROJECTS,
+    { label: "Lode" },
+    { label: "Full stack" },
+  ],
   pillars: [HOME, PROJECTS, { label: "Pillars" }],
   "ui-ux-intro": [HOME, PROJECTS, PILLARS, { label: "UI/UX" }],
   "ui-ux-hyperloop": [
@@ -23,14 +45,14 @@ const rawTrails: Partial<Record<string, Crumb[]>> = {
     PROJECTS,
     PILLARS,
     UI_UX,
-    { label: "Hyperloop" },
+    { label: "Hyperloop Control Station" },
   ],
   "ui-ux-swiss-kyle": [
     HOME,
     PROJECTS,
     PILLARS,
     UI_UX,
-    { label: "swiss-kyle" },
+    { label: "Swiss Kyle" },
   ],
   "ui-ux-lode": [HOME, PROJECTS, PILLARS, UI_UX, { label: "Lode" }],
   "performance-intro": [HOME, PROJECTS, PILLARS, { label: "Performance" }],
@@ -39,14 +61,14 @@ const rawTrails: Partial<Record<string, Crumb[]>> = {
     PROJECTS,
     PILLARS,
     PERFORMANCE,
-    { label: "Hyperloop" },
+    { label: "Hyperloop Control Station" },
   ],
   "performance-swiss-kyle": [
     HOME,
     PROJECTS,
     PILLARS,
     PERFORMANCE,
-    { label: "swiss-kyle" },
+    { label: "Swiss Kyle" },
   ],
   "performance-lode": [
     HOME,
@@ -67,14 +89,14 @@ const rawTrails: Partial<Record<string, Crumb[]>> = {
     PROJECTS,
     PILLARS,
     OS_COMPATIBILITY,
-    { label: "Hyperloop" },
+    { label: "Hyperloop Control Station" },
   ],
   "os-compatibility-swiss-kyle": [
     HOME,
     PROJECTS,
     PILLARS,
     OS_COMPATIBILITY,
-    { label: "swiss-kyle" },
+    { label: "Swiss Kyle" },
   ],
   "os-compatibility-lode": [
     HOME,

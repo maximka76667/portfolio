@@ -3,8 +3,11 @@ import StatementContent from "../components/pages/StatementContent";
 import WhiteSpaceContent from "../components/pages/WhiteSpaceContent";
 import ProjectsIntroContent from "../components/pages/ProjectsIntroContent";
 import ProjectHyperloopContent from "../components/pages/ProjectHyperloopContent";
+import ProjectHyperloopTeamContent from "../components/pages/ProjectHyperloopTeamContent";
 import ProjectSwissKyleContent from "../components/pages/ProjectSwissKyleContent";
+import ProjectSwissKyleStatementContent from "../components/pages/ProjectSwissKyleStatementContent";
 import ProjectLodeContent from "../components/pages/ProjectLodeContent";
+import ProjectLodeStatementContent from "../components/pages/ProjectLodeStatementContent";
 import PillarsTransitionContent from "../components/pages/PillarsTransitionContent";
 import PillarsContent from "../components/pages/PillarsContent";
 import UiUxIntroContent from "../components/pages/UiUxIntroContent";
@@ -58,14 +61,29 @@ export const screenDefs: ScreenDef[] = [
     render: () => <ProjectHyperloopContent />,
   },
   {
+    key: "project-hyperloop-team",
+    className: "bg-background flex items-center justify-center",
+    render: () => <ProjectHyperloopTeamContent />,
+  },
+  {
     key: "project-swiss-kyle",
     className: "bg-background flex items-center justify-center",
     render: () => <ProjectSwissKyleContent />,
   },
   {
+    key: "project-swiss-kyle-statement",
+    className: "bg-background flex items-center justify-center",
+    render: () => <ProjectSwissKyleStatementContent />,
+  },
+  {
     key: "project-lode",
     className: "bg-background flex items-center justify-center",
     render: () => <ProjectLodeContent />,
+  },
+  {
+    key: "project-lode-statement",
+    className: "bg-background flex items-center justify-center",
+    render: () => <ProjectLodeStatementContent />,
   },
   {
     key: "pillars-transition",
