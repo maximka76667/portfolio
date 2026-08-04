@@ -18,7 +18,6 @@ import PerformanceIntroContent from "../components/pages/PerformanceIntroContent
 import PerformanceHyperloopContent from "../components/pages/PerformanceHyperloopContent";
 import PerformanceSwissKyleContent from "../components/pages/PerformanceSwissKyleContent";
 import PerformanceLodeContent from "../components/pages/PerformanceLodeContent";
-import HyperloopPhotosContent from "../components/pages/HyperloopPhotosContent";
 import OsCompatibilityIntroContent from "../components/pages/OsCompatibilityIntroContent";
 import OsCompatibilityHyperloopContent from "../components/pages/OsCompatibilityHyperloopContent";
 import OsCompatibilitySwissKyleContent from "../components/pages/OsCompatibilitySwissKyleContent";
@@ -131,23 +130,21 @@ export const screenDefs: ScreenDef[] = [
   },
   {
     key: "performance-hyperloop",
-    className: "bg-foreground flex items-center justify-center",
+    className: "bg-foreground",
+    scrollable: true,
     render: () => <PerformanceHyperloopContent />,
   },
   {
     key: "performance-swiss-kyle",
-    className: "bg-foreground flex items-center justify-center",
+    className: "bg-foreground",
+    scrollable: true,
     render: () => <PerformanceSwissKyleContent />,
   },
   {
     key: "performance-lode",
-    className: "bg-foreground flex items-center justify-center",
+    className: "bg-foreground",
+    scrollable: true,
     render: () => <PerformanceLodeContent />,
-  },
-  {
-    key: "hyperloop-photos",
-    className: "bg-accent-dark flex items-center justify-center",
-    render: () => <HyperloopPhotosContent />,
   },
   {
     key: "os-compatibility-intro",
@@ -156,17 +153,20 @@ export const screenDefs: ScreenDef[] = [
   },
   {
     key: "os-compatibility-hyperloop",
-    className: "bg-accent flex items-center justify-center",
+    className: "bg-accent",
+    scrollable: true,
     render: () => <OsCompatibilityHyperloopContent />,
   },
   {
     key: "os-compatibility-swiss-kyle",
-    className: "bg-accent flex items-center justify-center",
+    className: "bg-accent",
+    scrollable: true,
     render: () => <OsCompatibilitySwissKyleContent />,
   },
   {
     key: "os-compatibility-lode",
-    className: "bg-accent flex items-center justify-center",
+    className: "bg-accent",
+    scrollable: true,
     render: () => <OsCompatibilityLodeContent />,
   },
   {

@@ -4,9 +4,17 @@ import ContentPage from "../ui/ContentPage";
 export default function UiUxLodeContent() {
   return (
     <ContentPage>
-      <h1 className="font-display text-foreground text-2xl sm:text-4xl font-medium px-6 text-center mb-12">
-        Lode — UI/UX
-      </h1>
+      <div className="flex flex-col items-end justify-center gap-12 h-[60vh] pr-24 mb-12">
+        <h1 className="font-display text-[#e4ded4] text-6xl sm:text-8xl 3xl:text-9xl">
+          UI/UX
+        </h1>
+        <h2 className="font-display text-foreground text-3xl sm:text-5xl 3xl:text-7xl underline decoration-[var(--accent)] decoration-4 underline-offset-8">
+          Lode
+        </h2>
+        <p className="text-foreground text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl text-right">
+          Placeholder — describe the UI/UX challenge for Lode here.
+        </p>
+      </div>
       <AnnotatedBlock
         title="Time range"
         side="left"

@@ -77,7 +77,6 @@ const rawTrails: Partial<Record<string, Crumb[]>> = {
     PERFORMANCE,
     { label: "Lode" },
   ],
-  "hyperloop-photos": [HOME, { label: "Hyperloop Photos" }],
   "os-compatibility-intro": [
     HOME,
     PROJECTS,

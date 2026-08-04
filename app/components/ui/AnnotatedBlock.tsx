@@ -14,6 +14,10 @@ type AnnotatedBlockProps = {
   media?: ReactNode;
   /** Any valid CSS margin shorthand, e.g. "0", "1px 0 0 3px", "4rem 8vw". Defaults to flush. */
   margin?: string;
+  /** Text color class for the title. Defaults to "text-accent" (for use on the light bg-background). */
+  titleColorClassName?: string;
+  /** Text color class for the caption. Defaults to "text-foreground" (for use on the light bg-background). */
+  textColorClassName?: string;
 };
 
 export default function AnnotatedBlock({
@@ -24,6 +28,8 @@ export default function AnnotatedBlock({
   aspectRatio = "16/10",
   media,
   margin = "0",
+  titleColorClassName = "text-accent",
+  textColorClassName = "text-foreground",
 }: AnnotatedBlockProps) {
   const mediaBox = (
     <div
@@ -40,11 +46,13 @@ export default function AnnotatedBlock({
 
   const copy = (
     <div
-      className={`text-foreground text-lg sm:text-xl 3xl:text-3xl font-medium flex-1 max-w-[clamp(280px,32vw,700px)] px-2 md:px-12 space-y-6 ${
+      className={`${textColorClassName} text-lg sm:text-xl 3xl:text-3xl font-medium flex-1 max-w-[clamp(280px,32vw,700px)] px-2 md:px-12 space-y-6 ${
         side === "right" ? "md:order-1" : ""
       }`}
     >
-      <h3 className="font-display text-accent text-3xl sm:text-4xl 3xl:text-5xl leading-tight">
+      <h3
+        className={`font-display ${titleColorClassName} text-3xl sm:text-4xl 3xl:text-5xl leading-tight`}
+      >
         » {title} «
       </h3>
       {text}
