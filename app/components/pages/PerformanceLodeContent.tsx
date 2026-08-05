@@ -12,31 +12,65 @@ export default function PerformanceLodeContent() {
           Lode
         </h2>
         <p className="text-background text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl text-right">
-          Placeholder — describe the performance challenge for Lode here.
+          Every reading has to reach every connected dashboard{" "}
+          <strong className="text-background bg-background/10 px-1 rounded-sm">
+            in real time
+          </strong>
+          , without letting database writes slow down the stream.
         </p>
       </div>
       <AnnotatedBlock
-        title="First decision — placeholder"
+        title="Dual-channel pipeline"
         side="left"
         width="clamp(320px, 60vw, 900px)"
         aspectRatio="16/9"
-        text="Explain the first performance decision here."
+        text={
+          <p>
+            Each incoming reading is{" "}
+            <strong className="text-background bg-background/10 px-1 rounded-sm">
+              broadcast to every connected SSE client
+            </strong>{" "}
+            immediately, on a separate channel from persistence — so{" "}
+            <strong className="text-background bg-background/10 px-1 rounded-sm">
+              one reading fans out to many dashboards
+            </strong>{" "}
+            without re-querying the database per client.
+          </p>
+        }
         textColorClassName="text-background"
       />
       <AnnotatedBlock
-        title="Second decision — placeholder"
+        title="Batched writes"
         side="right"
         width="clamp(220px, 28vw, 340px)"
         aspectRatio="3/4"
-        text="Explain the second performance decision here."
+        text={
+          <p>
+            Readings aren&apos;t written to Postgres one by one. They&apos;re{" "}
+            <strong className="text-background bg-background/10 px-1 rounded-sm">
+              buffered and batch-inserted every 30 seconds
+            </strong>
+            , cutting database round-trips without delaying what clients see
+            live.
+          </p>
+        }
         textColorClassName="text-background"
       />
       <AnnotatedBlock
-        title="Third decision — placeholder"
+        title="Configurable flush interval"
         side="left"
         width="clamp(260px, 40vw, 520px)"
         aspectRatio="16/10"
-        text="Explain the third performance decision here."
+        text={
+          <p>
+            The buffer flush interval is{" "}
+            <strong className="text-background bg-background/10 px-1 rounded-sm">
+              configurable
+            </strong>{" "}
+            — 30s in production, 100ms in tests — so tests verify the
+            pipeline quickly, without long sleeps.
+          </p>
+        }
         textColorClassName="text-background"
       />
     </ContentPage>

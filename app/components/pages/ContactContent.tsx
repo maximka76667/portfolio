@@ -5,8 +5,13 @@ export default function ContactContent() {
         I hope you enjoyed this little journey. You experienced it in 5 minutes,
         but for me there were years of hard work.
       </h1>
-      <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-background/10 flex items-center justify-center text-background/50 text-xs sm:text-sm mt-4">
-        photo placeholder
+      <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full overflow-hidden mt-4">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/media/me/me-photo.jpg"
+          alt="Maxim Grivennyy"
+          className="w-full h-full object-cover"
+        />
       </div>
       <p className="text-background text-lg sm:text-xl">Maxim Grivennyy</p>
       <div className="flex flex-col gap-1 text-background/70 text-base sm:text-lg">

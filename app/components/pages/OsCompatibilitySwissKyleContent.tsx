@@ -8,40 +8,83 @@ export default function OsCompatibilitySwissKyleContent() {
         <h1 className="font-display text-background/10 text-6xl sm:text-8xl 3xl:text-9xl">
           OS Compatibility
         </h1>
-        <h2 className="font-display text-background text-3xl sm:text-5xl 3xl:text-7xl underline decoration-background decoration-4 underline-offset-8">
+        <h2 className="font-display text-background text-3xl sm:text-5xl 3xl:text-7xl underline decoration-black decoration-4 underline-offset-8">
           Swiss Kyle
         </h2>
         <p className="text-background text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl">
-          Placeholder — describe the OS compatibility challenge for Swiss
-          Kyle here.
+          Built with{" "}
+          <strong className="text-background bg-background/10 px-1 rounded-sm">
+            Tauri
+          </strong>
+          , so the same app runs natively on both{" "}
+          <strong className="text-background bg-background/10 px-1 rounded-sm">
+            Linux and Windows
+          </strong>
+          .
         </p>
       </div>
       <AnnotatedBlock
-        title="First platform — placeholder"
+        title="Native on Linux and Windows"
         side="left"
         width="clamp(320px, 60vw, 900px)"
         aspectRatio="16/9"
-        text="Explain the first OS compatibility decision here."
+        text={
+          <p>
+            The desktop app is built with{" "}
+            <strong className="text-background bg-background/10 px-1 rounded-sm">
+              Tauri
+            </strong>
+            , compiled as a{" "}
+            <strong className="text-background bg-background/10 px-1 rounded-sm">
+              native build for each platform
+            </strong>{" "}
+            rather than one shared bundle.
+          </p>
+        }
         margin="0 70px 0"
         titleColorClassName="text-background"
         textColorClassName="text-background"
       />
       <AnnotatedBlock
-        title="Second platform — placeholder"
+        title="Per-platform sidecars"
         side="right"
         width="clamp(200px, 60vw, 1200px)"
         aspectRatio="16/10"
-        text="Explain the second OS compatibility decision here."
+        text={
+          <p>
+            The app bundles external tool binaries —{" "}
+            <strong className="text-background bg-background/10 px-1 rounded-sm">
+              nats-server, pandoc, typst, pdfcpu, ffmpeg
+            </strong>{" "}
+            — pinned and downloaded{" "}
+            <strong className="text-background bg-background/10 px-1 rounded-sm">
+              per OS at build time
+            </strong>
+            .
+          </p>
+        }
         margin="0 20px 0"
         titleColorClassName="text-background"
         textColorClassName="text-background"
       />
       <AnnotatedBlock
-        title="Third platform — placeholder"
+        title="Windows-only conversion path"
         side="left"
         width="clamp(260px, 40vw, 520px)"
         aspectRatio="16/10"
-        text="Explain the third OS compatibility decision here."
+        text={
+          <p>
+            Office-to-PDF conversion needs{" "}
+            <strong className="text-background bg-background/10 px-1 rounded-sm">
+              LibreOffice or Microsoft Word
+            </strong>
+            . Since Word only exists on Windows, that conversion path{" "}
+            <strong className="text-background bg-background/10 px-1 rounded-sm">
+              branches by OS
+            </strong>
+            .
+          </p>
+        }
         margin="0 50px 0"
         titleColorClassName="text-background"
         textColorClassName="text-background"

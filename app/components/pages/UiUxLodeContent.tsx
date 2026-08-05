@@ -1,4 +1,5 @@
-import AnnotatedBlock from "../ui/AnnotatedBlock";
+import ImageBlock from "../ui/ImageBlock";
+import VideoBlock from "../ui/VideoBlock";
 import ContentPage from "../ui/ContentPage";
 
 export default function UiUxLodeContent() {
@@ -12,14 +13,25 @@ export default function UiUxLodeContent() {
           Lode
         </h2>
         <p className="text-foreground text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl text-right">
-          Placeholder — describe the UI/UX challenge for Lode here.
+          For a live sensor feed like this, you need to trust it&apos;s{" "}
+          <strong className="text-accent bg-accent/10 px-1 rounded-sm">
+            actually live
+          </strong>
+          , and still be able to{" "}
+          <strong className="text-accent bg-accent/10 px-1 rounded-sm">
+            look back
+          </strong>{" "}
+          at what happened before you started watching.
         </p>
       </div>
-      <AnnotatedBlock
+      <ImageBlock
         title="Time range"
         side="left"
-        width="clamp(320px, 60vw, 900px)"
+        width="clamp(200px, 60vw, 1300px)"
         aspectRatio="16/9"
+        src="/media/lode/ui-ux-history.png"
+        alt="Time range selector scoping charts to a window"
+        margin="0 70px 0"
         text={
           <p>
             A{" "}
@@ -31,11 +43,13 @@ export default function UiUxLodeContent() {
           </p>
         }
       />
-      <AnnotatedBlock
+      <VideoBlock
         title="Live status"
         side="right"
-        width="clamp(220px, 28vw, 340px)"
-        aspectRatio="3/4"
+        width="clamp(200px, 60vw, 1200px)"
+        aspectRatio="16/9"
+        src="/media/lode/ui-ux-status.mp4"
+        margin="0 20px 0"
         text={
           <p>
             A{" "}
@@ -58,12 +72,24 @@ export default function UiUxLodeContent() {
           </p>
         }
       />
-      <AnnotatedBlock
-        title="Third decision — placeholder"
+      <ImageBlock
+        title="Physical display"
         side="left"
-        width="clamp(260px, 40vw, 520px)"
-        aspectRatio="16/10"
-        text="Explain the third UI/UX decision here."
+        width="clamp(200px, 45vw, 800px)"
+        aspectRatio="1/1"
+        src="/media/lode/ui-ux-display.png"
+        alt="Physical display showing the same live data"
+        margin="0 220px 0"
+        text={
+          <p>
+            A{" "}
+            <strong className="text-accent bg-accent/10 px-1 rounded-sm">
+              physical display
+            </strong>{" "}
+            mirrors the same data, so it&apos;s visible at a glance without
+            opening the app.
+          </p>
+        }
       />
     </ContentPage>
   );

@@ -10,6 +10,8 @@ type ImageBlockProps = {
   aspectRatio?: string;
   margin?: string;
   src: string;
+  titleColorClassName?: string;
+  textColorClassName?: string;
 };
 
 export default function ImageBlock({
@@ -21,6 +23,8 @@ export default function ImageBlock({
   aspectRatio,
   margin,
   src,
+  titleColorClassName,
+  textColorClassName,
 }: ImageBlockProps) {
   return (
     <AnnotatedBlock
@@ -30,6 +34,8 @@ export default function ImageBlock({
       width={width}
       aspectRatio={aspectRatio}
       margin={margin}
+      titleColorClassName={titleColorClassName}
+      textColorClassName={textColorClassName}
       media={
         // eslint-disable-next-line @next/next/no-img-element
         <img src={src} alt={alt} className="w-full h-full object-cover" />

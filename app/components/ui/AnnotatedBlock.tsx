@@ -61,7 +61,7 @@ export default function AnnotatedBlock({
 
   return (
     <div
-      className="w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20 box-border p-0 md:p-(--block-margin)"
+      className="w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 lg:gap-16 xl:gap-10 3xl:gap-6 box-border p-0 md:p-(--block-margin)"
       style={{ "--block-margin": margin } as CSSProperties}
     >
       {mediaBox}

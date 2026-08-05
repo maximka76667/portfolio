@@ -9,6 +9,8 @@ type VideoBlockProps = {
   aspectRatio?: string;
   margin?: string;
   src: string;
+  titleColorClassName?: string;
+  textColorClassName?: string;
 };
 
 export default function VideoBlock({
@@ -19,6 +21,8 @@ export default function VideoBlock({
   aspectRatio,
   margin,
   src,
+  titleColorClassName,
+  textColorClassName,
 }: VideoBlockProps) {
   return (
     <AnnotatedBlock
@@ -28,6 +32,8 @@ export default function VideoBlock({
       width={width}
       aspectRatio={aspectRatio}
       margin={margin}
+      titleColorClassName={titleColorClassName}
+      textColorClassName={textColorClassName}
       media={
         <video
           src={src}

@@ -1,4 +1,5 @@
-import AnnotatedBlock from "../ui/AnnotatedBlock";
+import ImageBlock from "../ui/ImageBlock";
+import VideoBlock from "../ui/VideoBlock";
 import ContentPage from "../ui/ContentPage";
 
 export default function PerformanceHyperloopContent() {
@@ -12,34 +13,81 @@ export default function PerformanceHyperloopContent() {
           Hyperloop Control Station
         </h2>
         <p className="text-background text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl text-right">
-          Placeholder — describe the performance challenge for Hyperloop
-          here.
+          With new data arriving faster than every{" "}
+          <strong className="text-background bg-background/10 px-1 rounded-sm">
+            100ms
+          </strong>{" "}
+          across dozens of charts, redrawing the whole interface on every
+          packet isn&apos;t an option.
         </p>
       </div>
-      <AnnotatedBlock
-        title="First metric — placeholder"
+      <VideoBlock
+        title="Batched updates"
         side="left"
         width="clamp(320px, 60vw, 900px)"
         aspectRatio="16/9"
-        text="Explain the first performance decision here."
+        src="/media/hyperloop/performance-batching.mp4"
+        text={
+          <p>
+            Incoming packets are{" "}
+            <strong className="text-background bg-background/10 px-1 rounded-sm">
+              batched
+            </strong>{" "}
+            instead of triggering an immediate render, so the{" "}
+            <strong className="text-background bg-background/10 px-1 rounded-sm">
+              whole interface never re-renders on every packet
+            </strong>{" "}
+            — even with many charts live and data arriving faster than the
+            eye can follow.
+          </p>
+        }
         margin="0 70px 0"
         textColorClassName="text-background"
       />
-      <AnnotatedBlock
-        title="Second metric — placeholder"
+      <VideoBlock
+        title="Virtualized telemetry panel"
         side="right"
         width="clamp(200px, 60vw, 1200px)"
         aspectRatio="16/10"
-        text="Explain the second performance decision here."
+        src="/media/hyperloop/performance-virtualized-list.mp4"
+        text={
+          <p>
+            The telemetry panel is{" "}
+            <strong className="text-background bg-background/10 px-1 rounded-sm">
+              virtualized
+            </strong>
+            , so rows with{" "}
+            <strong className="text-background bg-background/10 px-1 rounded-sm">
+              constantly changing colors and values
+            </strong>{" "}
+            that aren&apos;t currently visible to the user skip updating
+            entirely.
+          </p>
+        }
         margin="0 20px 0"
         textColorClassName="text-background"
       />
-      <AnnotatedBlock
-        title="Third metric — placeholder"
+      <ImageBlock
+        title="Bounded chart memory"
         side="left"
         width="clamp(260px, 40vw, 520px)"
         aspectRatio="16/10"
-        text="Explain the third performance decision here."
+        src="/media/hyperloop/performance-buffer.png"
+        alt="Maximum buffer size setting for chart memory usage"
+        text={
+          <p>
+            Charts don&apos;t store every value{" "}
+            <strong className="text-background bg-background/10 px-1 rounded-sm">
+              forever
+            </strong>
+            . A{" "}
+            <strong className="text-background bg-background/10 px-1 rounded-sm">
+              maximum buffer size
+            </strong>{" "}
+            lets each user choose how much memory a long-running session is
+            allowed to use.
+          </p>
+        }
         margin="0 50px 0"
         textColorClassName="text-background"
       />
