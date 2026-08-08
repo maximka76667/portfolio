@@ -17,8 +17,8 @@ export default function PerformanceHyperloopContent() {
           <strong className="text-background bg-background/10 px-1 rounded-sm">
             100ms
           </strong>{" "}
-          across dozens of charts, redrawing the whole interface on every
-          packet isn&apos;t an option.
+          across dozens of charts, redrawing the whole interface on every packet
+          isn&apos;t an option.
         </p>
       </div>
       <VideoBlock
@@ -37,11 +37,11 @@ export default function PerformanceHyperloopContent() {
             <strong className="text-background bg-background/10 px-1 rounded-sm">
               whole interface never re-renders on every packet
             </strong>{" "}
-            — even with many charts live and data arriving faster than the
-            eye can follow.
+            — even with many charts live and data arriving faster than the eye
+            can follow.
           </p>
         }
-        margin="0 70px 0"
+        margin="0 140px 0"
         textColorClassName="text-background"
       />
       <VideoBlock
@@ -64,14 +64,14 @@ export default function PerformanceHyperloopContent() {
             entirely.
           </p>
         }
-        margin="0 20px 0"
+        margin="0 100px 0"
         textColorClassName="text-background"
       />
       <ImageBlock
         title="Bounded chart memory"
         side="left"
-        width="clamp(260px, 40vw, 520px)"
-        aspectRatio="16/10"
+        width="clamp(320px, 55vw, 820px)"
+        aspectRatio="520/375"
         src="/media/hyperloop/performance-buffer.png"
         alt="Maximum buffer size setting for chart memory usage"
         text={
@@ -88,7 +88,7 @@ export default function PerformanceHyperloopContent() {
             allowed to use.
           </p>
         }
-        margin="0 50px 0"
+        margin="0 120px 0"
         textColorClassName="text-background"
       />
     </ContentPage>

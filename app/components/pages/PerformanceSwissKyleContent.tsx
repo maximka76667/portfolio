@@ -1,4 +1,4 @@
-import AnnotatedBlock from "../ui/AnnotatedBlock";
+import ImageBlock from "../ui/ImageBlock";
 import ContentPage from "../ui/ContentPage";
 
 export default function PerformanceSwissKyleContent() {
@@ -16,11 +16,13 @@ export default function PerformanceSwissKyleContent() {
           once, and one shouldn&apos;t slow down or break another.
         </p>
       </div>
-      <AnnotatedBlock
+      <ImageBlock
         title="Worker pool"
         side="left"
         width="clamp(320px, 60vw, 900px)"
-        aspectRatio="16/9"
+        aspectRatio="1078/394"
+        src="/media/swiss-kyle/performance-workers.png"
+        alt="Worker pool status panel showing four idle workers"
         text={
           <p>
             Jobs are{" "}
@@ -37,11 +39,13 @@ export default function PerformanceSwissKyleContent() {
         margin="0 70px 0"
         textColorClassName="text-background"
       />
-      <AnnotatedBlock
+      <ImageBlock
         title="Job queue"
         side="right"
         width="clamp(200px, 60vw, 1200px)"
-        aspectRatio="16/10"
+        aspectRatio="1044/888"
+        src="/media/swiss-kyle/performance-queue.png"
+        alt="Job queue with several jobs in progress"
         text={
           <p>
             If no worker is free, the job is{" "}
@@ -54,11 +58,13 @@ export default function PerformanceSwissKyleContent() {
         margin="0 20px 0"
         textColorClassName="text-background"
       />
-      <AnnotatedBlock
+      <ImageBlock
         title="Failover"
         side="left"
-        width="clamp(260px, 40vw, 520px)"
-        aspectRatio="16/10"
+        width="clamp(320px, 55vw, 820px)"
+        aspectRatio="1432/517"
+        src="/media/swiss-kyle/performance-failover.png"
+        alt="Worker log showing workers re-entering the fetch loop"
         text={
           <p>
             If a worker{" "}

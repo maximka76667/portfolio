@@ -1,4 +1,4 @@
-import AnnotatedBlock from "../ui/AnnotatedBlock";
+import ImageBlock from "../ui/ImageBlock";
 import ContentPage from "../ui/ContentPage";
 
 export default function OsCompatibilitySwissKyleContent() {
@@ -23,11 +23,13 @@ export default function OsCompatibilitySwissKyleContent() {
           .
         </p>
       </div>
-      <AnnotatedBlock
+      <ImageBlock
         title="Native on Linux and Windows"
         side="left"
         width="clamp(320px, 60vw, 900px)"
-        aspectRatio="16/9"
+        aspectRatio="1408/594"
+        src="/media/swiss-kyle/comp-installers.png"
+        alt="Release assets with native installers for Linux and Windows"
         text={
           <p>
             The desktop app is built with{" "}
@@ -45,11 +47,13 @@ export default function OsCompatibilitySwissKyleContent() {
         titleColorClassName="text-background"
         textColorClassName="text-background"
       />
-      <AnnotatedBlock
+      <ImageBlock
         title="Per-platform sidecars"
         side="right"
         width="clamp(200px, 60vw, 1200px)"
-        aspectRatio="16/10"
+        aspectRatio="732/541"
+        src="/media/swiss-kyle/comp-sidecars.png"
+        alt="Installer extracting a bundled per-platform ffmpeg sidecar binary"
         text={
           <p>
             The app bundles external tool binaries —{" "}
@@ -67,11 +71,13 @@ export default function OsCompatibilitySwissKyleContent() {
         titleColorClassName="text-background"
         textColorClassName="text-background"
       />
-      <AnnotatedBlock
+      <ImageBlock
         title="Windows-only conversion path"
         side="left"
-        width="clamp(260px, 40vw, 520px)"
-        aspectRatio="16/10"
+        width="clamp(320px, 55vw, 820px)"
+        aspectRatio="1062/381"
+        src="/media/swiss-kyle/comp-word.png"
+        alt="PDF converter dropdown showing Microsoft Word (Windows only) and LibreOffice"
         text={
           <p>
             Office-to-PDF conversion needs{" "}
