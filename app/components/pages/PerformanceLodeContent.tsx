@@ -1,4 +1,4 @@
-import AnnotatedBlock from "../ui/AnnotatedBlock";
+import ImageBlock from "../ui/ImageBlock";
 import ContentPage from "../ui/ContentPage";
 
 export default function PerformanceLodeContent() {
@@ -19,11 +19,13 @@ export default function PerformanceLodeContent() {
           , without letting database writes slow down the stream.
         </p>
       </div>
-      <AnnotatedBlock
+      <ImageBlock
         title="Dual-channel pipeline"
         side="left"
         width="clamp(320px, 60vw, 900px)"
-        aspectRatio="16/9"
+        aspectRatio="1120/735"
+        src="/media/lode/performance-sse.png"
+        alt="Browser dev tools EventStream tab showing readings streamed over SSE"
         text={
           <p>
             Each incoming reading is{" "}
@@ -37,13 +39,16 @@ export default function PerformanceLodeContent() {
             without re-querying the database per client.
           </p>
         }
+        margin="0 140px 0"
         textColorClassName="text-background"
       />
-      <AnnotatedBlock
+      <ImageBlock
         title="Batched writes"
         side="right"
-        width="clamp(220px, 28vw, 340px)"
-        aspectRatio="3/4"
+        width="clamp(200px, 60vw, 1200px)"
+        aspectRatio="840/145"
+        src="/media/lode/performance-batching.png"
+        alt="Code buffering readings and batch-inserting them every 30 seconds"
         text={
           <p>
             Readings aren&apos;t written to Postgres one by one. They&apos;re{" "}
@@ -54,13 +59,16 @@ export default function PerformanceLodeContent() {
             live.
           </p>
         }
+        margin="0 100px 0"
         textColorClassName="text-background"
       />
-      <AnnotatedBlock
+      <ImageBlock
         title="Configurable flush interval"
         side="left"
-        width="clamp(260px, 40vw, 520px)"
-        aspectRatio="16/10"
+        width="clamp(320px, 55vw, 820px)"
+        aspectRatio="736/316"
+        src="/media/lode/performance-flush-interval.png"
+        alt="Function signature showing flush_interval as a configurable parameter"
         text={
           <p>
             The buffer flush interval is{" "}
@@ -71,6 +79,7 @@ export default function PerformanceLodeContent() {
             pipeline quickly, without long sleeps.
           </p>
         }
+        margin="0 120px 0"
         textColorClassName="text-background"
       />
     </ContentPage>

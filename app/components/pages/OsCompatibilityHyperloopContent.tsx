@@ -1,4 +1,4 @@
-import AnnotatedBlock from "../ui/AnnotatedBlock";
+import ImageBlock from "../ui/ImageBlock";
 import ContentPage from "../ui/ContentPage";
 
 export default function OsCompatibilityHyperloopContent() {
@@ -19,11 +19,13 @@ export default function OsCompatibilityHyperloopContent() {
           , whatever OS they already had on their own machine.
         </p>
       </div>
-      <AnnotatedBlock
+      <ImageBlock
         title="One tool, every teammate"
         side="left"
         width="clamp(320px, 60vw, 900px)"
-        aspectRatio="16/9"
+        aspectRatio="1280/718"
+        src="/media/hyperloop/comp-member.jpg"
+        alt="Team member using the Control Station on their own machine"
         text={
           <p>
             The Control Station had to run on{" "}
@@ -33,15 +35,17 @@ export default function OsCompatibilityHyperloopContent() {
             — there was no shared or standardized setup to target.
           </p>
         }
-        margin="0 70px 0"
+        margin="0 140px 0"
         titleColorClassName="text-background"
         textColorClassName="text-background"
       />
-      <AnnotatedBlock
+      <ImageBlock
         title="Windows, macOS, and Linux"
         side="right"
         width="clamp(200px, 60vw, 1200px)"
-        aspectRatio="16/10"
+        aspectRatio="1771/1105"
+        src="/media/hyperloop/comp-distributives.png"
+        alt="Control Station running across Windows, macOS, and Linux distributions"
         text={
           <p>
             That meant supporting{" "}
@@ -59,15 +63,17 @@ export default function OsCompatibilityHyperloopContent() {
             — Mint, Ubuntu, Fedora, Arch, and others.
           </p>
         }
-        margin="0 20px 0"
+        margin="0 100px 0"
         titleColorClassName="text-background"
         textColorClassName="text-background"
       />
-      <AnnotatedBlock
+      <ImageBlock
         title="One codebase, via Electron"
         side="left"
-        width="clamp(260px, 40vw, 520px)"
-        aspectRatio="16/10"
+        width="clamp(320px, 55vw, 820px)"
+        aspectRatio="1554/952"
+        src="/media/hyperloop/comp-electron.png"
+        alt="Electron app running as a native build"
         text={
           <p>
             Built with{" "}
@@ -81,7 +87,7 @@ export default function OsCompatibilityHyperloopContent() {
             instead of maintaining separate builds per OS.
           </p>
         }
-        margin="0 50px 0"
+        margin="0 120px 0"
         titleColorClassName="text-background"
         textColorClassName="text-background"
       />
