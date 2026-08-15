@@ -53,7 +53,7 @@ export default function AnnotatedBlock({
       <h3
         className={`font-display ${titleColorClassName} text-3xl sm:text-4xl 3xl:text-5xl leading-tight`}
       >
-        » {title} «
+        {title}
       </h3>
       {text}
     </div>

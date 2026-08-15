@@ -76,10 +76,10 @@ export default function UiUxLodeContent() {
         title="Physical display"
         side="left"
         width="clamp(200px, 45vw, 800px)"
-        aspectRatio="1/1"
+        aspectRatio="12/10"
         src="/media/lode/ui-ux-display.png"
         alt="Physical display showing the same live data"
-        margin="0 220px 0"
+        margin="0 100px 0"
         text={
           <p>
             A{" "}

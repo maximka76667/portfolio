@@ -24,7 +24,7 @@ export default function PerformanceHyperloopContent() {
       <VideoBlock
         title="Batched updates"
         side="left"
-        width="clamp(320px, 60vw, 900px)"
+        width="clamp(320px, 60vw, 700px)"
         aspectRatio="16/9"
         src="/media/hyperloop/performance-batching.mp4"
         text={
@@ -41,13 +41,13 @@ export default function PerformanceHyperloopContent() {
             can follow.
           </p>
         }
-        margin="0 140px 0"
+        margin="0 70px 0"
         textColorClassName="text-background"
       />
       <VideoBlock
         title="Virtualized telemetry panel"
         side="right"
-        width="clamp(200px, 60vw, 1200px)"
+        width="clamp(200px, 55vw, 800px)"
         aspectRatio="16/10"
         src="/media/hyperloop/performance-virtualized-list.mp4"
         text={
@@ -64,7 +64,7 @@ export default function PerformanceHyperloopContent() {
             entirely.
           </p>
         }
-        margin="0 100px 0"
+        margin="0 70px 0"
         textColorClassName="text-background"
       />
       <ImageBlock
@@ -88,7 +88,7 @@ export default function PerformanceHyperloopContent() {
             allowed to use.
           </p>
         }
-        margin="0 120px 0"
+        margin="0 70px 0"
         textColorClassName="text-background"
       />
     </ContentPage>

@@ -22,7 +22,7 @@ export default function PerformanceLodeContent() {
       <ImageBlock
         title="Dual-channel pipeline"
         side="left"
-        width="clamp(320px, 60vw, 900px)"
+        width="clamp(320px, 60vw, 700px)"
         aspectRatio="1120/735"
         src="/media/lode/performance-sse.png"
         alt="Browser dev tools EventStream tab showing readings streamed over SSE"
@@ -39,13 +39,13 @@ export default function PerformanceLodeContent() {
             without re-querying the database per client.
           </p>
         }
-        margin="0 140px 0"
+        margin="0 70px 0"
         textColorClassName="text-background"
       />
       <ImageBlock
         title="Batched writes"
         side="right"
-        width="clamp(200px, 60vw, 1200px)"
+        width="clamp(200px, 60vw, 700px)"
         aspectRatio="840/145"
         src="/media/lode/performance-batching.png"
         alt="Code buffering readings and batch-inserting them every 30 seconds"
@@ -59,13 +59,13 @@ export default function PerformanceLodeContent() {
             live.
           </p>
         }
-        margin="0 100px 0"
+        margin="0 70px 0"
         textColorClassName="text-background"
       />
       <ImageBlock
         title="Configurable flush interval"
         side="left"
-        width="clamp(320px, 55vw, 820px)"
+        width="clamp(320px, 55vw, 700px)"
         aspectRatio="736/316"
         src="/media/lode/performance-flush-interval.png"
         alt="Function signature showing flush_interval as a configurable parameter"
@@ -75,11 +75,11 @@ export default function PerformanceLodeContent() {
             <strong className="text-background bg-background/10 px-1 rounded-sm">
               configurable
             </strong>{" "}
-            — 30s in production, 100ms in tests — so tests verify the
-            pipeline quickly, without long sleeps.
+            — 30s in production, 100ms in tests — so tests verify the pipeline
+            quickly, without long sleeps.
           </p>
         }
-        margin="0 120px 0"
+        margin="0 70px 0"
         textColorClassName="text-background"
       />
     </ContentPage>

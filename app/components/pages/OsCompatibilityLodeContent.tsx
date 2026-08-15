@@ -26,7 +26,7 @@ export default function OsCompatibilityLodeContent() {
       <ImageBlock
         title="Sensor drivers"
         side="left"
-        width="clamp(320px, 60vw, 900px)"
+        width="clamp(320px, 60vw, 700px)"
         aspectRatio="16/9"
         margin="0 70px 0"
         src="/media/lode/os-drivers.png"
