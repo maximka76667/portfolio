@@ -62,7 +62,7 @@ export default function ProjectsIntroContent({
                 </div>
               </div>
               <p className="text-foreground text-base sm:text-xl font-medium">
-                swiss-kyle
+                Swiss Kyle
               </p>
             </div>
           </div>
