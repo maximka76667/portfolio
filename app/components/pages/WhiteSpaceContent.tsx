@@ -1,3 +1,3 @@
 export default function WhiteSpaceContent() {
-  return "1";
+  return null;
 }
