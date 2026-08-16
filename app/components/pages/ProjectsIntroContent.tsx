@@ -11,14 +11,14 @@ export default function ProjectsIntroContent({
 }: ProjectsIntroContentProps) {
   return (
     <>
-      <h1 className="font-display mt-auto mb-6 md:mb-10 text-foreground text-3xl sm:text-5xl font-medium text-center px-6">
+      <h1 className="font-display mt-16 md:mt-auto mb-6 md:mb-10 text-foreground text-3xl sm:text-5xl font-medium text-center px-6">
         My Projects
       </h1>
-      <div className="mx-6 mb-6 flex flex-col gap-2 overflow-hidden rounded-lg md:mx-12 md:mb-12 md:h-[55vh] md:flex-row md:gap-0">
+      <div className="mx-6 mb-6 flex flex-1 flex-col gap-2 overflow-hidden rounded-lg md:mx-12 md:mb-12 md:h-[55vh] md:flex-none md:flex-row md:gap-0">
         {/* Hyperloop Control Station — top-left corner */}
         <div
           onClick={onSelectHyperloop}
-          className="group relative h-28 w-full bg-foreground overflow-hidden cursor-pointer md:h-full md:w-1/2"
+          className="group relative flex-1 w-full bg-foreground overflow-hidden cursor-pointer md:h-full md:w-1/2 md:flex-none"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -44,7 +44,7 @@ export default function ProjectsIntroContent({
           {/* swiss-kyle */}
           <div
             onClick={onSelectSwissKyle}
-            className="group relative h-28 w-full bg-background overflow-hidden cursor-pointer md:h-1/2"
+            className="group relative flex-1 w-full bg-background overflow-hidden cursor-pointer md:h-1/2 md:flex-none"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -69,7 +69,7 @@ export default function ProjectsIntroContent({
           {/* Lode */}
           <div
             onClick={onSelectLode}
-            className="group relative h-28 w-full bg-accent overflow-hidden cursor-pointer md:h-1/2"
+            className="group relative flex-1 w-full bg-accent overflow-hidden cursor-pointer md:h-1/2 md:flex-none"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
