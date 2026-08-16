@@ -1,22 +1,22 @@
 import ImageBlock from "../ui/ImageBlock";
 import ContentPage from "../ui/ContentPage";
 import TextHighlight from "../ui/TextHighlight";
+import PillarPageHeader from "../ui/PillarPageHeader";
 
 export default function PerformanceSwissKyleContent() {
   return (
     <ContentPage>
-      <div className="flex flex-col items-start justify-center gap-12 h-[60vh] pl-24 mb-12">
-        <h1 className="font-display text-background/10 text-6xl sm:text-8xl 3xl:text-9xl">
-          Performance
-        </h1>
-        <h2 className="font-display text-background text-3xl sm:text-5xl 3xl:text-7xl underline decoration-accent decoration-4 underline-offset-8">
-          Swiss Kyle
-        </h2>
-        <p className="text-background text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl">
-          Every action kicks off its own background job — many can run at
-          once, and one shouldn&apos;t slow down or break another.
-        </p>
-      </div>
+      <PillarPageHeader
+        pillar="Performance"
+        title="Swiss Kyle"
+        side="left"
+        pillarColorClassName="text-background/10"
+        titleColorClassName="text-background"
+        textColorClassName="text-background"
+      >
+        Every action kicks off its own background job — many can run at
+        once, and one shouldn&apos;t slow down or break another.
+      </PillarPageHeader>
       <ImageBlock
         title="Worker pool"
         side="left"

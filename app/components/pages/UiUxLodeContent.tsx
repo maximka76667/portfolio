@@ -2,25 +2,22 @@ import ImageBlock from "../ui/ImageBlock";
 import VideoBlock from "../ui/VideoBlock";
 import ContentPage from "../ui/ContentPage";
 import TextHighlight from "../ui/TextHighlight";
+import PillarPageHeader from "../ui/PillarPageHeader";
 
 export default function UiUxLodeContent() {
   return (
     <ContentPage>
-      <div className="flex flex-col items-end justify-center gap-12 h-[60vh] pr-24 mb-12">
-        <h1 className="font-display text-[#e4ded4] text-6xl sm:text-8xl 3xl:text-9xl">
-          UI/UX
-        </h1>
-        <h2 className="font-display text-foreground text-3xl sm:text-5xl 3xl:text-7xl underline decoration-[var(--accent)] decoration-4 underline-offset-8">
-          Lode
-        </h2>
-        <p className="text-foreground text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl text-right">
-          For a live sensor feed like this, you need to trust it&apos;s{" "}
-          <TextHighlight>actually live</TextHighlight>
-          , and still be able to{" "}
-          <TextHighlight>look back</TextHighlight>{" "}
-          at what happened before you started watching.
-        </p>
-      </div>
+      <PillarPageHeader
+        pillar="UI/UX"
+        title="Lode"
+        side="right"
+        decorationClassName="decoration-[var(--accent)]"
+      >
+        For a live sensor feed like this, you need to trust it&apos;s{" "}
+        <TextHighlight>actually live</TextHighlight>
+        , and still be able to <TextHighlight>look back</TextHighlight> at
+        what happened before you started watching.
+      </PillarPageHeader>
       <ImageBlock
         title="Time range"
         side="left"

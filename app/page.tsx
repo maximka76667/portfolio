@@ -162,7 +162,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative h-screen w-screen overflow-hidden">
+    <div className="relative h-dvh w-screen overflow-hidden">
       {[...screenDefs].reverse().map((screen, reversedIdx) => {
         const idx = screenCount - 1 - reversedIdx;
         const isLast = idx === screenCount - 1;

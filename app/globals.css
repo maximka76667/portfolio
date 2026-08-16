@@ -43,7 +43,6 @@
   --color-status-error: var(--status-error);
   --color-status-dev: var(--status-dev);
   --font-sans: var(--font-bricolage-grotesque);
-  --font-mono: var(--font-geist-mono);
   --font-display: var(--font-abril-fatface);
 }
 

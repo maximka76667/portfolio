@@ -1,25 +1,19 @@
 import type { Metadata } from "next";
-import {
-  Geist_Mono,
-  Abril_Fatface,
-  Bricolage_Grotesque,
-} from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const abrilFatface = Abril_Fatface({
-  variable: "--font-abril-fatface",
+const abrilFatface = localFont({
+  src: "../public/media/fonts/AbrilFatface-Regular.woff2",
   weight: "400",
-  subsets: ["latin"],
+  variable: "--font-abril-fatface",
+  fallback: ["Georgia", "serif"],
 });
 
-const bricolageGrotesque = Bricolage_Grotesque({
+const bricolageGrotesque = localFont({
+  src: "../public/media/fonts/BricolageGrotesque-Variable.woff2",
+  weight: "200 800",
   variable: "--font-bricolage-grotesque",
-  subsets: ["latin"],
+  fallback: ["Arial", "Helvetica", "sans-serif"],
 });
 
 export const metadata: Metadata = {
@@ -35,7 +29,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistMono.variable} ${abrilFatface.variable} ${bricolageGrotesque.variable} h-full antialiased`}
+      className={`${abrilFatface.variable} ${bricolageGrotesque.variable} h-full antialiased`}
     >
       <body className="min-h-full">{children}</body>
     </html>

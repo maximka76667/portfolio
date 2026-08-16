@@ -46,7 +46,7 @@ export default function ProjectOverview({
   };
 
   return (
-    <div className="relative mx-auto w-full max-w-4xl 3xl:max-w-6xl 4xl:max-w-7xl px-6">
+    <div className="mx-auto flex w-full max-w-4xl flex-col gap-6 px-6 md:relative md:gap-0 3xl:max-w-6xl 4xl:max-w-7xl">
       <div
         className="relative aspect-video rounded-lg overflow-hidden bg-zinc-200 flex items-center justify-center"
         onMouseEnter={handleMouseEnter}
@@ -58,7 +58,7 @@ export default function ProjectOverview({
         {media && (
           <div
             ref={overlayRef}
-            className="absolute inset-0 bg-background/75 pointer-events-none transition-[--reveal-r] duration-1000 ease-out"
+            className="absolute inset-0 hidden bg-background/75 pointer-events-none transition-[--reveal-r] duration-1000 ease-out md:block"
             style={{
               maskImage:
                 "radial-gradient(circle var(--reveal-r) at var(--reveal-x) var(--reveal-y), transparent 0, transparent calc(var(--reveal-r) - 1px), black var(--reveal-r))",
@@ -68,7 +68,7 @@ export default function ProjectOverview({
           />
         )}
         {media && (
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="absolute inset-0 hidden items-center justify-center pointer-events-none md:flex">
             <span
               className={`-translate-x-56 flex h-32 w-32 flex-col items-center justify-center gap-2 text-center text-zinc-900 text-base font-medium animate-float transition-opacity duration-200 ${
                 hovering ? "opacity-0" : "opacity-100"
@@ -81,8 +81,8 @@ export default function ProjectOverview({
         )}
       </div>
       <div
-        className={`absolute -bottom-7.5 -right-7.5 max-w-md text-left text-foreground space-y-3 transition-opacity duration-200 ${
-          hovering ? "opacity-0 pointer-events-none" : "opacity-100"
+        className={`mx-auto max-w-md text-center text-foreground space-y-3 transition-opacity duration-200 md:absolute md:-bottom-7.5 md:-right-7.5 md:mx-0 md:text-left ${
+          hovering ? "md:opacity-0 md:pointer-events-none" : "opacity-100"
         }`}
       >
         <h1 className="font-display text-4xl sm:text-6xl">{name}</h1>
