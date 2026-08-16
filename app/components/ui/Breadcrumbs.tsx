@@ -19,7 +19,7 @@ export default function Breadcrumbs({ trail, onNavigate }: BreadcrumbsProps) {
 
   return (
     <>
-      <nav className="absolute top-6 left-6 hidden sm:flex items-center gap-2 rounded-full bg-foreground/60 px-4 py-2 text-sm text-background backdrop-blur">
+      <nav className="absolute top-6 left-6 z-20 hidden sm:flex items-center gap-2 rounded-full bg-foreground/60 px-4 py-2 text-sm text-background backdrop-blur">
         {trail.map((crumb, i) => (
           <span key={i} className="flex items-center gap-2">
             {i > 0 && <span className="opacity-40">/</span>}
@@ -38,7 +38,7 @@ export default function Breadcrumbs({ trail, onNavigate }: BreadcrumbsProps) {
         ))}
       </nav>
 
-      <div className="absolute top-6 left-6 sm:hidden">
+      <div className="absolute top-6 left-6 z-20 sm:hidden">
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
