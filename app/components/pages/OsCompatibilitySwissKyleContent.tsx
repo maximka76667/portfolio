@@ -28,7 +28,7 @@ export default function OsCompatibilitySwissKyleContent() {
       <ImageBlock
         title="Native on Linux and Windows"
         side="left"
-        width="clamp(320px, 60vw, 700px)"
+        width="clamp(320px, 55vw, 1300px)"
         aspectRatio="1408/594"
         src="/media/swiss-kyle/comp-installers.png"
         alt="Release assets with native installers for Linux and Windows"
@@ -51,7 +51,7 @@ export default function OsCompatibilitySwissKyleContent() {
       <ImageBlock
         title="Per-platform sidecars"
         side="right"
-        width="clamp(200px, 60vw, 1000px)"
+        width="clamp(200px, 55vw, 1200px)"
         aspectRatio="732/541"
         src="/media/swiss-kyle/comp-sidecars.png"
         alt="Installer extracting a bundled per-platform ffmpeg sidecar binary"
@@ -74,7 +74,7 @@ export default function OsCompatibilitySwissKyleContent() {
       <ImageBlock
         title="Windows-only conversion path"
         side="left"
-        width="clamp(320px, 55vw, 800px)"
+        width="clamp(320px, 55vw, 1200px)"
         aspectRatio="1062/381"
         src="/media/swiss-kyle/comp-word.png"
         alt="PDF converter dropdown showing Microsoft Word (Windows only) and LibreOffice"

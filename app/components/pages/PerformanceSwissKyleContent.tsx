@@ -14,13 +14,13 @@ export default function PerformanceSwissKyleContent() {
         titleColorClassName="text-background"
         textColorClassName="text-background"
       >
-        Every action kicks off its own background job — many can run at
-        once, and one shouldn&apos;t slow down or break another.
+        Every action kicks off its own background job — many can run at once,
+        and one shouldn&apos;t slow down or break another.
       </PillarPageHeader>
       <ImageBlock
         title="Worker pool"
         side="left"
-        width="clamp(320px, 60vw, 900px)"
+        width="clamp(320px, 60vw, 1300px)"
         aspectRatio="1078/394"
         src="/media/swiss-kyle/performance-workers.png"
         alt="Worker pool status panel showing four idle workers"
@@ -60,7 +60,7 @@ export default function PerformanceSwissKyleContent() {
       <ImageBlock
         title="Failover"
         side="left"
-        width="clamp(320px, 55vw, 820px)"
+        width="clamp(320px, 55vw, 1200px)"
         aspectRatio="1432/517"
         src="/media/swiss-kyle/performance-failover.png"
         alt="Worker log showing workers re-entering the fetch loop"
