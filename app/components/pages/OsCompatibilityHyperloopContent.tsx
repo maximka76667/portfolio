@@ -24,7 +24,7 @@ export default function OsCompatibilityHyperloopContent() {
       <ImageBlock
         title="One tool, every teammate"
         side="left"
-        width="clamp(320px, 60vw, 700px)"
+        width="clamp(320px, 55vw, 1300px)"
         aspectRatio="1280/718"
         src="/media/hyperloop/comp-member.jpg"
         alt="Team member using the Control Station on their own machine"
@@ -43,7 +43,7 @@ export default function OsCompatibilityHyperloopContent() {
       <ImageBlock
         title="Windows, macOS, and Linux"
         side="right"
-        width="clamp(200px, 60vw, 700px)"
+        width="clamp(200px, 50vw, 1200px)"
         aspectRatio="1771/1105"
         src="/media/hyperloop/comp-distributives.png"
         alt="Control Station running across Windows, macOS, and Linux distributions"
@@ -70,7 +70,7 @@ export default function OsCompatibilityHyperloopContent() {
       <ImageBlock
         title="One codebase, via Electron"
         side="left"
-        width="clamp(320px, 55vw, 700px)"
+        width="clamp(320px, 50vw, 1200px)"
         aspectRatio="1554/952"
         src="/media/hyperloop/comp-electron.png"
         alt="Electron app running as a native build"

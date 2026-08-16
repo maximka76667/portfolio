@@ -26,7 +26,7 @@ export default function PerformanceHyperloopContent() {
       <VideoBlock
         title="Batched updates"
         side="left"
-        width="clamp(320px, 60vw, 700px)"
+        width="clamp(320px, 55vw, 1300px)"
         aspectRatio="16/9"
         src="/media/hyperloop/performance-batching.mp4"
         className="md:px-[70px]"
@@ -41,14 +41,14 @@ export default function PerformanceHyperloopContent() {
           <TextHighlight className="text-background bg-background/10">
             whole interface never re-renders on every packet
           </TextHighlight>{" "}
-          — even with many charts live and data arriving faster than the eye
-          can follow.
+          — even with many charts live and data arriving faster than the eye can
+          follow.
         </p>
       </VideoBlock>
       <VideoBlock
         title="Virtualized telemetry panel"
         side="right"
-        width="clamp(200px, 55vw, 800px)"
+        width="clamp(200px, 55vw, 1200px)"
         aspectRatio="16/10"
         src="/media/hyperloop/performance-virtualized-list.mp4"
         className="md:px-[70px]"
@@ -63,14 +63,13 @@ export default function PerformanceHyperloopContent() {
           <TextHighlight className="text-background bg-background/10">
             constantly changing colors and values
           </TextHighlight>{" "}
-          that aren&apos;t currently visible to the user skip updating
-          entirely.
+          that aren&apos;t currently visible to the user skip updating entirely.
         </p>
       </VideoBlock>
       <ImageBlock
         title="Bounded chart memory"
         side="left"
-        width="clamp(320px, 55vw, 820px)"
+        width="clamp(320px, 55vw, 1200px)"
         aspectRatio="520/375"
         src="/media/hyperloop/performance-buffer.png"
         alt="Maximum buffer size setting for chart memory usage"
