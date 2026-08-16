@@ -1,23 +1,21 @@
 import VideoBlock from "../ui/VideoBlock";
 import ContentPage from "../ui/ContentPage";
 import TextHighlight from "../ui/TextHighlight";
+import PillarPageHeader from "../ui/PillarPageHeader";
 
 export default function UiUxHyperloopContent() {
   return (
     <ContentPage>
-      <div className="flex flex-col items-end justify-center gap-12 h-[60vh] pr-24 mb-12">
-        <h1 className="font-display text-[#e4ded4] text-6xl sm:text-8xl 3xl:text-9xl">
-          UI/UX
-        </h1>
-        <h2 className="font-display text-foreground text-3xl sm:text-5xl 3xl:text-7xl underline decoration-[var(--accent)] decoration-4 underline-offset-8">
-          Hyperloop Control Station
-        </h2>
-        <p className="text-foreground text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl text-right">
-          For a critical system like this one, you need to always be{" "}
-          <TextHighlight>aware of its state</TextHighlight>
-          , and a fast way to get to what you actually want to see.
-        </p>
-      </div>
+      <PillarPageHeader
+        pillar="UI/UX"
+        title="Hyperloop Control Station"
+        side="right"
+        decorationClassName="decoration-[var(--accent)]"
+      >
+        For a critical system like this one, you need to always be{" "}
+        <TextHighlight>aware of its state</TextHighlight>
+        , and a fast way to get to what you actually want to see.
+      </PillarPageHeader>
       <VideoBlock
         title="State"
         side="left"

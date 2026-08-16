@@ -1,25 +1,26 @@
 import ImageBlock from "../ui/ImageBlock";
 import ContentPage from "../ui/ContentPage";
 import TextHighlight from "../ui/TextHighlight";
+import PillarPageHeader from "../ui/PillarPageHeader";
 
 export default function PerformanceLodeContent() {
   return (
     <ContentPage>
-      <div className="flex flex-col items-end justify-center gap-12 h-[60vh] pr-24 mb-12">
-        <h1 className="font-display text-background/10 text-6xl sm:text-8xl 3xl:text-9xl">
-          Performance
-        </h1>
-        <h2 className="font-display text-background text-3xl sm:text-5xl 3xl:text-7xl underline decoration-[var(--accent)] decoration-4 underline-offset-8">
-          Lode
-        </h2>
-        <p className="text-background text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl text-right">
-          Every reading has to reach every connected dashboard{" "}
-          <TextHighlight className="text-background bg-background/10">
-            in real time
-          </TextHighlight>
-          , without letting database writes slow down the stream.
-        </p>
-      </div>
+      <PillarPageHeader
+        pillar="Performance"
+        title="Lode"
+        side="right"
+        pillarColorClassName="text-background/10"
+        titleColorClassName="text-background"
+        decorationClassName="decoration-[var(--accent)]"
+        textColorClassName="text-background"
+      >
+        Every reading has to reach every connected dashboard{" "}
+        <TextHighlight className="text-background bg-background/10">
+          in real time
+        </TextHighlight>
+        , without letting database writes slow down the stream.
+      </PillarPageHeader>
       <ImageBlock
         title="Dual-channel pipeline"
         side="left"

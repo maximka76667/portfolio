@@ -2,26 +2,27 @@ import ImageBlock from "../ui/ImageBlock";
 import VideoBlock from "../ui/VideoBlock";
 import ContentPage from "../ui/ContentPage";
 import TextHighlight from "../ui/TextHighlight";
+import PillarPageHeader from "../ui/PillarPageHeader";
 
 export default function PerformanceHyperloopContent() {
   return (
     <ContentPage>
-      <div className="flex flex-col items-end justify-center gap-12 h-[60vh] pr-24 mb-12">
-        <h1 className="font-display text-background/10 text-6xl sm:text-8xl 3xl:text-9xl">
-          Performance
-        </h1>
-        <h2 className="font-display text-background text-3xl sm:text-5xl 3xl:text-7xl underline decoration-[var(--accent)] decoration-4 underline-offset-8">
-          Hyperloop Control Station
-        </h2>
-        <p className="text-background text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl text-right">
-          With new data arriving faster than every{" "}
-          <TextHighlight className="text-background bg-background/10">
-            100ms
-          </TextHighlight>{" "}
-          across dozens of charts, redrawing the whole interface on every packet
-          isn&apos;t an option.
-        </p>
-      </div>
+      <PillarPageHeader
+        pillar="Performance"
+        title="Hyperloop Control Station"
+        side="right"
+        pillarColorClassName="text-background/10"
+        titleColorClassName="text-background"
+        decorationClassName="decoration-[var(--accent)]"
+        textColorClassName="text-background"
+      >
+        With new data arriving faster than every{" "}
+        <TextHighlight className="text-background bg-background/10">
+          100ms
+        </TextHighlight>{" "}
+        across dozens of charts, redrawing the whole interface on every packet
+        isn&apos;t an option.
+      </PillarPageHeader>
       <VideoBlock
         title="Batched updates"
         side="left"

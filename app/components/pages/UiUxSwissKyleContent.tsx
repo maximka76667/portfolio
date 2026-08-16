@@ -1,23 +1,16 @@
 import VideoBlock from "../ui/VideoBlock";
 import ContentPage from "../ui/ContentPage";
 import TextHighlight from "../ui/TextHighlight";
+import PillarPageHeader from "../ui/PillarPageHeader";
 
 export default function UiUxSwissKyleContent() {
   return (
     <ContentPage>
-      <div className="flex flex-col items-start justify-center gap-12 h-[60vh] pl-24 mb-12">
-        <h1 className="font-display text-[#e4ded4] text-6xl sm:text-8xl 3xl:text-9xl">
-          UI/UX
-        </h1>
-        <h2 className="font-display text-foreground text-3xl sm:text-5xl 3xl:text-7xl underline decoration-accent decoration-4 underline-offset-8">
-          Swiss Kyle
-        </h2>
-        <p className="text-foreground text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl">
-          Every action here kicks off a{" "}
-          <TextHighlight>background job</TextHighlight>, so you need to trust
-          it&apos;s actually running, and know right away if it didn&apos;t.
-        </p>
-      </div>
+      <PillarPageHeader pillar="UI/UX" title="Swiss Kyle" side="left">
+        Every action here kicks off a{" "}
+        <TextHighlight>background job</TextHighlight>, so you need to trust
+        it&apos;s actually running, and know right away if it didn&apos;t.
+      </PillarPageHeader>
       <VideoBlock
         title="Document upload"
         side="left"
