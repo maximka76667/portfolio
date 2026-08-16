@@ -24,7 +24,7 @@ export default function PerformanceSwissKyleContent() {
         aspectRatio="1078/394"
         src="/media/swiss-kyle/performance-workers.png"
         alt="Worker pool status panel showing four idle workers"
-        margin="0 70px 0"
+        className="md:px-[70px]"
         textColorClassName="text-background"
       >
         <p>
@@ -46,7 +46,7 @@ export default function PerformanceSwissKyleContent() {
         aspectRatio="1044/888"
         src="/media/swiss-kyle/performance-queue.png"
         alt="Job queue with several jobs in progress"
-        margin="0 20px 0"
+        className="md:px-[20px]"
         textColorClassName="text-background"
       >
         <p>
@@ -64,7 +64,7 @@ export default function PerformanceSwissKyleContent() {
         aspectRatio="1432/517"
         src="/media/swiss-kyle/performance-failover.png"
         alt="Worker log showing workers re-entering the fetch loop"
-        margin="0 50px 0"
+        className="md:px-[50px]"
         textColorClassName="text-background"
       >
         <p>

@@ -28,7 +28,7 @@ export default function UiUxLodeContent() {
         aspectRatio="16/9"
         src="/media/lode/ui-ux-history.png"
         alt="Time range selector scoping charts to a window"
-        margin="0 70px 0"
+        className="md:px-[70px]"
       >
         <p>
           A{" "}
@@ -43,7 +43,7 @@ export default function UiUxLodeContent() {
         width="clamp(200px, 60vw, 1200px)"
         aspectRatio="16/9"
         src="/media/lode/ui-ux-status.mp4"
-        margin="0 20px 0"
+        className="md:px-[20px]"
       >
         <p>
           A{" "}
@@ -70,7 +70,7 @@ export default function UiUxLodeContent() {
         aspectRatio="12/10"
         src="/media/lode/ui-ux-display.png"
         alt="Physical display showing the same live data"
-        margin="0 100px 0"
+        className="md:px-[100px]"
       >
         <p>
           A{" "}

@@ -27,7 +27,7 @@ export default function PerformanceLodeContent() {
         aspectRatio="1120/735"
         src="/media/lode/performance-sse.png"
         alt="Browser dev tools EventStream tab showing readings streamed over SSE"
-        margin="0 70px 0"
+        className="md:px-[70px]"
         textColorClassName="text-background"
       >
         <p>
@@ -49,7 +49,7 @@ export default function PerformanceLodeContent() {
         aspectRatio="840/145"
         src="/media/lode/performance-batching.png"
         alt="Code buffering readings and batch-inserting them every 30 seconds"
-        margin="0 70px 0"
+        className="md:px-[70px]"
         textColorClassName="text-background"
       >
         <p>
@@ -68,7 +68,7 @@ export default function PerformanceLodeContent() {
         aspectRatio="736/316"
         src="/media/lode/performance-flush-interval.png"
         alt="Function signature showing flush_interval as a configurable parameter"
-        margin="0 70px 0"
+        className="md:px-[70px]"
         textColorClassName="text-background"
       >
         <p>

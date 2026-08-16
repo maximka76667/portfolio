@@ -29,7 +29,7 @@ export default function OsCompatibilityLodeContent() {
         side="left"
         width="clamp(320px, 60vw, 700px)"
         aspectRatio="16/9"
-        margin="0 70px 0"
+        className="md:px-[70px]"
         src="/media/lode/os-drivers.png"
         alt="Rust sensor drivers running across STM32 variants"
         titleColorClassName="text-background"

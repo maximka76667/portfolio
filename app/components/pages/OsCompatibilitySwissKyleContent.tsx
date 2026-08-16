@@ -31,7 +31,7 @@ export default function OsCompatibilitySwissKyleContent() {
         aspectRatio="1408/594"
         src="/media/swiss-kyle/comp-installers.png"
         alt="Release assets with native installers for Linux and Windows"
-        margin="0 70px 0"
+        className="md:px-[70px]"
         titleColorClassName="text-background"
         textColorClassName="text-background"
       >
@@ -54,7 +54,7 @@ export default function OsCompatibilitySwissKyleContent() {
         aspectRatio="732/541"
         src="/media/swiss-kyle/comp-sidecars.png"
         alt="Installer extracting a bundled per-platform ffmpeg sidecar binary"
-        margin="0 20px 0"
+        className="md:px-[20px]"
         titleColorClassName="text-background"
         textColorClassName="text-background"
       >
@@ -77,7 +77,7 @@ export default function OsCompatibilitySwissKyleContent() {
         aspectRatio="1062/381"
         src="/media/swiss-kyle/comp-word.png"
         alt="PDF converter dropdown showing Microsoft Word (Windows only) and LibreOffice"
-        margin="0 50px 0"
+        className="md:px-[50px]"
         titleColorClassName="text-background"
         textColorClassName="text-background"
       >

@@ -28,7 +28,7 @@ export default function PerformanceHyperloopContent() {
         width="clamp(320px, 60vw, 700px)"
         aspectRatio="16/9"
         src="/media/hyperloop/performance-batching.mp4"
-        margin="0 70px 0"
+        className="md:px-[70px]"
         textColorClassName="text-background"
       >
         <p>
@@ -50,7 +50,7 @@ export default function PerformanceHyperloopContent() {
         width="clamp(200px, 55vw, 800px)"
         aspectRatio="16/10"
         src="/media/hyperloop/performance-virtualized-list.mp4"
-        margin="0 70px 0"
+        className="md:px-[70px]"
         textColorClassName="text-background"
       >
         <p>
@@ -73,7 +73,7 @@ export default function PerformanceHyperloopContent() {
         aspectRatio="520/375"
         src="/media/hyperloop/performance-buffer.png"
         alt="Maximum buffer size setting for chart memory usage"
-        margin="0 70px 0"
+        className="md:px-[70px]"
         textColorClassName="text-background"
       >
         <p>

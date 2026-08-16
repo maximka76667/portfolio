@@ -24,7 +24,7 @@ export default function UiUxSwissKyleContent() {
         width="clamp(200px, 60vw, 1300px)"
         aspectRatio="16/9"
         src="/media/swiss-kyle/ui-ux-swiss-kyle-dnd.mp4"
-        margin="0 70px 0"
+        className="md:px-[70px]"
       >
         <p>
           Documents are added by <TextHighlight>drag and drop</TextHighlight>.
@@ -37,7 +37,7 @@ export default function UiUxSwissKyleContent() {
         width="clamp(200px, 60vw, 1200px)"
         aspectRatio="16/10"
         src="/media/swiss-kyle/ui-ux-swiss-kyle-badge-status.mp4"
-        margin="0 20px 0"
+        className="md:px-[20px]"
       >
         <p>
           Every job carries a <TextHighlight>status badge</TextHighlight> —
@@ -50,7 +50,7 @@ export default function UiUxSwissKyleContent() {
         width="clamp(200px, 60vw, 1200px)"
         aspectRatio="16/9"
         src="/media/swiss-kyle/ui-ux-swiss-kyle-diagnostics.mp4"
-        margin="0 50px 0"
+        className="md:px-[50px]"
       >
         <p>
           The diagnostics page shows{" "}

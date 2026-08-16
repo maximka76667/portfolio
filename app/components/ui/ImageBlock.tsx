@@ -8,7 +8,7 @@ type ImageBlockProps = {
   side?: "left" | "right";
   width?: string;
   aspectRatio?: string;
-  margin?: string;
+  className?: string;
   src: string;
   titleColorClassName?: string;
   textColorClassName?: string;
@@ -22,7 +22,7 @@ type ImageBlockProps = {
  * @param side Which side the image appears on. Defaults to "left".
  * @param width Fluid width: any CSS size, e.g. "45vw", "clamp(260px, 40vw, 480px)", "50%". Defaults to AnnotatedBlock's default ("clamp(240px, 40vw, 480px)").
  * @param aspectRatio CSS aspect-ratio, e.g. "16/9", "4/5", "1/1". Height is derived from this + width. Defaults to AnnotatedBlock's default ("16/10").
- * @param margin Any valid CSS margin shorthand, e.g. "0", "1px 0 0 3px", "4rem 8vw". Defaults to AnnotatedBlock's default ("0", flush).
+ * @param className Additional classes applied to the outer wrapper — use for spacing, e.g. "md:px-[70px]".
  * @param src Image source URL.
  * @param titleColorClassName Text color class for the title. Defaults to AnnotatedBlock's default ("text-accent", for use on the light bg-background).
  * @param textColorClassName Text color class for the caption. Defaults to AnnotatedBlock's default ("text-foreground", for use on the light bg-background).
@@ -34,7 +34,7 @@ export default function ImageBlock({
   side = "left",
   width,
   aspectRatio,
-  margin,
+  className,
   src,
   titleColorClassName,
   textColorClassName,
@@ -45,7 +45,7 @@ export default function ImageBlock({
       side={side}
       width={width}
       aspectRatio={aspectRatio}
-      margin={margin}
+      className={className}
       titleColorClassName={titleColorClassName}
       textColorClassName={textColorClassName}
       media={

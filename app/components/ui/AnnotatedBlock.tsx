@@ -12,8 +12,8 @@ type AnnotatedBlockProps = {
   aspectRatio?: string;
   /** The media element (img/video) rendered inside the box. */
   media?: ReactNode;
-  /** Any valid CSS margin shorthand, e.g. "0", "1px 0 0 3px", "4rem 8vw". Defaults to "0". */
-  margin?: string;
+  /** Additional classes applied to the outer wrapper — use for spacing, e.g. "md:px-[70px]". */
+  className?: string;
   /** Text color class for the title. Defaults to "text-accent" (for use on the light bg-background). */
   titleColorClassName?: string;
   /** Text color class for the caption. Defaults to "text-foreground" (for use on the light bg-background). */
@@ -28,7 +28,7 @@ type AnnotatedBlockProps = {
  * @param width Fluid width: any CSS size, e.g. "45vw", "clamp(260px, 40vw, 480px)", "50%". Defaults to "clamp(240px, 40vw, 480px)".
  * @param aspectRatio CSS aspect-ratio, e.g. "16/9", "4/5", "1/1". Height is derived from this + width. Defaults to "16/10".
  * @param media The media element (img/video) rendered inside the box. Defaults to a placeholder.
- * @param margin Any valid CSS margin shorthand, e.g. "0", "1px 0 0 3px", "4rem 8vw". Defaults to "0" (flush).
+ * @param className Additional classes applied to the outer wrapper — use for spacing, e.g. "md:px-[70px]".
  * @param titleColorClassName Text color class for the title. Defaults to "text-accent" (for use on the light bg-background).
  * @param textColorClassName Text color class for the caption. Defaults to "text-foreground" (for use on the light bg-background).
  */
@@ -39,7 +39,7 @@ export default function AnnotatedBlock({
   width = "clamp(240px, 40vw, 480px)",
   aspectRatio = "16/10",
   media,
-  margin = "0",
+  className = "",
   titleColorClassName = "text-accent",
   textColorClassName = "text-foreground",
 }: AnnotatedBlockProps) {
@@ -73,8 +73,7 @@ export default function AnnotatedBlock({
 
   return (
     <div
-      className="w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 lg:gap-16 xl:gap-10 3xl:gap-6 box-border p-0 md:p-(--block-margin)"
-      style={{ "--block-margin": margin } as CSSProperties}
+      className={`w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 lg:gap-16 xl:gap-10 3xl:gap-6 box-border p-0 ${className}`}
     >
       {mediaBox}
       {copy}

@@ -24,7 +24,7 @@ export default function UiUxHyperloopContent() {
         width="clamp(200px, 60vw, 1300px)"
         aspectRatio="16/7"
         src="/media/hyperloop/ui-ux-hyperloop-state.mp4"
-        margin="0 70px 0"
+        className="md:px-[70px]"
       >
         <p>
           The app always shows its current state —{" "}
@@ -57,7 +57,7 @@ export default function UiUxHyperloopContent() {
         width="clamp(200px, 60vw, 1200px)"
         aspectRatio="16/10"
         src="/media/hyperloop/ui-ux-hyperloop-dnd.mp4"
-        margin="0 20px 0"
+        className="md:px-[20px]"
       >
         <p>
           Charts are built with{" "}
@@ -77,7 +77,7 @@ export default function UiUxHyperloopContent() {
         width="clamp(200px, 60vw, 1200px)"
         aspectRatio="16/9"
         src="/media/hyperloop/ui-ux-hyperloop-workspaces.mp4"
-        margin="0 50px 0"
+        className="md:px-[50px]"
       >
         <p>
           Different configurations live in different workspaces, so
@@ -97,7 +97,7 @@ export default function UiUxHyperloopContent() {
         width="clamp(200px, 60vw, 1200px)"
         aspectRatio="16/9"
         src="/media/hyperloop/ui-ux-hyperloop-keybindings.mp4"
-        margin="0 30px 0"
+        className="md:px-[30px]"
       >
         <p>
           Every user can{" "}

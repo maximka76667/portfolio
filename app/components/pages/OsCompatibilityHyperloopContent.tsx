@@ -27,7 +27,7 @@ export default function OsCompatibilityHyperloopContent() {
         aspectRatio="1280/718"
         src="/media/hyperloop/comp-member.jpg"
         alt="Team member using the Control Station on their own machine"
-        margin="0 70px 0"
+        className="md:px-[70px]"
         titleColorClassName="text-background"
         textColorClassName="text-background"
       >
@@ -46,7 +46,7 @@ export default function OsCompatibilityHyperloopContent() {
         aspectRatio="1771/1105"
         src="/media/hyperloop/comp-distributives.png"
         alt="Control Station running across Windows, macOS, and Linux distributions"
-        margin="0 70px 0"
+        className="md:px-[70px]"
         titleColorClassName="text-background"
         textColorClassName="text-background"
       >
@@ -73,7 +73,7 @@ export default function OsCompatibilityHyperloopContent() {
         aspectRatio="1554/952"
         src="/media/hyperloop/comp-electron.png"
         alt="Electron app running as a native build"
-        margin="0 70px 0"
+        className="md:px-[70px]"
         titleColorClassName="text-background"
         textColorClassName="text-background"
       >
