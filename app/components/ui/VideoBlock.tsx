@@ -21,7 +21,7 @@ type VideoBlockProps = {
  * @param width Fluid width: any CSS size, e.g. "45vw", "clamp(260px, 40vw, 480px)", "50%". Defaults to AnnotatedBlock's default ("clamp(240px, 40vw, 480px)").
  * @param aspectRatio CSS aspect-ratio, e.g. "16/9", "4/5", "1/1". Height is derived from this + width. Defaults to AnnotatedBlock's default ("16/10").
  * @param className Additional classes applied to the outer wrapper — use for spacing, e.g. "md:px-[70px]".
- * @param src Video source URL. Plays autoplaying, muted, and looped.
+ * @param src Video source URL. Plays autoplaying, muted, and looped. On screens narrower than 768px, a lower-resolution variant is used instead — the same path with "-mobile" inserted before the extension (e.g. "/foo.mp4" → "/foo-mobile.mp4") must exist.
  * @param titleColorClassName Text color class for the title. Defaults to AnnotatedBlock's default ("text-accent", for use on the light bg-background).
  * @param textColorClassName Text color class for the caption. Defaults to AnnotatedBlock's default ("text-foreground", for use on the light bg-background).
  */
@@ -36,6 +36,8 @@ export default function VideoBlock({
   titleColorClassName,
   textColorClassName,
 }: VideoBlockProps) {
+  const mobileSrc = src.replace(/\.mp4$/, "-mobile.mp4");
+
   return (
     <AnnotatedBlock
       title={title}
@@ -47,13 +49,15 @@ export default function VideoBlock({
       textColorClassName={textColorClassName}
       media={
         <video
-          src={src}
           autoPlay
           muted
           loop
           playsInline
           className="w-full h-full object-cover"
-        />
+        >
+          <source src={mobileSrc} media="(max-width: 767px)" />
+          <source src={src} />
+        </video>
       }
     >
       {children}
