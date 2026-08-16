@@ -12,7 +12,7 @@ type AnnotatedBlockProps = {
   aspectRatio?: string;
   /** The media element (img/video) rendered inside the box. */
   media?: ReactNode;
-  /** Any valid CSS margin shorthand, e.g. "0", "1px 0 0 3px", "4rem 8vw". Defaults to flush. */
+  /** Any valid CSS margin shorthand, e.g. "0", "1px 0 0 3px", "4rem 8vw". Defaults to "0". */
   margin?: string;
   /** Text color class for the title. Defaults to "text-accent" (for use on the light bg-background). */
   titleColorClassName?: string;
