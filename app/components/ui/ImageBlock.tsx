@@ -14,11 +14,14 @@ type ImageBlockProps = {
   textColorClassName?: string;
 };
 
+/**
+ * A section with an image and text on the side. Used on the UI/UX, Performance and OS Compatibility project pages.
+ */
 export default function ImageBlock({
   title,
   text,
   alt,
-  side,
+  side = "left",
   width,
   aspectRatio,
   margin,

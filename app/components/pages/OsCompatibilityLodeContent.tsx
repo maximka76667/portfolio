@@ -1,5 +1,6 @@
 import ImageBlock from "../ui/ImageBlock";
 import ContentPage from "../ui/ContentPage";
+import TextHighlight from "../ui/TextHighlight";
 
 export default function OsCompatibilityLodeContent() {
   return (
@@ -13,13 +14,13 @@ export default function OsCompatibilityLodeContent() {
         </h2>
         <p className="text-background text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl text-right">
           I built it as a{" "}
-          <strong className="text-background bg-background/10 px-1 rounded-sm">
+          <TextHighlight className="text-background bg-background/10">
             web app
-          </strong>
+          </TextHighlight>
           , so the dashboard is{" "}
-          <strong className="text-background bg-background/10 px-1 rounded-sm">
+          <TextHighlight className="text-background bg-background/10">
             easily accessible
-          </strong>{" "}
+          </TextHighlight>{" "}
           from any device, with no install required.
         </p>
       </div>
@@ -36,13 +37,13 @@ export default function OsCompatibilityLodeContent() {
         text={
           <p>
             The sensor drivers are written in{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               Rust
-            </strong>
+            </TextHighlight>
             , so the same firmware runs across{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               different STM32 variants
-            </strong>{" "}
+            </TextHighlight>{" "}
             without rewriting the low-level code.
           </p>
         }

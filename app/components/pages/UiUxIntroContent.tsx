@@ -1,3 +1,5 @@
+import TextHighlight from "../ui/TextHighlight";
+
 export default function UiUxIntroContent() {
   return (
     <div className="flex flex-col items-center gap-12 px-6 text-center max-w-3xl">
@@ -7,23 +9,19 @@ export default function UiUxIntroContent() {
       <div className="text-foreground text-lg sm:text-2xl font-medium space-y-8 max-w-md mx-auto">
         <p>
           These are{" "}
-          <strong className="text-accent bg-accent/10 px-1 rounded-sm">
+          <TextHighlight>
             tools people use to get something done
-          </strong>
+          </TextHighlight>
           .
         </p>
         <p>
           When the interface{" "}
-          <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-            gets in the way
-          </strong>
+          <TextHighlight>gets in the way</TextHighlight>
           , people end up fighting it.
         </p>
         <p>
           Making it something people{" "}
-          <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-            actually wanted to use
-          </strong>{" "}
+          <TextHighlight>actually wanted to use</TextHighlight>{" "}
           mattered as much as making it work.
         </p>
       </div>

@@ -1,3 +1,5 @@
+import TextHighlight from "../ui/TextHighlight";
+
 export default function ProjectHyperloopTeamContent() {
   return (
     <div className="w-full flex justify-center px-6">
@@ -19,9 +21,7 @@ export default function ProjectHyperloopTeamContent() {
           </h3>
           <p>
             This was one of the parts that helped us take{" "}
-            <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-              second place
-            </strong>{" "}
+            <TextHighlight>second place</TextHighlight>{" "}
             at{" "}
             <a
               href="https://www.hyperloopweek.com/"

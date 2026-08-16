@@ -1,3 +1,5 @@
+import TextHighlight from "../ui/TextHighlight";
+
 export default function ProjectSwissKyleStatementContent() {
   return (
     <div className="flex flex-col items-center gap-6 px-6 text-center max-w-2xl">
@@ -7,16 +9,14 @@ export default function ProjectSwissKyleStatementContent() {
       <div className="text-foreground text-lg sm:text-2xl 3xl:text-3xl font-medium space-y-6">
         <p>
           I was tired of SaaS services out on the internet that make you{" "}
-          <strong className="text-accent bg-accent/10 px-1 rounded-sm">
+          <TextHighlight>
             create an account or pay a subscription
-          </strong>
+          </TextHighlight>
           .
         </p>
         <p>
           I think a solution for such friction should be{" "}
-          <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-            accessible to anybody
-          </strong>
+          <TextHighlight>accessible to anybody</TextHighlight>
           .
         </p>
       </div>

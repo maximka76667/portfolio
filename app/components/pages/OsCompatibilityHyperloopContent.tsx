@@ -1,5 +1,6 @@
 import ImageBlock from "../ui/ImageBlock";
 import ContentPage from "../ui/ContentPage";
+import TextHighlight from "../ui/TextHighlight";
 
 export default function OsCompatibilityHyperloopContent() {
   return (
@@ -13,9 +14,9 @@ export default function OsCompatibilityHyperloopContent() {
         </h2>
         <p className="text-background text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl text-right">
           It needed to work for{" "}
-          <strong className="text-background bg-background/10 px-1 rounded-sm">
+          <TextHighlight className="text-background bg-background/10">
             every team member
-          </strong>
+          </TextHighlight>
           , whatever OS they already had on their own machine.
         </p>
       </div>
@@ -29,9 +30,9 @@ export default function OsCompatibilityHyperloopContent() {
         text={
           <p>
             The Control Station had to run on{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               each team member&apos;s own machine
-            </strong>{" "}
+            </TextHighlight>{" "}
             — there was no shared or standardized setup to target.
           </p>
         }
@@ -49,17 +50,17 @@ export default function OsCompatibilityHyperloopContent() {
         text={
           <p>
             That meant supporting{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               Windows
-            </strong>
+            </TextHighlight>
             ,{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               macOS
-            </strong>{" "}
+            </TextHighlight>{" "}
             (Intel and Apple Silicon), and a range of{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               Linux distributions
-            </strong>{" "}
+            </TextHighlight>{" "}
             — Mint, Ubuntu, Fedora, Arch, and others.
           </p>
         }
@@ -77,13 +78,13 @@ export default function OsCompatibilityHyperloopContent() {
         text={
           <p>
             Built with{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               Electron
-            </strong>
+            </TextHighlight>
             , so the same codebase ships as a{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               native app on every platform
-            </strong>{" "}
+            </TextHighlight>{" "}
             instead of maintaining separate builds per OS.
           </p>
         }

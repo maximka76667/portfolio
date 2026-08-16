@@ -1,5 +1,6 @@
 import VideoBlock from "../ui/VideoBlock";
 import ContentPage from "../ui/ContentPage";
+import TextHighlight from "../ui/TextHighlight";
 
 export default function UiUxSwissKyleContent() {
   return (
@@ -13,11 +14,8 @@ export default function UiUxSwissKyleContent() {
         </h2>
         <p className="text-foreground text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl">
           Every action here kicks off a{" "}
-          <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-            background job
-          </strong>
-          , so you need to trust it&apos;s actually running, and know right
-          away if it didn&apos;t.
+          <TextHighlight>background job</TextHighlight>, so you need to trust
+          it&apos;s actually running, and know right away if it didn&apos;t.
         </p>
       </div>
       <VideoBlock
@@ -29,15 +27,8 @@ export default function UiUxSwissKyleContent() {
         margin="0 70px 0"
         text={
           <p>
-            Documents are added by{" "}
-            <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-              drag and drop
-            </strong>
-            . An unsupported format{" "}
-            <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-              shows an error
-            </strong>
-            .
+            Documents are added by <TextHighlight>drag and drop</TextHighlight>.
+            An unsupported format <TextHighlight>shows an error</TextHighlight>.
           </p>
         }
       />
@@ -50,11 +41,8 @@ export default function UiUxSwissKyleContent() {
         margin="0 20px 0"
         text={
           <p>
-            Every job carries a{" "}
-            <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-              status badge
-            </strong>{" "}
-            — running, done, or failed — always visible in the sidebar.
+            Every job carries a <TextHighlight>status badge</TextHighlight> —
+            running, done, or failed — always visible in the sidebar.
           </p>
         }
       />
@@ -68,10 +56,8 @@ export default function UiUxSwissKyleContent() {
         text={
           <p>
             The diagnostics page shows{" "}
-            <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-              worker status and the job log
-            </strong>
-            , so problems are visible as they happen.
+            <TextHighlight>worker status and the job log</TextHighlight>, so
+            problems are visible as they happen.
           </p>
         }
       />

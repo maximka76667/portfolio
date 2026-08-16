@@ -1,6 +1,7 @@
 import ImageBlock from "../ui/ImageBlock";
 import VideoBlock from "../ui/VideoBlock";
 import ContentPage from "../ui/ContentPage";
+import TextHighlight from "../ui/TextHighlight";
 
 export default function PerformanceHyperloopContent() {
   return (
@@ -14,9 +15,9 @@ export default function PerformanceHyperloopContent() {
         </h2>
         <p className="text-background text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl text-right">
           With new data arriving faster than every{" "}
-          <strong className="text-background bg-background/10 px-1 rounded-sm">
+          <TextHighlight className="text-background bg-background/10">
             100ms
-          </strong>{" "}
+          </TextHighlight>{" "}
           across dozens of charts, redrawing the whole interface on every packet
           isn&apos;t an option.
         </p>
@@ -30,13 +31,13 @@ export default function PerformanceHyperloopContent() {
         text={
           <p>
             Incoming packets are{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               batched
-            </strong>{" "}
+            </TextHighlight>{" "}
             instead of triggering an immediate render, so the{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               whole interface never re-renders on every packet
-            </strong>{" "}
+            </TextHighlight>{" "}
             — even with many charts live and data arriving faster than the eye
             can follow.
           </p>
@@ -53,13 +54,13 @@ export default function PerformanceHyperloopContent() {
         text={
           <p>
             The telemetry panel is{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               virtualized
-            </strong>
+            </TextHighlight>
             , so rows with{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               constantly changing colors and values
-            </strong>{" "}
+            </TextHighlight>{" "}
             that aren&apos;t currently visible to the user skip updating
             entirely.
           </p>
@@ -77,13 +78,13 @@ export default function PerformanceHyperloopContent() {
         text={
           <p>
             Charts don&apos;t store every value{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               forever
-            </strong>
+            </TextHighlight>
             . A{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               maximum buffer size
-            </strong>{" "}
+            </TextHighlight>{" "}
             lets each user choose how much memory a long-running session is
             allowed to use.
           </p>

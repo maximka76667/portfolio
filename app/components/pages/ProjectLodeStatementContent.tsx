@@ -1,3 +1,5 @@
+import TextHighlight from "../ui/TextHighlight";
+
 export default function ProjectLodeStatementContent() {
   return (
     <div className="w-full flex justify-center px-6">
@@ -19,9 +21,7 @@ export default function ProjectLodeStatementContent() {
           </h3>
           <p>
             I built the{" "}
-            <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-              whole infrastructure myself
-            </strong>{" "}
+            <TextHighlight>whole infrastructure myself</TextHighlight>{" "}
             — the STM32 board reading the sensors, the firmware, the
             server, and the dashboard that streams it all live.
           </p>

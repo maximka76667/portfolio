@@ -1,6 +1,7 @@
 import ImageBlock from "../ui/ImageBlock";
 import VideoBlock from "../ui/VideoBlock";
 import ContentPage from "../ui/ContentPage";
+import TextHighlight from "../ui/TextHighlight";
 
 export default function UiUxLodeContent() {
   return (
@@ -14,13 +15,9 @@ export default function UiUxLodeContent() {
         </h2>
         <p className="text-foreground text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl text-right">
           For a live sensor feed like this, you need to trust it&apos;s{" "}
-          <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-            actually live
-          </strong>
+          <TextHighlight>actually live</TextHighlight>
           , and still be able to{" "}
-          <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-            look back
-          </strong>{" "}
+          <TextHighlight>look back</TextHighlight>{" "}
           at what happened before you started watching.
         </p>
       </div>
@@ -35,9 +32,7 @@ export default function UiUxLodeContent() {
         text={
           <p>
             A{" "}
-            <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-              time range selector
-            </strong>{" "}
+            <TextHighlight>time range selector</TextHighlight>{" "}
             scopes every chart to a window — 20 minutes, 1 hour, 5 hours, or
             multiple days.
           </p>
@@ -53,9 +48,7 @@ export default function UiUxLodeContent() {
         text={
           <p>
             A{" "}
-            <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-              status badge
-            </strong>{" "}
+            <TextHighlight>status badge</TextHighlight>{" "}
             always shows where the feed stands —{" "}
             <span className="text-status-active bg-status-active/10 px-1 rounded-sm">
               live
@@ -83,9 +76,7 @@ export default function UiUxLodeContent() {
         text={
           <p>
             A{" "}
-            <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-              physical display
-            </strong>{" "}
+            <TextHighlight>physical display</TextHighlight>{" "}
             mirrors the same data, so it&apos;s visible at a glance without
             opening the app.
           </p>

@@ -1,5 +1,6 @@
 import ImageBlock from "../ui/ImageBlock";
 import ContentPage from "../ui/ContentPage";
+import TextHighlight from "../ui/TextHighlight";
 
 export default function PerformanceSwissKyleContent() {
   return (
@@ -26,13 +27,13 @@ export default function PerformanceSwissKyleContent() {
         text={
           <p>
             Jobs are{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               distributed across a pool of 4 workers
-            </strong>
+            </TextHighlight>
             , so{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               up to 4 jobs run at once without affecting each other
-            </strong>{" "}
+            </TextHighlight>{" "}
             — a slow or failing job never blocks the rest.
           </p>
         }
@@ -49,9 +50,9 @@ export default function PerformanceSwissKyleContent() {
         text={
           <p>
             If no worker is free, the job is{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               queued with NATS JetStream
-            </strong>{" "}
+            </TextHighlight>{" "}
             instead of dropped or run inline.
           </p>
         }
@@ -68,13 +69,13 @@ export default function PerformanceSwissKyleContent() {
         text={
           <p>
             If a worker{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               fails
-            </strong>
+            </TextHighlight>
             , its job isn&apos;t lost — thanks to the persistent queue, it{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               gets picked up by another worker
-            </strong>{" "}
+            </TextHighlight>{" "}
             instead.
           </p>
         }

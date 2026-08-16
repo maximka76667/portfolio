@@ -1,5 +1,6 @@
 import ImageBlock from "../ui/ImageBlock";
 import ContentPage from "../ui/ContentPage";
+import TextHighlight from "../ui/TextHighlight";
 
 export default function OsCompatibilitySwissKyleContent() {
   return (
@@ -13,13 +14,13 @@ export default function OsCompatibilitySwissKyleContent() {
         </h2>
         <p className="text-background text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl">
           Built with{" "}
-          <strong className="text-background bg-background/10 px-1 rounded-sm">
+          <TextHighlight className="text-background bg-background/10">
             Tauri
-          </strong>
+          </TextHighlight>
           , so the same app runs natively on both{" "}
-          <strong className="text-background bg-background/10 px-1 rounded-sm">
+          <TextHighlight className="text-background bg-background/10">
             Linux and Windows
-          </strong>
+          </TextHighlight>
           .
         </p>
       </div>
@@ -33,13 +34,13 @@ export default function OsCompatibilitySwissKyleContent() {
         text={
           <p>
             The desktop app is built with{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               Tauri
-            </strong>
+            </TextHighlight>
             , compiled as a{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               native build for each platform
-            </strong>{" "}
+            </TextHighlight>{" "}
             rather than one shared bundle.
           </p>
         }
@@ -57,13 +58,13 @@ export default function OsCompatibilitySwissKyleContent() {
         text={
           <p>
             The app bundles external tool binaries —{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               nats-server, pandoc, typst, pdfcpu, ffmpeg
-            </strong>{" "}
+            </TextHighlight>{" "}
             — pinned and downloaded{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               per OS at build time
-            </strong>
+            </TextHighlight>
             .
           </p>
         }
@@ -81,13 +82,13 @@ export default function OsCompatibilitySwissKyleContent() {
         text={
           <p>
             Office-to-PDF conversion needs{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               LibreOffice or Microsoft Word
-            </strong>
+            </TextHighlight>
             . Since Word only exists on Windows, that conversion path{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               branches by OS
-            </strong>
+            </TextHighlight>
             .
           </p>
         }

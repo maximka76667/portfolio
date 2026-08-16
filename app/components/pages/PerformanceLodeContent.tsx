@@ -1,5 +1,6 @@
 import ImageBlock from "../ui/ImageBlock";
 import ContentPage from "../ui/ContentPage";
+import TextHighlight from "../ui/TextHighlight";
 
 export default function PerformanceLodeContent() {
   return (
@@ -13,9 +14,9 @@ export default function PerformanceLodeContent() {
         </h2>
         <p className="text-background text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl text-right">
           Every reading has to reach every connected dashboard{" "}
-          <strong className="text-background bg-background/10 px-1 rounded-sm">
+          <TextHighlight className="text-background bg-background/10">
             in real time
-          </strong>
+          </TextHighlight>
           , without letting database writes slow down the stream.
         </p>
       </div>
@@ -29,13 +30,13 @@ export default function PerformanceLodeContent() {
         text={
           <p>
             Each incoming reading is{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               broadcast to every connected SSE client
-            </strong>{" "}
+            </TextHighlight>{" "}
             immediately, on a separate channel from persistence — so{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               one reading fans out to many dashboards
-            </strong>{" "}
+            </TextHighlight>{" "}
             without re-querying the database per client.
           </p>
         }
@@ -52,9 +53,9 @@ export default function PerformanceLodeContent() {
         text={
           <p>
             Readings aren&apos;t written to Postgres one by one. They&apos;re{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               buffered and batch-inserted every 30 seconds
-            </strong>
+            </TextHighlight>
             , cutting database round-trips without delaying what clients see
             live.
           </p>
@@ -72,9 +73,9 @@ export default function PerformanceLodeContent() {
         text={
           <p>
             The buffer flush interval is{" "}
-            <strong className="text-background bg-background/10 px-1 rounded-sm">
+            <TextHighlight className="text-background bg-background/10">
               configurable
-            </strong>{" "}
+            </TextHighlight>{" "}
             — 30s in production, 100ms in tests — so tests verify the pipeline
             quickly, without long sleeps.
           </p>

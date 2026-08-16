@@ -1,5 +1,6 @@
 import VideoBlock from "../ui/VideoBlock";
 import ContentPage from "../ui/ContentPage";
+import TextHighlight from "../ui/TextHighlight";
 
 export default function UiUxHyperloopContent() {
   return (
@@ -13,9 +14,7 @@ export default function UiUxHyperloopContent() {
         </h2>
         <p className="text-foreground text-lg sm:text-xl 3xl:text-2xl font-medium max-w-md 3xl:max-w-xl text-right">
           For a critical system like this one, you need to always be{" "}
-          <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-            aware of its state
-          </strong>
+          <TextHighlight>aware of its state</TextHighlight>
           , and a fast way to get to what you actually want to see.
         </p>
       </div>
@@ -48,9 +47,7 @@ export default function UiUxHyperloopContent() {
             </p>
             <p>
               While loading, the relevant functionality is{" "}
-              <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-                disabled
-              </strong>
+              <TextHighlight>disabled</TextHighlight>
               , so the user can&apos;t interact with it unintentionally.
             </p>
           </>
@@ -67,17 +64,13 @@ export default function UiUxHyperloopContent() {
           <>
             <p>
               Charts are built with{" "}
-              <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-                drag and drop
-              </strong>{" "}
+              <TextHighlight>drag and drop</TextHighlight>{" "}
               — drag a variable onto the canvas to create a chart, or onto an
               existing chart to add it there.
             </p>
             <p>
               For anyone who&apos;d rather not drag, a{" "}
-              <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-                plus button
-              </strong>{" "}
+              <TextHighlight>plus button</TextHighlight>{" "}
               does the same thing manually.
             </p>
           </>
@@ -95,16 +88,12 @@ export default function UiUxHyperloopContent() {
             <p>
               Different configurations live in different workspaces, so
               switching context is{" "}
-              <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-                one click
-              </strong>{" "}
+              <TextHighlight>one click</TextHighlight>{" "}
               instead of reconfiguring everything.
             </p>
             <p>
               New workspaces can be added{" "}
-              <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-                anytime
-              </strong>
+              <TextHighlight>anytime</TextHighlight>
               , for however many setups you need.
             </p>
           </>
@@ -121,17 +110,13 @@ export default function UiUxHyperloopContent() {
           <>
             <p>
               Every user can{" "}
-              <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-                bind their own keys
-              </strong>{" "}
+              <TextHighlight>bind their own keys</TextHighlight>{" "}
               to commands, for speed and convenience that match how they
               actually work.
             </p>
             <p>
               For critical commands, keybindings provide a{" "}
-              <strong className="text-accent bg-accent/10 px-1 rounded-sm">
-                fast way
-              </strong>{" "}
+              <TextHighlight>fast way</TextHighlight>{" "}
               to execute them.
             </p>
           </>

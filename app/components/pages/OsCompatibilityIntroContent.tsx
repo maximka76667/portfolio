@@ -1,3 +1,5 @@
+import TextHighlight from "../ui/TextHighlight";
+
 export default function OsCompatibilityIntroContent() {
   return (
     <div className="flex flex-col items-center gap-12 px-6 text-center">
@@ -7,23 +9,23 @@ export default function OsCompatibilityIntroContent() {
       <div className="text-background text-lg sm:text-2xl font-medium space-y-8 max-w-md">
         <p>
           I needed the same tool to{" "}
-          <strong className="text-background bg-background/10 px-1 rounded-sm">
+          <TextHighlight className="text-background bg-background/10">
             run the same way on Windows, macOS, and Linux
-          </strong>
+          </TextHighlight>
           .
         </p>
         <p>
           I needed the platform-specific pieces{" "}
-          <strong className="text-background bg-background/10 px-1 rounded-sm">
+          <TextHighlight className="text-background bg-background/10">
             handled once
-          </strong>
+          </TextHighlight>
           , not per install.
         </p>
         <p>
           I needed to make it{" "}
-          <strong className="text-background bg-background/10 px-1 rounded-sm">
+          <TextHighlight className="text-background bg-background/10">
             accessible to anybody
-          </strong>
+          </TextHighlight>
           .
         </p>
       </div>
