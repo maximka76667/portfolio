@@ -58,7 +58,7 @@ export default function ZoomableScreenshot({
           type="button"
           onClick={openLightbox}
           aria-label="View full screenshot"
-          className="group absolute z-10 bottom-4 left-4 flex h-9 w-9 items-center justify-center rounded-full bg-background/90 text-foreground shadow-md transition-all duration-200 ease-out hover:scale-110 hover:bg-background hover:shadow-lg active:scale-95"
+          className="group absolute z-10 bottom-4 left-4 hidden h-9 w-9 items-center justify-center rounded-full bg-background/90 text-foreground shadow-md transition-all duration-200 ease-out hover:scale-110 hover:bg-background hover:shadow-lg active:scale-95 md:flex"
         >
           <svg
             viewBox="0 0 24 24"
