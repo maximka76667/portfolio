@@ -4,7 +4,7 @@ type AnnotatedBlockProps = {
   /** Small heading shown above the caption. */
   title: string;
   /** Caption content. A string renders as one paragraph; pass multiple <p> (or any nodes) for more. */
-  text: ReactNode;
+  children: ReactNode;
   side?: "left" | "right";
   /** Fluid width: any CSS size, e.g. "45vw", "clamp(260px, 40vw, 480px)", "50%". */
   width?: string;
@@ -20,9 +20,21 @@ type AnnotatedBlockProps = {
   textColorClassName?: string;
 };
 
+/**
+ * A media box paired with a title and caption, side by side.
+ * @param title Small heading shown above the caption.
+ * @param children Caption content. A string renders as one paragraph; pass multiple <p> (or any nodes) for more.
+ * @param side Which side the media box appears on. Defaults to "left".
+ * @param width Fluid width: any CSS size, e.g. "45vw", "clamp(260px, 40vw, 480px)", "50%". Defaults to "clamp(240px, 40vw, 480px)".
+ * @param aspectRatio CSS aspect-ratio, e.g. "16/9", "4/5", "1/1". Height is derived from this + width. Defaults to "16/10".
+ * @param media The media element (img/video) rendered inside the box. Defaults to a placeholder.
+ * @param margin Any valid CSS margin shorthand, e.g. "0", "1px 0 0 3px", "4rem 8vw". Defaults to "0" (flush).
+ * @param titleColorClassName Text color class for the title. Defaults to "text-accent" (for use on the light bg-background).
+ * @param textColorClassName Text color class for the caption. Defaults to "text-foreground" (for use on the light bg-background).
+ */
 export default function AnnotatedBlock({
   title,
-  text,
+  children,
   side = "left",
   width = "clamp(240px, 40vw, 480px)",
   aspectRatio = "16/10",
@@ -55,7 +67,7 @@ export default function AnnotatedBlock({
       >
         {title}
       </h3>
-      {text}
+      {children}
     </div>
   );
 

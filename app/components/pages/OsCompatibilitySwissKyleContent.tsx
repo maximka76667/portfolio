@@ -31,23 +31,22 @@ export default function OsCompatibilitySwissKyleContent() {
         aspectRatio="1408/594"
         src="/media/swiss-kyle/comp-installers.png"
         alt="Release assets with native installers for Linux and Windows"
-        text={
-          <p>
-            The desktop app is built with{" "}
-            <TextHighlight className="text-background bg-background/10">
-              Tauri
-            </TextHighlight>
-            , compiled as a{" "}
-            <TextHighlight className="text-background bg-background/10">
-              native build for each platform
-            </TextHighlight>{" "}
-            rather than one shared bundle.
-          </p>
-        }
         margin="0 70px 0"
         titleColorClassName="text-background"
         textColorClassName="text-background"
-      />
+      >
+        <p>
+          The desktop app is built with{" "}
+          <TextHighlight className="text-background bg-background/10">
+            Tauri
+          </TextHighlight>
+          , compiled as a{" "}
+          <TextHighlight className="text-background bg-background/10">
+            native build for each platform
+          </TextHighlight>{" "}
+          rather than one shared bundle.
+        </p>
+      </ImageBlock>
       <ImageBlock
         title="Per-platform sidecars"
         side="right"
@@ -55,23 +54,22 @@ export default function OsCompatibilitySwissKyleContent() {
         aspectRatio="732/541"
         src="/media/swiss-kyle/comp-sidecars.png"
         alt="Installer extracting a bundled per-platform ffmpeg sidecar binary"
-        text={
-          <p>
-            The app bundles external tool binaries —{" "}
-            <TextHighlight className="text-background bg-background/10">
-              nats-server, pandoc, typst, pdfcpu, ffmpeg
-            </TextHighlight>{" "}
-            — pinned and downloaded{" "}
-            <TextHighlight className="text-background bg-background/10">
-              per OS at build time
-            </TextHighlight>
-            .
-          </p>
-        }
         margin="0 20px 0"
         titleColorClassName="text-background"
         textColorClassName="text-background"
-      />
+      >
+        <p>
+          The app bundles external tool binaries —{" "}
+          <TextHighlight className="text-background bg-background/10">
+            nats-server, pandoc, typst, pdfcpu, ffmpeg
+          </TextHighlight>{" "}
+          — pinned and downloaded{" "}
+          <TextHighlight className="text-background bg-background/10">
+            per OS at build time
+          </TextHighlight>
+          .
+        </p>
+      </ImageBlock>
       <ImageBlock
         title="Windows-only conversion path"
         side="left"
@@ -79,23 +77,22 @@ export default function OsCompatibilitySwissKyleContent() {
         aspectRatio="1062/381"
         src="/media/swiss-kyle/comp-word.png"
         alt="PDF converter dropdown showing Microsoft Word (Windows only) and LibreOffice"
-        text={
-          <p>
-            Office-to-PDF conversion needs{" "}
-            <TextHighlight className="text-background bg-background/10">
-              LibreOffice or Microsoft Word
-            </TextHighlight>
-            . Since Word only exists on Windows, that conversion path{" "}
-            <TextHighlight className="text-background bg-background/10">
-              branches by OS
-            </TextHighlight>
-            .
-          </p>
-        }
         margin="0 50px 0"
         titleColorClassName="text-background"
         textColorClassName="text-background"
-      />
+      >
+        <p>
+          Office-to-PDF conversion needs{" "}
+          <TextHighlight className="text-background bg-background/10">
+            LibreOffice or Microsoft Word
+          </TextHighlight>
+          . Since Word only exists on Windows, that conversion path{" "}
+          <TextHighlight className="text-background bg-background/10">
+            branches by OS
+          </TextHighlight>
+          .
+        </p>
+      </ImageBlock>
     </ContentPage>
   );
 }

@@ -34,20 +34,19 @@ export default function OsCompatibilityLodeContent() {
         alt="Rust sensor drivers running across STM32 variants"
         titleColorClassName="text-background"
         textColorClassName="text-background"
-        text={
-          <p>
-            The sensor drivers are written in{" "}
-            <TextHighlight className="text-background bg-background/10">
-              Rust
-            </TextHighlight>
-            , so the same firmware runs across{" "}
-            <TextHighlight className="text-background bg-background/10">
-              different STM32 variants
-            </TextHighlight>{" "}
-            without rewriting the low-level code.
-          </p>
-        }
-      />
+      >
+        <p>
+          The sensor drivers are written in{" "}
+          <TextHighlight className="text-background bg-background/10">
+            Rust
+          </TextHighlight>
+          , so the same firmware runs across{" "}
+          <TextHighlight className="text-background bg-background/10">
+            different STM32 variants
+          </TextHighlight>{" "}
+          without rewriting the low-level code.
+        </p>
+      </ImageBlock>
       <div className="w-full flex flex-col items-center justify-center gap-4 py-24 text-center">
         <p className="text-background text-lg sm:text-xl 3xl:text-2xl font-medium">
           It runs in the browser — no setup needed.

@@ -21,9 +21,9 @@ export default function ProjectLodeStatementContent() {
           </h3>
           <p>
             I built the{" "}
-            <TextHighlight>whole infrastructure myself</TextHighlight>{" "}
-            — the STM32 board reading the sensors, the firmware, the
-            server, and the dashboard that streams it all live.
+            <TextHighlight>whole infrastructure myself</TextHighlight> — the
+            STM32 board reading the sensors, the firmware, the server, and the
+            dashboard that streams it all live.
           </p>
         </div>
       </div>

@@ -25,13 +25,12 @@ export default function UiUxSwissKyleContent() {
         aspectRatio="16/9"
         src="/media/swiss-kyle/ui-ux-swiss-kyle-dnd.mp4"
         margin="0 70px 0"
-        text={
-          <p>
-            Documents are added by <TextHighlight>drag and drop</TextHighlight>.
-            An unsupported format <TextHighlight>shows an error</TextHighlight>.
-          </p>
-        }
-      />
+      >
+        <p>
+          Documents are added by <TextHighlight>drag and drop</TextHighlight>.
+          An unsupported format <TextHighlight>shows an error</TextHighlight>.
+        </p>
+      </VideoBlock>
       <VideoBlock
         title="Job status badges"
         side="right"
@@ -39,13 +38,12 @@ export default function UiUxSwissKyleContent() {
         aspectRatio="16/10"
         src="/media/swiss-kyle/ui-ux-swiss-kyle-badge-status.mp4"
         margin="0 20px 0"
-        text={
-          <p>
-            Every job carries a <TextHighlight>status badge</TextHighlight> —
-            running, done, or failed — always visible in the sidebar.
-          </p>
-        }
-      />
+      >
+        <p>
+          Every job carries a <TextHighlight>status badge</TextHighlight> —
+          running, done, or failed — always visible in the sidebar.
+        </p>
+      </VideoBlock>
       <VideoBlock
         title="Diagnostics"
         side="left"
@@ -53,14 +51,13 @@ export default function UiUxSwissKyleContent() {
         aspectRatio="16/9"
         src="/media/swiss-kyle/ui-ux-swiss-kyle-diagnostics.mp4"
         margin="0 50px 0"
-        text={
-          <p>
-            The diagnostics page shows{" "}
-            <TextHighlight>worker status and the job log</TextHighlight>, so
-            problems are visible as they happen.
-          </p>
-        }
-      />
+      >
+        <p>
+          The diagnostics page shows{" "}
+          <TextHighlight>worker status and the job log</TextHighlight>, so
+          problems are visible as they happen.
+        </p>
+      </VideoBlock>
     </ContentPage>
   );
 }

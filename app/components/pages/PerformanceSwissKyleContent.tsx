@@ -24,22 +24,21 @@ export default function PerformanceSwissKyleContent() {
         aspectRatio="1078/394"
         src="/media/swiss-kyle/performance-workers.png"
         alt="Worker pool status panel showing four idle workers"
-        text={
-          <p>
-            Jobs are{" "}
-            <TextHighlight className="text-background bg-background/10">
-              distributed across a pool of 4 workers
-            </TextHighlight>
-            , so{" "}
-            <TextHighlight className="text-background bg-background/10">
-              up to 4 jobs run at once without affecting each other
-            </TextHighlight>{" "}
-            — a slow or failing job never blocks the rest.
-          </p>
-        }
         margin="0 70px 0"
         textColorClassName="text-background"
-      />
+      >
+        <p>
+          Jobs are{" "}
+          <TextHighlight className="text-background bg-background/10">
+            distributed across a pool of 4 workers
+          </TextHighlight>
+          , so{" "}
+          <TextHighlight className="text-background bg-background/10">
+            up to 4 jobs run at once without affecting each other
+          </TextHighlight>{" "}
+          — a slow or failing job never blocks the rest.
+        </p>
+      </ImageBlock>
       <ImageBlock
         title="Job queue"
         side="right"
@@ -47,18 +46,17 @@ export default function PerformanceSwissKyleContent() {
         aspectRatio="1044/888"
         src="/media/swiss-kyle/performance-queue.png"
         alt="Job queue with several jobs in progress"
-        text={
-          <p>
-            If no worker is free, the job is{" "}
-            <TextHighlight className="text-background bg-background/10">
-              queued with NATS JetStream
-            </TextHighlight>{" "}
-            instead of dropped or run inline.
-          </p>
-        }
         margin="0 20px 0"
         textColorClassName="text-background"
-      />
+      >
+        <p>
+          If no worker is free, the job is{" "}
+          <TextHighlight className="text-background bg-background/10">
+            queued with NATS JetStream
+          </TextHighlight>{" "}
+          instead of dropped or run inline.
+        </p>
+      </ImageBlock>
       <ImageBlock
         title="Failover"
         side="left"
@@ -66,22 +64,21 @@ export default function PerformanceSwissKyleContent() {
         aspectRatio="1432/517"
         src="/media/swiss-kyle/performance-failover.png"
         alt="Worker log showing workers re-entering the fetch loop"
-        text={
-          <p>
-            If a worker{" "}
-            <TextHighlight className="text-background bg-background/10">
-              fails
-            </TextHighlight>
-            , its job isn&apos;t lost — thanks to the persistent queue, it{" "}
-            <TextHighlight className="text-background bg-background/10">
-              gets picked up by another worker
-            </TextHighlight>{" "}
-            instead.
-          </p>
-        }
         margin="0 50px 0"
         textColorClassName="text-background"
-      />
+      >
+        <p>
+          If a worker{" "}
+          <TextHighlight className="text-background bg-background/10">
+            fails
+          </TextHighlight>
+          , its job isn&apos;t lost — thanks to the persistent queue, it{" "}
+          <TextHighlight className="text-background bg-background/10">
+            gets picked up by another worker
+          </TextHighlight>{" "}
+          instead.
+        </p>
+      </ImageBlock>
     </ContentPage>
   );
 }

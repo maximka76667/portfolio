@@ -28,46 +28,44 @@ export default function PerformanceHyperloopContent() {
         width="clamp(320px, 60vw, 700px)"
         aspectRatio="16/9"
         src="/media/hyperloop/performance-batching.mp4"
-        text={
-          <p>
-            Incoming packets are{" "}
-            <TextHighlight className="text-background bg-background/10">
-              batched
-            </TextHighlight>{" "}
-            instead of triggering an immediate render, so the{" "}
-            <TextHighlight className="text-background bg-background/10">
-              whole interface never re-renders on every packet
-            </TextHighlight>{" "}
-            — even with many charts live and data arriving faster than the eye
-            can follow.
-          </p>
-        }
         margin="0 70px 0"
         textColorClassName="text-background"
-      />
+      >
+        <p>
+          Incoming packets are{" "}
+          <TextHighlight className="text-background bg-background/10">
+            batched
+          </TextHighlight>{" "}
+          instead of triggering an immediate render, so the{" "}
+          <TextHighlight className="text-background bg-background/10">
+            whole interface never re-renders on every packet
+          </TextHighlight>{" "}
+          — even with many charts live and data arriving faster than the eye
+          can follow.
+        </p>
+      </VideoBlock>
       <VideoBlock
         title="Virtualized telemetry panel"
         side="right"
         width="clamp(200px, 55vw, 800px)"
         aspectRatio="16/10"
         src="/media/hyperloop/performance-virtualized-list.mp4"
-        text={
-          <p>
-            The telemetry panel is{" "}
-            <TextHighlight className="text-background bg-background/10">
-              virtualized
-            </TextHighlight>
-            , so rows with{" "}
-            <TextHighlight className="text-background bg-background/10">
-              constantly changing colors and values
-            </TextHighlight>{" "}
-            that aren&apos;t currently visible to the user skip updating
-            entirely.
-          </p>
-        }
         margin="0 70px 0"
         textColorClassName="text-background"
-      />
+      >
+        <p>
+          The telemetry panel is{" "}
+          <TextHighlight className="text-background bg-background/10">
+            virtualized
+          </TextHighlight>
+          , so rows with{" "}
+          <TextHighlight className="text-background bg-background/10">
+            constantly changing colors and values
+          </TextHighlight>{" "}
+          that aren&apos;t currently visible to the user skip updating
+          entirely.
+        </p>
+      </VideoBlock>
       <ImageBlock
         title="Bounded chart memory"
         side="left"
@@ -75,23 +73,22 @@ export default function PerformanceHyperloopContent() {
         aspectRatio="520/375"
         src="/media/hyperloop/performance-buffer.png"
         alt="Maximum buffer size setting for chart memory usage"
-        text={
-          <p>
-            Charts don&apos;t store every value{" "}
-            <TextHighlight className="text-background bg-background/10">
-              forever
-            </TextHighlight>
-            . A{" "}
-            <TextHighlight className="text-background bg-background/10">
-              maximum buffer size
-            </TextHighlight>{" "}
-            lets each user choose how much memory a long-running session is
-            allowed to use.
-          </p>
-        }
         margin="0 70px 0"
         textColorClassName="text-background"
-      />
+      >
+        <p>
+          Charts don&apos;t store every value{" "}
+          <TextHighlight className="text-background bg-background/10">
+            forever
+          </TextHighlight>
+          . A{" "}
+          <TextHighlight className="text-background bg-background/10">
+            maximum buffer size
+          </TextHighlight>{" "}
+          lets each user choose how much memory a long-running session is
+          allowed to use.
+        </p>
+      </ImageBlock>
     </ContentPage>
   );
 }

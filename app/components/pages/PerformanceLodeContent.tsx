@@ -27,22 +27,21 @@ export default function PerformanceLodeContent() {
         aspectRatio="1120/735"
         src="/media/lode/performance-sse.png"
         alt="Browser dev tools EventStream tab showing readings streamed over SSE"
-        text={
-          <p>
-            Each incoming reading is{" "}
-            <TextHighlight className="text-background bg-background/10">
-              broadcast to every connected SSE client
-            </TextHighlight>{" "}
-            immediately, on a separate channel from persistence — so{" "}
-            <TextHighlight className="text-background bg-background/10">
-              one reading fans out to many dashboards
-            </TextHighlight>{" "}
-            without re-querying the database per client.
-          </p>
-        }
         margin="0 70px 0"
         textColorClassName="text-background"
-      />
+      >
+        <p>
+          Each incoming reading is{" "}
+          <TextHighlight className="text-background bg-background/10">
+            broadcast to every connected SSE client
+          </TextHighlight>{" "}
+          immediately, on a separate channel from persistence — so{" "}
+          <TextHighlight className="text-background bg-background/10">
+            one reading fans out to many dashboards
+          </TextHighlight>{" "}
+          without re-querying the database per client.
+        </p>
+      </ImageBlock>
       <ImageBlock
         title="Batched writes"
         side="right"
@@ -50,19 +49,18 @@ export default function PerformanceLodeContent() {
         aspectRatio="840/145"
         src="/media/lode/performance-batching.png"
         alt="Code buffering readings and batch-inserting them every 30 seconds"
-        text={
-          <p>
-            Readings aren&apos;t written to Postgres one by one. They&apos;re{" "}
-            <TextHighlight className="text-background bg-background/10">
-              buffered and batch-inserted every 30 seconds
-            </TextHighlight>
-            , cutting database round-trips without delaying what clients see
-            live.
-          </p>
-        }
         margin="0 70px 0"
         textColorClassName="text-background"
-      />
+      >
+        <p>
+          Readings aren&apos;t written to Postgres one by one. They&apos;re{" "}
+          <TextHighlight className="text-background bg-background/10">
+            buffered and batch-inserted every 30 seconds
+          </TextHighlight>
+          , cutting database round-trips without delaying what clients see
+          live.
+        </p>
+      </ImageBlock>
       <ImageBlock
         title="Configurable flush interval"
         side="left"
@@ -70,19 +68,18 @@ export default function PerformanceLodeContent() {
         aspectRatio="736/316"
         src="/media/lode/performance-flush-interval.png"
         alt="Function signature showing flush_interval as a configurable parameter"
-        text={
-          <p>
-            The buffer flush interval is{" "}
-            <TextHighlight className="text-background bg-background/10">
-              configurable
-            </TextHighlight>{" "}
-            — 30s in production, 100ms in tests — so tests verify the pipeline
-            quickly, without long sleeps.
-          </p>
-        }
         margin="0 70px 0"
         textColorClassName="text-background"
-      />
+      >
+        <p>
+          The buffer flush interval is{" "}
+          <TextHighlight className="text-background bg-background/10">
+            configurable
+          </TextHighlight>{" "}
+          — 30s in production, 100ms in tests — so tests verify the pipeline
+          quickly, without long sleeps.
+        </p>
+      </ImageBlock>
     </ContentPage>
   );
 }

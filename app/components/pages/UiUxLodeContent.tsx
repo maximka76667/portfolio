@@ -29,15 +29,14 @@ export default function UiUxLodeContent() {
         src="/media/lode/ui-ux-history.png"
         alt="Time range selector scoping charts to a window"
         margin="0 70px 0"
-        text={
-          <p>
-            A{" "}
-            <TextHighlight>time range selector</TextHighlight>{" "}
-            scopes every chart to a window — 20 minutes, 1 hour, 5 hours, or
-            multiple days.
-          </p>
-        }
-      />
+      >
+        <p>
+          A{" "}
+          <TextHighlight>time range selector</TextHighlight>{" "}
+          scopes every chart to a window — 20 minutes, 1 hour, 5 hours, or
+          multiple days.
+        </p>
+      </ImageBlock>
       <VideoBlock
         title="Live status"
         side="right"
@@ -45,26 +44,25 @@ export default function UiUxLodeContent() {
         aspectRatio="16/9"
         src="/media/lode/ui-ux-status.mp4"
         margin="0 20px 0"
-        text={
-          <p>
-            A{" "}
-            <TextHighlight>status badge</TextHighlight>{" "}
-            always shows where the feed stands —{" "}
-            <span className="text-status-active bg-status-active/10 px-1 rounded-sm">
-              live
-            </span>
-            ,{" "}
-            <span className="text-status-loading bg-status-loading/10 px-1 rounded-sm">
-              waiting for data
-            </span>
-            , or{" "}
-            <span className="text-status-error bg-status-error/10 px-1 rounded-sm">
-              error
-            </span>{" "}
-            — so a stalled connection is never mistaken for a quiet one.
-          </p>
-        }
-      />
+      >
+        <p>
+          A{" "}
+          <TextHighlight>status badge</TextHighlight>{" "}
+          always shows where the feed stands —{" "}
+          <span className="text-status-active bg-status-active/10 px-1 rounded-sm">
+            live
+          </span>
+          ,{" "}
+          <span className="text-status-loading bg-status-loading/10 px-1 rounded-sm">
+            waiting for data
+          </span>
+          , or{" "}
+          <span className="text-status-error bg-status-error/10 px-1 rounded-sm">
+            error
+          </span>{" "}
+          — so a stalled connection is never mistaken for a quiet one.
+        </p>
+      </VideoBlock>
       <ImageBlock
         title="Physical display"
         side="left"
@@ -73,15 +71,14 @@ export default function UiUxLodeContent() {
         src="/media/lode/ui-ux-display.png"
         alt="Physical display showing the same live data"
         margin="0 100px 0"
-        text={
-          <p>
-            A{" "}
-            <TextHighlight>physical display</TextHighlight>{" "}
-            mirrors the same data, so it&apos;s visible at a glance without
-            opening the app.
-          </p>
-        }
-      />
+      >
+        <p>
+          A{" "}
+          <TextHighlight>physical display</TextHighlight>{" "}
+          mirrors the same data, so it&apos;s visible at a glance without
+          opening the app.
+        </p>
+      </ImageBlock>
     </ContentPage>
   );
 }

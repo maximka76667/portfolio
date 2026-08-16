@@ -27,19 +27,18 @@ export default function OsCompatibilityHyperloopContent() {
         aspectRatio="1280/718"
         src="/media/hyperloop/comp-member.jpg"
         alt="Team member using the Control Station on their own machine"
-        text={
-          <p>
-            The Control Station had to run on{" "}
-            <TextHighlight className="text-background bg-background/10">
-              each team member&apos;s own machine
-            </TextHighlight>{" "}
-            — there was no shared or standardized setup to target.
-          </p>
-        }
         margin="0 70px 0"
         titleColorClassName="text-background"
         textColorClassName="text-background"
-      />
+      >
+        <p>
+          The Control Station had to run on{" "}
+          <TextHighlight className="text-background bg-background/10">
+            each team member&apos;s own machine
+          </TextHighlight>{" "}
+          — there was no shared or standardized setup to target.
+        </p>
+      </ImageBlock>
       <ImageBlock
         title="Windows, macOS, and Linux"
         side="right"
@@ -47,27 +46,26 @@ export default function OsCompatibilityHyperloopContent() {
         aspectRatio="1771/1105"
         src="/media/hyperloop/comp-distributives.png"
         alt="Control Station running across Windows, macOS, and Linux distributions"
-        text={
-          <p>
-            That meant supporting{" "}
-            <TextHighlight className="text-background bg-background/10">
-              Windows
-            </TextHighlight>
-            ,{" "}
-            <TextHighlight className="text-background bg-background/10">
-              macOS
-            </TextHighlight>{" "}
-            (Intel and Apple Silicon), and a range of{" "}
-            <TextHighlight className="text-background bg-background/10">
-              Linux distributions
-            </TextHighlight>{" "}
-            — Mint, Ubuntu, Fedora, Arch, and others.
-          </p>
-        }
         margin="0 70px 0"
         titleColorClassName="text-background"
         textColorClassName="text-background"
-      />
+      >
+        <p>
+          That meant supporting{" "}
+          <TextHighlight className="text-background bg-background/10">
+            Windows
+          </TextHighlight>
+          ,{" "}
+          <TextHighlight className="text-background bg-background/10">
+            macOS
+          </TextHighlight>{" "}
+          (Intel and Apple Silicon), and a range of{" "}
+          <TextHighlight className="text-background bg-background/10">
+            Linux distributions
+          </TextHighlight>{" "}
+          — Mint, Ubuntu, Fedora, Arch, and others.
+        </p>
+      </ImageBlock>
       <ImageBlock
         title="One codebase, via Electron"
         side="left"
@@ -75,23 +73,22 @@ export default function OsCompatibilityHyperloopContent() {
         aspectRatio="1554/952"
         src="/media/hyperloop/comp-electron.png"
         alt="Electron app running as a native build"
-        text={
-          <p>
-            Built with{" "}
-            <TextHighlight className="text-background bg-background/10">
-              Electron
-            </TextHighlight>
-            , so the same codebase ships as a{" "}
-            <TextHighlight className="text-background bg-background/10">
-              native app on every platform
-            </TextHighlight>{" "}
-            instead of maintaining separate builds per OS.
-          </p>
-        }
         margin="0 70px 0"
         titleColorClassName="text-background"
         textColorClassName="text-background"
-      />
+      >
+        <p>
+          Built with{" "}
+          <TextHighlight className="text-background bg-background/10">
+            Electron
+          </TextHighlight>
+          , so the same codebase ships as a{" "}
+          <TextHighlight className="text-background bg-background/10">
+            native app on every platform
+          </TextHighlight>{" "}
+          instead of maintaining separate builds per OS.
+        </p>
+      </ImageBlock>
     </ContentPage>
   );
 }
